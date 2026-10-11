@@ -1,0 +1,777 @@
+{
+  "schema_version": 1,
+  "asset_root": "runs/sim/review-1/assets/v2",
+  "representation": "Generated eight-frame fixed-view RGBA walking sequences; simulator trajectories and collisions remain separate.",
+  "animations": {
+    "child": {
+      "frame_paths": [
+        "runs/sim/review-1/assets/v2/child/frame-00.png",
+        "runs/sim/review-1/assets/v2/child/frame-01.png",
+        "runs/sim/review-1/assets/v2/child/frame-02.png",
+        "runs/sim/review-1/assets/v2/child/frame-03.png",
+        "runs/sim/review-1/assets/v2/child/frame-04.png",
+        "runs/sim/review-1/assets/v2/child/frame-05.png",
+        "runs/sim/review-1/assets/v2/child/frame-06.png",
+        "runs/sim/review-1/assets/v2/child/frame-07.png"
+      ],
+      "fps": 8,
+      "anchor_uv": [
+        0.5,
+        0.9
+      ],
+      "width_m": 1.3013333333333332,
+      "height_m": 1.6266666666666665,
+      "nominal_body_height_m": 1.22,
+      "canvas_size_px": [
+        512,
+        640
+      ],
+      "ground_anchor_px": [
+        256,
+        576
+      ],
+      "target_alpha_core_height_px": 480,
+      "frames": [
+        {
+          "index": 0,
+          "path": "runs/sim/review-1/assets/v2/child/frame-00.png",
+          "sha256": "f3e486405af33256011490f5760a4c976d62fc5c518396c8131f8bdfac264c08",
+          "source_crop_xyxy": [
+            0,
+            0,
+            362,
+            543
+          ],
+          "source_alpha_core_bbox": [
+            78,
+            17,
+            276,
+            506
+          ],
+          "source_torso_center_x": 169.3505119023603,
+          "scale": 0.9815950920245399,
+          "resized_cell_size_px": [
+            355,
+            533
+          ],
+          "paste_xy": [
+            90,
+            80
+          ],
+          "output_alpha_core_bbox": [
+            167,
+            96,
+            361,
+            576
+          ],
+          "output_core_height_px": 480,
+          "original_alpha_policy": "Original RGBA cell preserved; geometric RGBA Lanczos resampling and integer placement only. No thresholding/painting/matte cleanup in output."
+        },
+        {
+          "index": 1,
+          "path": "runs/sim/review-1/assets/v2/child/frame-01.png",
+          "sha256": "02ef6502b447590da613e588c75f58bcdfc8cc0c681fe434393e19268bf2f8a9",
+          "source_crop_xyxy": [
+            362,
+            0,
+            724,
+            543
+          ],
+          "source_alpha_core_bbox": [
+            52,
+            17,
+            293,
+            503
+          ],
+          "source_torso_center_x": 173.32443226410038,
+          "scale": 0.9876543209876543,
+          "resized_cell_size_px": [
+            358,
+            536
+          ],
+          "paste_xy": [
+            85,
+            80
+          ],
+          "output_alpha_core_bbox": [
+            136,
+            96,
+            375,
+            576
+          ],
+          "output_core_height_px": 480,
+          "original_alpha_policy": "Original RGBA cell preserved; geometric RGBA Lanczos resampling and integer placement only. No thresholding/painting/matte cleanup in output."
+        },
+        {
+          "index": 2,
+          "path": "runs/sim/review-1/assets/v2/child/frame-02.png",
+          "sha256": "771339c456530911fddc49f9b75acc741a3e356284685d4110fac85c7ac2ec4d",
+          "source_crop_xyxy": [
+            724,
+            0,
+            1086,
+            543
+          ],
+          "source_alpha_core_bbox": [
+            48,
+            17,
+            324,
+            501
+          ],
+          "source_torso_center_x": 171.65547450927994,
+          "scale": 0.9917355371900827,
+          "resized_cell_size_px": [
+            359,
+            539
+          ],
+          "paste_xy": [
+            86,
+            79
+          ],
+          "output_alpha_core_bbox": [
+            133,
+            95,
+            408,
+            576
+          ],
+          "output_core_height_px": 481,
+          "original_alpha_policy": "Original RGBA cell preserved; geometric RGBA Lanczos resampling and integer placement only. No thresholding/painting/matte cleanup in output."
+        },
+        {
+          "index": 3,
+          "path": "runs/sim/review-1/assets/v2/child/frame-03.png",
+          "sha256": "74a567ff6e3fee5292ecdb57a8464675ed0d4bf7170402b4ac1370c1c800f30f",
+          "source_crop_xyxy": [
+            1086,
+            0,
+            1448,
+            543
+          ],
+          "source_alpha_core_bbox": [
+            45,
+            17,
+            330,
+            500
+          ],
+          "source_torso_center_x": 169.96036504002032,
+          "scale": 0.9937888198757764,
+          "resized_cell_size_px": [
+            360,
+            540
+          ],
+          "paste_xy": [
+            87,
+            79
+          ],
+          "output_alpha_core_bbox": [
+            132,
+            96,
+            415,
+            576
+          ],
+          "output_core_height_px": 480,
+          "original_alpha_policy": "Original RGBA cell preserved; geometric RGBA Lanczos resampling and integer placement only. No thresholding/painting/matte cleanup in output."
+        },
+        {
+          "index": 4,
+          "path": "runs/sim/review-1/assets/v2/child/frame-04.png",
+          "sha256": "09f3ca81577f9c6c08cf8e64855973e3e165cf3c84e3e15dcdb6202a518f3ba4",
+          "source_crop_xyxy": [
+            0,
+            543,
+            362,
+            1086
+          ],
+          "source_alpha_core_bbox": [
+            36,
+            18,
+            307,
+            499
+          ],
+          "source_torso_center_x": 174.75829238080354,
+          "scale": 0.997920997920998,
+          "resized_cell_size_px": [
+            361,
+            542
+          ],
+          "paste_xy": [
+            82,
+            78
+          ],
+          "output_alpha_core_bbox": [
+            118,
+            96,
+            388,
+            576
+          ],
+          "output_core_height_px": 480,
+          "original_alpha_policy": "Original RGBA cell preserved; geometric RGBA Lanczos resampling and integer placement only. No thresholding/painting/matte cleanup in output."
+        },
+        {
+          "index": 5,
+          "path": "runs/sim/review-1/assets/v2/child/frame-05.png",
+          "sha256": "5793990328967afd99b5a418999a8c3d0d7e6ecc3b0fa35e2c718cff4806ee75",
+          "source_crop_xyxy": [
+            362,
+            543,
+            724,
+            1086
+          ],
+          "source_alpha_core_bbox": [
+            40,
+            18,
+            295,
+            502
+          ],
+          "source_torso_center_x": 176.4938296044783,
+          "scale": 0.9917355371900827,
+          "resized_cell_size_px": [
+            359,
+            539
+          ],
+          "paste_xy": [
+            81,
+            78
+          ],
+          "output_alpha_core_bbox": [
+            121,
+            96,
+            373,
+            576
+          ],
+          "output_core_height_px": 480,
+          "original_alpha_policy": "Original RGBA cell preserved; geometric RGBA Lanczos resampling and integer placement only. No thresholding/painting/matte cleanup in output."
+        },
+        {
+          "index": 6,
+          "path": "runs/sim/review-1/assets/v2/child/frame-06.png",
+          "sha256": "ba04874d2dbe2278d64befc44156b78fb376d2662a4c24e3ab6b03abf5f191c7",
+          "source_crop_xyxy": [
+            724,
+            543,
+            1086,
+            1086
+          ],
+          "source_alpha_core_bbox": [
+            45,
+            18,
+            338,
+            499
+          ],
+          "source_torso_center_x": 179.94253597911455,
+          "scale": 0.997920997920998,
+          "resized_cell_size_px": [
+            361,
+            542
+          ],
+          "paste_xy": [
+            77,
+            78
+          ],
+          "output_alpha_core_bbox": [
+            122,
+            96,
+            414,
+            576
+          ],
+          "output_core_height_px": 480,
+          "original_alpha_policy": "Original RGBA cell preserved; geometric RGBA Lanczos resampling and integer placement only. No thresholding/painting/matte cleanup in output."
+        },
+        {
+          "index": 7,
+          "path": "runs/sim/review-1/assets/v2/child/frame-07.png",
+          "sha256": "3e6127c650036b6378f053ebc674e9a86f35066b1b44dbc709dbd7df543067d8",
+          "source_crop_xyxy": [
+            1086,
+            543,
+            1448,
+            1086
+          ],
+          "source_alpha_core_bbox": [
+            72,
+            18,
+            284,
+            504
+          ],
+          "source_torso_center_x": 169.2377968209711,
+          "scale": 0.9876543209876543,
+          "resized_cell_size_px": [
+            358,
+            536
+          ],
+          "paste_xy": [
+            89,
+            78
+          ],
+          "output_alpha_core_bbox": [
+            161,
+            96,
+            370,
+            576
+          ],
+          "output_core_height_px": 480,
+          "original_alpha_policy": "Original RGBA cell preserved; geometric RGBA Lanczos resampling and integer placement only. No thresholding/painting/matte cleanup in output."
+        }
+      ],
+      "source": {
+        "original_path": "generated_images/01a0f4fe-c1ec-7b01-9364-b1ddd505483b/exec-d6cacc3e-2ad0-4766-8f0a-b1911bfcc860.png",
+        "original_sha256": "e4f42a73785fefff28e6314c5d0e65c6c416383af899a288bb5d50ff0f8f078e",
+        "atlas_path": "runs/sim/review-1/assets/v2/child-atlas.png",
+        "atlas_sha256": "e4f42a73785fefff28e6314c5d0e65c6c416383af899a288bb5d50ff0f8f078e"
+      },
+      "qa": {
+        "status": "prepared_child_tiles_for_scene_qa",
+        "complete_silhouettes": true,
+        "core_height_px_range": [
+          480,
+          481
+        ],
+        "motion": "Eight generated side-profile walking poses at8fps; fixed viewpoint, not3D or physically rigged gait."
+      }
+    },
+    "dog": {
+      "frame_paths": [
+        "runs/sim/review-1/assets/v2/dog/frame-00.png",
+        "runs/sim/review-1/assets/v2/dog/frame-01.png",
+        "runs/sim/review-1/assets/v2/dog/frame-02.png",
+        "runs/sim/review-1/assets/v2/dog/frame-03.png",
+        "runs/sim/review-1/assets/v2/dog/frame-04.png",
+        "runs/sim/review-1/assets/v2/dog/frame-05.png",
+        "runs/sim/review-1/assets/v2/dog/frame-06.png",
+        "runs/sim/review-1/assets/v2/dog/frame-07.png"
+      ],
+      "fps": 8,
+      "anchor_uv": [
+        0.5,
+        0.75
+      ],
+      "width_m": 1.6,
+      "height_m": 1.6,
+      "nominal_body_height_m": 0.8,
+      "canvas_size_px": [
+        512,
+        512
+      ],
+      "ground_anchor_px": [
+        256,
+        384
+      ],
+      "target_alpha_core_height_px": 256,
+      "frames": [
+        {
+          "index": 0,
+          "path": "runs/sim/review-1/assets/v2/dog/frame-00.png",
+          "sha256": "34e0700311927b5b3bb1d50275d3cb2e1cdfc43773b3f17d6f4f42a64508d2b1",
+          "source_cell_xyxy": [
+            0,
+            0,
+            362,
+            543
+          ],
+          "source_inner_crop_xyxy": [
+            35,
+            215,
+            330,
+            448
+          ],
+          "source_atlas_crop_xyxy": [
+            35,
+            215,
+            330,
+            448
+          ],
+          "source_alpha_core_bbox": [
+            17,
+            17,
+            278,
+            216
+          ],
+          "source_body_center_x": 137.67958511525296,
+          "scale": 1.2864321608040201,
+          "resized_crop_size_px": [
+            379,
+            300
+          ],
+          "paste_xy": [
+            79,
+            106
+          ],
+          "output_alpha_core_bbox": [
+            101,
+            128,
+            436,
+            384
+          ],
+          "output_core_height_px": 256,
+          "discarded_far_background_alpha_max": 1,
+          "discarded_far_background_nonzero_pixels": 135
+        },
+        {
+          "index": 1,
+          "path": "runs/sim/review-1/assets/v2/dog/frame-01.png",
+          "sha256": "1df84e306c439d9be50fa3df1ab8af5d0e2a81ecc1d89732e552f5bad1756d1e",
+          "source_cell_xyxy": [
+            362,
+            0,
+            724,
+            543
+          ],
+          "source_inner_crop_xyxy": [
+            23,
+            213,
+            326,
+            450
+          ],
+          "source_atlas_crop_xyxy": [
+            385,
+            213,
+            688,
+            450
+          ],
+          "source_alpha_core_bbox": [
+            18,
+            17,
+            286,
+            220
+          ],
+          "source_body_center_x": 141.3269118040729,
+          "scale": 1.2610837438423645,
+          "resized_crop_size_px": [
+            382,
+            299
+          ],
+          "paste_xy": [
+            78,
+            107
+          ],
+          "output_alpha_core_bbox": [
+            100,
+            129,
+            439,
+            384
+          ],
+          "output_core_height_px": 255,
+          "discarded_far_background_alpha_max": 1,
+          "discarded_far_background_nonzero_pixels": 223
+        },
+        {
+          "index": 2,
+          "path": "runs/sim/review-1/assets/v2/dog/frame-02.png",
+          "sha256": "8c3467fd0fd8634e35fd5857e4df163de76499d9ff327f643fcc240f7dc14dd3",
+          "source_cell_xyxy": [
+            724,
+            0,
+            1086,
+            543
+          ],
+          "source_inner_crop_xyxy": [
+            13,
+            213,
+            324,
+            449
+          ],
+          "source_atlas_crop_xyxy": [
+            737,
+            213,
+            1048,
+            449
+          ],
+          "source_alpha_core_bbox": [
+            18,
+            17,
+            294,
+            219
+          ],
+          "source_body_center_x": 146.48328851643797,
+          "scale": 1.2673267326732673,
+          "resized_crop_size_px": [
+            394,
+            299
+          ],
+          "paste_xy": [
+            70,
+            106
+          ],
+          "output_alpha_core_bbox": [
+            93,
+            127,
+            443,
+            384
+          ],
+          "output_core_height_px": 257,
+          "discarded_far_background_alpha_max": 1,
+          "discarded_far_background_nonzero_pixels": 179
+        },
+        {
+          "index": 3,
+          "path": "runs/sim/review-1/assets/v2/dog/frame-03.png",
+          "sha256": "5a89140170cd388ca98a216719112e8a52aed46014a759e5c54c17eaedce7587",
+          "source_cell_xyxy": [
+            1086,
+            0,
+            1448,
+            543
+          ],
+          "source_inner_crop_xyxy": [
+            12,
+            211,
+            327,
+            449
+          ],
+          "source_atlas_crop_xyxy": [
+            1098,
+            211,
+            1413,
+            449
+          ],
+          "source_alpha_core_bbox": [
+            18,
+            17,
+            299,
+            221
+          ],
+          "source_body_center_x": 147.68920385987417,
+          "scale": 1.2549019607843137,
+          "resized_crop_size_px": [
+            395,
+            299
+          ],
+          "paste_xy": [
+            71,
+            107
+          ],
+          "output_alpha_core_bbox": [
+            93,
+            129,
+            445,
+            384
+          ],
+          "output_core_height_px": 255,
+          "discarded_far_background_alpha_max": 1,
+          "discarded_far_background_nonzero_pixels": 38
+        },
+        {
+          "index": 4,
+          "path": "runs/sim/review-1/assets/v2/dog/frame-04.png",
+          "sha256": "dbef2f6f749217a7bd2f5bb1d8a85d6b1528e75d5d04795a43919ac480165a23",
+          "source_cell_xyxy": [
+            0,
+            543,
+            362,
+            1086
+          ],
+          "source_inner_crop_xyxy": [
+            28,
+            148,
+            326,
+            378
+          ],
+          "source_atlas_crop_xyxy": [
+            28,
+            691,
+            326,
+            921
+          ],
+          "source_alpha_core_bbox": [
+            18,
+            16,
+            282,
+            213
+          ],
+          "source_body_center_x": 138.33959222727088,
+          "scale": 1.299492385786802,
+          "resized_crop_size_px": [
+            387,
+            299
+          ],
+          "paste_xy": [
+            76,
+            107
+          ],
+          "output_alpha_core_bbox": [
+            99,
+            128,
+            442,
+            384
+          ],
+          "output_core_height_px": 256,
+          "discarded_far_background_alpha_max": 1,
+          "discarded_far_background_nonzero_pixels": 240
+        },
+        {
+          "index": 5,
+          "path": "runs/sim/review-1/assets/v2/dog/frame-05.png",
+          "sha256": "06f8f2d8db3ad306f474e8591ef10e79660873e5620626084da63e4e40613a9e",
+          "source_cell_xyxy": [
+            362,
+            543,
+            724,
+            1086
+          ],
+          "source_inner_crop_xyxy": [
+            26,
+            146,
+            335,
+            379
+          ],
+          "source_atlas_crop_xyxy": [
+            388,
+            689,
+            697,
+            922
+          ],
+          "source_alpha_core_bbox": [
+            18,
+            16,
+            292,
+            216
+          ],
+          "source_body_center_x": 142.8618704824844,
+          "scale": 1.28,
+          "resized_crop_size_px": [
+            396,
+            298
+          ],
+          "paste_xy": [
+            73,
+            108
+          ],
+          "output_alpha_core_bbox": [
+            96,
+            129,
+            447,
+            384
+          ],
+          "output_core_height_px": 255,
+          "discarded_far_background_alpha_max": 1,
+          "discarded_far_background_nonzero_pixels": 244
+        },
+        {
+          "index": 6,
+          "path": "runs/sim/review-1/assets/v2/dog/frame-06.png",
+          "sha256": "e4f30e4656754a80d9d6cbbf854cec1611f7f03a6736601eeee1b951288a08cc",
+          "source_cell_xyxy": [
+            724,
+            543,
+            1086,
+            1086
+          ],
+          "source_inner_crop_xyxy": [
+            16,
+            146,
+            335,
+            380
+          ],
+          "source_atlas_crop_xyxy": [
+            740,
+            689,
+            1059,
+            923
+          ],
+          "source_alpha_core_bbox": [
+            17,
+            17,
+            302,
+            217
+          ],
+          "source_body_center_x": 146.6518009969553,
+          "scale": 1.28,
+          "resized_crop_size_px": [
+            408,
+            300
+          ],
+          "paste_xy": [
+            68,
+            105
+          ],
+          "output_alpha_core_bbox": [
+            90,
+            126,
+            455,
+            384
+          ],
+          "output_core_height_px": 258,
+          "discarded_far_background_alpha_max": 1,
+          "discarded_far_background_nonzero_pixels": 208
+        },
+        {
+          "index": 7,
+          "path": "runs/sim/review-1/assets/v2/dog/frame-07.png",
+          "sha256": "665d3e44606c0e6fe303b852b158fc9733b3c2883c9897238e8468643fc2f64d",
+          "source_cell_xyxy": [
+            1086,
+            543,
+            1448,
+            1086
+          ],
+          "source_inner_crop_xyxy": [
+            16,
+            146,
+            328,
+            379
+          ],
+          "source_atlas_crop_xyxy": [
+            1102,
+            689,
+            1414,
+            922
+          ],
+          "source_alpha_core_bbox": [
+            18,
+            17,
+            295,
+            217
+          ],
+          "source_body_center_x": 147.317691636866,
+          "scale": 1.28,
+          "resized_crop_size_px": [
+            399,
+            298
+          ],
+          "paste_xy": [
+            68,
+            107
+          ],
+          "output_alpha_core_bbox": [
+            91,
+            129,
+            446,
+            384
+          ],
+          "output_core_height_px": 255,
+          "discarded_far_background_alpha_max": 1,
+          "discarded_far_background_nonzero_pixels": 85
+        }
+      ],
+      "source": {
+        "original_path": "generated_images/01a0f4fe-c1ec-7b01-9364-b1ddd505483b/exec-85e0c943-ad53-4108-9b2e-9c8d69408782.png",
+        "original_sha256": "bcd8781cbb59394aebb2dda319152bdbfb4887d09063371b78288b2955ef5e22",
+        "atlas_path": "runs/sim/review-1/assets/v2/dog-atlas-padded.png",
+        "atlas_sha256": "bcd8781cbb59394aebb2dda319152bdbfb4887d09063371b78288b2955ef5e22"
+      },
+      "qa": {
+        "status": "prepared_dog_tiles_for_scene_qa",
+        "complete_silhouettes": true,
+        "all_original_cell_edge_alpha_max": 1,
+        "core_height_px_range": [
+          255,
+          258
+        ],
+        "motion": "Eight generated side-profile walking poses at8fps; fixed viewpoint, not3D or physically rigged gait."
+      },
+      "alpha_policy": "Preserve originalRGBA inside diagnostic alpha>=16 bounds plus16pxrectangularpadding; discarded far-background alpha remains below16. RGBA Lanczos geometricresampling only; no painted or thresholded outputmatte."
+    }
+  },
+  "rejected_sources": [
+    {
+      "original_path": "generated_images/01a0f4fe-c1ec-7b01-9364-b1ddd505483b/exec-f3c77e65-8ab3-4fd0-b918-54baf860ac5f.png",
+      "original_sha256": "15ce447cb5d9797c4277781ec41c959e90eb8446a56f068a5ad7dcccf8c5b28e",
+      "atlas_path": "runs/sim/review-1/assets/v2/dog-atlas-rejected.png",
+      "atlas_sha256": "15ce447cb5d9797c4277781ec41c959e90eb8446a56f068a5ad7dcccf8c5b28e",
+      "reason": "Significant alpha touches internal fixed-grid cuts; preserve atlas but do not normalize clipped tiles.",
+      "audit_path": "runs/sim/review-1/assets/v2/alpha-audit.json"
+    }
+  ],
+  "alpha_policy": "Generated alpha is retained and only geometrically resampled. Diagnostic alpha thresholds locate anchors; never substitute thresholded alpha in output.",
+  "prompt_provenance": "runs/sim/review-1/assets/prompts.json"
+}

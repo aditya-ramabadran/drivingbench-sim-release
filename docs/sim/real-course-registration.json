@@ -1,0 +1,2983 @@
+{
+  "schema": 1,
+  "coordinate_frame": "site1_full_ground",
+  "heading_units": "radians_ccw_from_ground_x",
+  "body_reference": "nominal body/CoG center, camera 1.0 m forward; not surveyed",
+  "registration_method": "one rigid SE2 per engagement, unscaled wheel-speed/gyro path jointly anchored to registered real camera centers and headings; no simulated path used",
+  "command_semantics": "set_motion status accepted; stop_now successful statuses stopping/stopped are retained (not mislabeled rejected)",
+  "source_hashes": {
+    "sim/site1-full-ground.json": "007dbec997245e8f284f4c5d27dddc6c30dd044d8361f4336fa820d5ae1a425a",
+    "runs/sim/visual/site1-validation/sfm/frames.jsonl": "38c74537ca6b7b69dc1027f28e499591f13a4adbff40c5264f2090de172c7d00",
+    "runs/sim/series/00000041--fdf9cede4b.npz": "229f69dc2c043d139bb3efb5c643ba322571f04498e1c806ad7323225c8d6db6",
+    "runs/sim/series/00000042--544757d3f5.npz": "0496d027155092dad5bdc2b95725f783aa56ae50c87c9f72de9478c870a29126"
+  },
+  "missing_motion_engagements": [
+    {
+      "segment": "2026-09-17-c29af6",
+      "listed_session": "2026-09-17-gpt-6-astra-codex-2da073",
+      "reason": "no accepted set_motion in the saved site1 route series; setup, disconnect or administrative engagement, not a silently dropped attempt"
+    },
+    {
+      "segment": "2026-09-17-e6cff1",
+      "listed_session": "2026-09-17-gpt-6-astra-codex-457f46",
+      "reason": "no accepted set_motion in the saved site1 route series; setup, disconnect or administrative engagement, not a silently dropped attempt"
+    },
+    {
+      "segment": "2026-09-17-250991",
+      "listed_session": "2026-09-17-gpt-6-astra-codex-457f46",
+      "reason": "no accepted set_motion in the saved site1 route series; setup, disconnect or administrative engagement, not a silently dropped attempt"
+    },
+    {
+      "segment": "2026-09-17-8f4733",
+      "listed_session": "2026-09-17-gpt-6-astra-codex-457f46",
+      "reason": "no accepted set_motion in the saved site1 route series; setup, disconnect or administrative engagement, not a silently dropped attempt"
+    },
+    {
+      "segment": "2026-09-17-2f0958",
+      "listed_session": "2026-09-17-gpt-6-astra-codex-664abe",
+      "reason": "no accepted set_motion in the saved site1 route series; setup, disconnect or administrative engagement, not a silently dropped attempt"
+    },
+    {
+      "segment": "2026-09-17-a8d08f",
+      "listed_session": "2026-09-17-gpt-6-astra-codex-af2796",
+      "reason": "no accepted set_motion in the saved site1 route series; setup, disconnect or administrative engagement, not a silently dropped attempt"
+    }
+  ],
+  "early_anchor_sensitivity": [
+    {
+      "id": "2026-09-17-18ade2",
+      "anchors": 6,
+      "angle_difference_deg": -0.38383627250652,
+      "start_pose": {
+        "x": 3.3212239274646573,
+        "y": -2.286521452713683,
+        "heading": 2.624827312123105
+      },
+      "start_shift_m": 0.14280945899532194,
+      "end_shift_m": 0.20874097456238322,
+      "max_shift_m": 0.20874097456238322,
+      "source_path": "runs/sim/real-course-twin/registration/2026-09-17-18ade2-early.npz"
+    },
+    {
+      "id": "2026-09-17-24137e",
+      "anchors": 13,
+      "angle_difference_deg": -4.4560689746794315,
+      "start_pose": {
+        "x": 3.9678282115821304,
+        "y": -2.87184909905094,
+        "heading": 2.6113992838195985
+      },
+      "start_shift_m": 0.3353526333302794,
+      "end_shift_m": 4.274314678098547,
+      "max_shift_m": 4.274314678098547,
+      "source_path": "runs/sim/real-course-twin/registration/2026-09-17-24137e-early.npz"
+    },
+    {
+      "id": "2026-09-17-48ff3a",
+      "anchors": 4,
+      "angle_difference_deg": -0.05543419469717922,
+      "start_pose": {
+        "x": 4.6224245632841185,
+        "y": -1.4469049134896017,
+        "heading": 2.7094308692911913
+      },
+      "start_shift_m": 0.024460237526296863,
+      "end_shift_m": 0.024784117696652622,
+      "max_shift_m": 0.024784117696652622,
+      "source_path": "runs/sim/real-course-twin/registration/2026-09-17-48ff3a-early.npz"
+    },
+    {
+      "id": "2026-09-17-503d24",
+      "anchors": 7,
+      "angle_difference_deg": -0.7320521791019472,
+      "start_pose": {
+        "x": 4.057862077623752,
+        "y": -3.3781093519321654,
+        "heading": 2.5506837653383125
+      },
+      "start_shift_m": 0.18911076356054787,
+      "end_shift_m": 0.41193974918755155,
+      "max_shift_m": 0.41193974918755155,
+      "source_path": "runs/sim/real-course-twin/registration/2026-09-17-503d24-early.npz"
+    },
+    {
+      "id": "2026-09-17-5c4479",
+      "anchors": 12,
+      "angle_difference_deg": -4.629244404284483,
+      "start_pose": {
+        "x": 4.238865439480915,
+        "y": -2.702417516900697,
+        "heading": 2.6240453126656447
+      },
+      "start_shift_m": 0.5614033298985805,
+      "end_shift_m": 5.7861045799931095,
+      "max_shift_m": 6.165071129108369,
+      "source_path": "runs/sim/real-course-twin/registration/2026-09-17-5c4479-early.npz"
+    },
+    {
+      "id": "2026-09-17-5ceee7",
+      "anchors": 8,
+      "angle_difference_deg": -0.11197471323420902,
+      "start_pose": {
+        "x": 4.794373225500101,
+        "y": -1.758753881998138,
+        "heading": 2.653112166019814
+      },
+      "start_shift_m": 0.05457579141051906,
+      "end_shift_m": 0.05770110271885362,
+      "max_shift_m": 0.05770774623206601,
+      "source_path": "runs/sim/real-course-twin/registration/2026-09-17-5ceee7-early.npz"
+    },
+    {
+      "id": "2026-09-17-627be4",
+      "anchors": 5,
+      "angle_difference_deg": -0.2794449362892423,
+      "start_pose": {
+        "x": 4.236534025000794,
+        "y": -1.4230155893911405,
+        "heading": 2.6480370710711276
+      },
+      "start_shift_m": 0.22279190557121029,
+      "end_shift_m": 0.23710600605927581,
+      "max_shift_m": 0.23710600605927581,
+      "source_path": "runs/sim/real-course-twin/registration/2026-09-17-627be4-early.npz"
+    },
+    {
+      "id": "2026-09-17-667691",
+      "anchors": 10,
+      "angle_difference_deg": -0.5181042211139195,
+      "start_pose": {
+        "x": 4.25174511401444,
+        "y": -2.083463441926793,
+        "heading": 2.6623902400232935
+      },
+      "start_shift_m": 0.17488149223346178,
+      "end_shift_m": 0.3205225554309053,
+      "max_shift_m": 0.3205225554309053,
+      "source_path": "runs/sim/real-course-twin/registration/2026-09-17-667691-early.npz"
+    },
+    {
+      "id": "2026-09-17-691a30",
+      "anchors": 13,
+      "angle_difference_deg": -0.2286931859647507,
+      "start_pose": {
+        "x": 3.570098522370126,
+        "y": -4.319899324205375,
+        "heading": 2.515514576970918
+      },
+      "start_shift_m": 0.07911385625896408,
+      "end_shift_m": 0.13980567665061835,
+      "max_shift_m": 0.13980567665061835,
+      "source_path": "runs/sim/real-course-twin/registration/2026-09-17-691a30-early.npz"
+    },
+    {
+      "id": "2026-09-17-926568",
+      "anchors": 5,
+      "angle_difference_deg": -0.944430543911697,
+      "start_pose": {
+        "x": 4.0358220409010235,
+        "y": -2.315599680934418,
+        "heading": 2.645895920463239
+      },
+      "start_shift_m": 0.33079475100991773,
+      "end_shift_m": 0.5718959283951616,
+      "max_shift_m": 0.5719861235872653,
+      "source_path": "runs/sim/real-course-twin/registration/2026-09-17-926568-early.npz"
+    },
+    {
+      "id": "2026-09-17-ca2652",
+      "anchors": 7,
+      "angle_difference_deg": -3.6484095342271807,
+      "start_pose": {
+        "x": 3.549904562230952,
+        "y": -3.302081882758301,
+        "heading": 2.530103529568524
+      },
+      "start_shift_m": 0.12058828868379542,
+      "end_shift_m": 3.588289645419982,
+      "max_shift_m": 3.5890259285468895,
+      "source_path": "runs/sim/real-course-twin/registration/2026-09-17-ca2652-early.npz"
+    },
+    {
+      "id": "2026-09-17-f1762a",
+      "anchors": 8,
+      "angle_difference_deg": -0.052633476701027776,
+      "start_pose": {
+        "x": 4.589176477610913,
+        "y": -3.4979650070128634,
+        "heading": 2.5697912593966263
+      },
+      "start_shift_m": 0.057364969319071715,
+      "end_shift_m": 0.05604368558408683,
+      "max_shift_m": 0.057364969319071715,
+      "source_path": "runs/sim/real-course-twin/registration/2026-09-17-f1762a-early.npz"
+    }
+  ],
+  "camera_supported_reference": [
+    {
+      "id": "2026-09-17-18ade2",
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-18ade2-map-reference.npz",
+      "camera_anchors_in_drive": 18,
+      "first_anchor_t": 1964.7921168950002,
+      "last_anchor_t": 2001.792073669,
+      "start_anchor_extrapolation_s": 3.654341555000201,
+      "end_anchor_extrapolation_s": 0.160473366999895,
+      "max_camera_gap_s": 11.999994928999968,
+      "start_pose": {
+        "x": 3.3581175319457026,
+        "y": -2.3252603489535932,
+        "heading": 2.623765716906088
+      },
+      "end_pose": {
+        "x": -12.295929847238193,
+        "y": 4.429283149561764,
+        "heading": 2.97831211028336
+      },
+      "sensor_travel_after_last_anchor_m": 0.18769798650357714,
+      "max_position_correction_m": 0.3431133542635271
+    },
+    {
+      "id": "2026-09-17-24137e",
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-24137e-map-reference.npz",
+      "camera_anchors_in_drive": 59,
+      "first_anchor_t": 697.7938861690001,
+      "last_anchor_t": 772.7937987040001,
+      "start_anchor_extrapolation_s": 2.252193896000108,
+      "end_anchor_extrapolation_s": 0.5744766599999593,
+      "max_camera_gap_s": 10.999966375999975,
+      "start_pose": {
+        "x": 4.237106447191335,
+        "y": -2.809472500565071,
+        "heading": 2.5977861223170544
+      },
+      "end_pose": {
+        "x": -38.74974067018034,
+        "y": -39.825402619895584,
+        "heading": 4.06318318510552
+      },
+      "sensor_travel_after_last_anchor_m": 0.6121684091796101,
+      "max_position_correction_m": 0.3737842060751685
+    },
+    {
+      "id": "2026-09-17-48ff3a",
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-48ff3a-map-reference.npz",
+      "camera_anchors_in_drive": 11,
+      "first_anchor_t": 1849.7922890460002,
+      "last_anchor_t": 1859.79228693,
+      "start_anchor_extrapolation_s": 16.847444056000086,
+      "end_anchor_extrapolation_s": 0.1998817040000631,
+      "max_camera_gap_s": 1.0000108409999484,
+      "start_pose": {
+        "x": 4.636450491357699,
+        "y": -1.4353511677236719,
+        "heading": 2.7090777836731226
+      },
+      "end_pose": {
+        "x": -10.503252618187181,
+        "y": 5.49584779399769,
+        "heading": 2.7153500987599846
+      },
+      "sensor_travel_after_last_anchor_m": 0.20160515299096632,
+      "max_position_correction_m": 0.054154845076997075
+    },
+    {
+      "id": "2026-09-17-503d24",
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-503d24-map-reference.npz",
+      "camera_anchors_in_drive": 20,
+      "first_anchor_t": 3187.777343998,
+      "last_anchor_t": 3229.777085829,
+      "start_anchor_extrapolation_s": 7.139843680000013,
+      "end_anchor_extrapolation_s": 0.3021205260001807,
+      "max_camera_gap_s": 13.999901406999925,
+      "start_pose": {
+        "x": 4.1878455809035025,
+        "y": -3.3671949329638804,
+        "heading": 2.5451022605972176
+      },
+      "end_pose": {
+        "x": -16.45441151097566,
+        "y": 3.1928358402619725,
+        "heading": 3.205673236078854
+      },
+      "sensor_travel_after_last_anchor_m": 0.2748541884153186,
+      "max_position_correction_m": 0.400165314363784
+    },
+    {
+      "id": "2026-09-17-5c4479",
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-5c4479-map-reference.npz",
+      "camera_anchors_in_drive": 202,
+      "first_anchor_t": 866.7936763140001,
+      "last_anchor_t": 1161.7932685540002,
+      "start_anchor_extrapolation_s": 3.557269803000054,
+      "end_anchor_extrapolation_s": 23.19191523199993,
+      "max_camera_gap_s": 12.999986911000178,
+      "start_pose": {
+        "x": 4.49194534934064,
+        "y": -2.6349889047290356,
+        "heading": 2.6107109939210504
+      },
+      "end_pose": {
+        "x": -74.15914504198088,
+        "y": 1.9159548081917153,
+        "heading": 1.0018862948203509
+      },
+      "sensor_travel_after_last_anchor_m": 0.02037745914658889,
+      "max_position_correction_m": 1.9117583294691427
+    },
+    {
+      "id": "2026-09-17-5ceee7",
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-5ceee7-map-reference.npz",
+      "camera_anchors_in_drive": 13,
+      "first_anchor_t": 1659.792554883,
+      "last_anchor_t": 1682.7925439,
+      "start_anchor_extrapolation_s": 2.2166621280000527,
+      "end_anchor_extrapolation_s": 2.5285304129999986,
+      "max_camera_gap_s": 11.999964929000043,
+      "start_pose": {
+        "x": 4.839811861637836,
+        "y": -1.8068118877197474,
+        "heading": 2.651246543507341
+      },
+      "end_pose": {
+        "x": -8.034361564847561,
+        "y": 4.956148679224315,
+        "heading": 2.7197267152385196
+      },
+      "sensor_travel_after_last_anchor_m": 0.023765574443528947,
+      "max_position_correction_m": 0.12807845619811867
+    },
+    {
+      "id": "2026-09-17-627be4",
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-627be4-map-reference.npz",
+      "camera_anchors_in_drive": 17,
+      "first_anchor_t": 1749.792450158,
+      "last_anchor_t": 1782.7923931530001,
+      "start_anchor_extrapolation_s": 3.7458737160000055,
+      "end_anchor_extrapolation_s": 0.696105217999957,
+      "max_camera_gap_s": 12.999963738000133,
+      "start_pose": {
+        "x": 4.2768649325862444,
+        "y": -1.462550089595813,
+        "heading": 2.6468217936902425
+      },
+      "end_pose": {
+        "x": -9.63853700788214,
+        "y": 4.931537828973238,
+        "heading": 2.819053731550683
+      },
+      "sensor_travel_after_last_anchor_m": 0.6856265433554175,
+      "max_position_correction_m": 0.2760561936346989
+    },
+    {
+      "id": "2026-09-17-667691",
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-667691-map-reference.npz",
+      "camera_anchors_in_drive": 22,
+      "first_anchor_t": 3393.7761035850003,
+      "last_anchor_t": 3432.7758657140002,
+      "start_anchor_extrapolation_s": 3.518921135000255,
+      "end_anchor_extrapolation_s": 0.15087369899993064,
+      "max_camera_gap_s": 11.9999519160001,
+      "start_pose": {
+        "x": 4.430050979965516,
+        "y": -2.0638269760098673,
+        "heading": 2.6552436165935904
+      },
+      "end_pose": {
+        "x": -16.546582008460874,
+        "y": 3.2842020460156043,
+        "heading": 3.0968459698462985
+      },
+      "sensor_travel_after_last_anchor_m": 0.048516954491726244,
+      "max_position_correction_m": 0.35296305845248893
+    },
+    {
+      "id": "2026-09-17-691a30",
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-691a30-map-reference.npz",
+      "camera_anchors_in_drive": 16,
+      "first_anchor_t": 4403.761959619001,
+      "last_anchor_t": 4542.758075985001,
+      "start_anchor_extrapolation_s": 3.447056149000673,
+      "end_anchor_extrapolation_s": 0.5618157389990301,
+      "max_camera_gap_s": 124.99653449800007,
+      "start_pose": {
+        "x": 3.9084387813090933,
+        "y": -4.099142404347855,
+        "heading": 2.5038435204626013
+      },
+      "end_pose": {
+        "x": -11.563154411078918,
+        "y": -0.6489546059384818,
+        "heading": 3.3483630093522407
+      },
+      "sensor_travel_after_last_anchor_m": 0.5171723186282479,
+      "max_position_correction_m": 0.5522471949799684
+    },
+    {
+      "id": "2026-09-17-926568",
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-926568-map-reference.npz",
+      "camera_anchors_in_drive": 29,
+      "first_anchor_t": 2114.7909858380003,
+      "last_anchor_t": 2297.7870402890003,
+      "start_anchor_extrapolation_s": 3.831849195000359,
+      "end_anchor_extrapolation_s": 3.1573448659996757,
+      "max_camera_gap_s": 80.99821788199961,
+      "start_pose": {
+        "x": 4.071121023939909,
+        "y": -2.3409131983587694,
+        "heading": 2.6451071752663142
+      },
+      "end_pose": {
+        "x": -17.65652706229769,
+        "y": 3.1845176153607113,
+        "heading": 3.310774601415215
+      },
+      "sensor_travel_after_last_anchor_m": 0.23098934355900896,
+      "max_position_correction_m": 0.42938678772996924
+    },
+    {
+      "id": "2026-09-17-ca2652",
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-ca2652-map-reference.npz",
+      "camera_anchors_in_drive": 69,
+      "first_anchor_t": 2487.783968008,
+      "last_anchor_t": 2726.781085765,
+      "start_anchor_extrapolation_s": 4.609805160000178,
+      "end_anchor_extrapolation_s": 16.43841395499976,
+      "max_camera_gap_s": 35.99959839400026,
+      "start_pose": {
+        "x": 3.7703900545008304,
+        "y": -3.224668284673501,
+        "heading": 2.5229189618554244
+      },
+      "end_pose": {
+        "x": -37.21874785611942,
+        "y": -40.803379147438086,
+        "heading": 4.184813616223144
+      },
+      "sensor_travel_after_last_anchor_m": 0.10217221810241517,
+      "max_position_correction_m": 0.577562596430591
+    },
+    {
+      "id": "2026-09-17-f1762a",
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-f1762a-map-reference.npz",
+      "camera_anchors_in_drive": 12,
+      "first_anchor_t": 3103.777936462,
+      "last_anchor_t": 3133.777708694,
+      "start_anchor_extrapolation_s": 3.8422216449998814,
+      "end_anchor_extrapolation_s": 0.8699535589998959,
+      "max_camera_gap_s": 19.999866594000196,
+      "start_pose": {
+        "x": 4.634593554005179,
+        "y": -3.5611565893950474,
+        "heading": 2.5681714955842523
+      },
+      "end_pose": {
+        "x": -6.976547048242796,
+        "y": 4.062321624092775,
+        "heading": 2.5619329579167167
+      },
+      "sensor_travel_after_last_anchor_m": 0.8103422897582727,
+      "max_position_correction_m": 0.1347849443943595
+    }
+  ],
+  "final_astra_stopped_frame_pnp": {
+    "correspondences": 663,
+    "inliers": 643,
+    "query": "00000042--544757d3f5--019--0116-final-pnp.jpg",
+    "t": 1168.5932733700001,
+    "encode_index": 116,
+    "source_segment": "runs/artifacts/routes/00000042--544757d3f5--19",
+    "target_t": 1168.5736,
+    "references": [
+      "00000042--544757d3f5--018--0920.jpg",
+      "00000041--fdf9cede4b--052--1000.jpg",
+      "00000041--fdf9cede4b--031--0840.jpg",
+      "00000042--544757d3f5--018--0820.jpg",
+      "00000041--fdf9cede4b--031--0820.jpg",
+      "00000042--544757d3f5--019--0760.jpg",
+      "00000042--544757d3f5--019--0780.jpg",
+      "00000041--fdf9cede4b--031--0860.jpg",
+      "00000042--544757d3f5--018--0620.jpg",
+      "00000042--544757d3f5--019--0720.jpg",
+      "00000041--fdf9cede4b--030--0600.jpg",
+      "00000041--fdf9cede4b--038--0160.jpg",
+      "00000042--544757d3f5--019--0800.jpg",
+      "00000041--fdf9cede4b--032--0480.jpg",
+      "00000041--fdf9cede4b--030--0620.jpg",
+      "00000042--544757d3f5--019--0640.jpg",
+      "00000042--544757d3f5--018--0420.jpg",
+      "00000041--fdf9cede4b--030--0580.jpg",
+      "00000041--fdf9cede4b--037--0200.jpg",
+      "00000041--fdf9cede4b--031--0800.jpg"
+    ],
+    "source_database_sha256": "4abb63789bc126e3c1c513e010ef8f0fd727da3618d9ccb84314c38cb3f15c1c",
+    "source_sparse_images_sha256": "f3a63e415aea498411507234e3cc18e75a04a94f43cf5b8cc75edf346216a2d4",
+    "localized": true,
+    "camera_xy": [
+      -73.61685754915584,
+      2.7672541103209523
+    ],
+    "camera_height": 1.1677754205842947,
+    "body_xy": [
+      -74.15556605879611,
+      1.9247618897983154
+    ],
+    "heading_rad": 1.0018929104233785,
+    "heading_deg": 57.40423529133823,
+    "opencv_transform": [
+      [
+        0.8367846930792876,
+        0.011404688738311172,
+        0.547413290396739,
+        -73.61532156311337
+      ],
+      [
+        -0.5475283861094844,
+        0.02110140583580385,
+        0.836521008149882,
+        2.7672779828311898
+      ],
+      [
+        -0.0020109282795663284,
+        -0.9997122904848844,
+        0.02390172422482325,
+        1.2166993989353387
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "attempts": [
+    {
+      "id": "2026-09-17-498293",
+      "segment": "2026-09-17-498293",
+      "route": "00000041--fdf9cede4b",
+      "session": "2026-09-17-gpt-6-astra-codex-af2796",
+      "model": "GPT-6 Astra",
+      "scope": "testing",
+      "label": "testing",
+      "outcome": "completed",
+      "operator_note": "",
+      "series_path": "runs/sim/series/00000041--fdf9cede4b.npz",
+      "start_t": 2144.023916765,
+      "command_start_t": 2144.019297838211,
+      "end_t": 2228.625388511,
+      "start_index": 31707,
+      "end_index": 40130,
+      "segment_end_t": 2228.6904797554016,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 9,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-498293.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": -73.28763021331554,
+        "y": -0.7677318428622202,
+        "heading": 0.8318653220721572
+      },
+      "end_pose": {
+        "x": -35.72248571139197,
+        "y": 10.004054532179186,
+        "heading": -0.5819096781501678
+      },
+      "registration": {
+        "angle_rad": 0.8318653220721572,
+        "translation_m": [
+          -73.28763021331554,
+          -0.7677318428622202
+        ],
+        "camera_anchors": 57,
+        "camera_time_range_s": [
+          2148.482662199,
+          2228.4803056630003
+        ],
+        "nearest_start_camera_gap_s": 4.458745433999866,
+        "position_residual_median_m": 0.5124209279847666,
+        "position_residual_p95_m": 0.7719388225365125,
+        "heading_residual_median_deg": 1.397487961330683,
+        "heading_residual_p95_deg": 2.5869863653051026,
+        "bootstrap": {
+          "blocks_5s": 15,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              -73.38958276752744,
+              -1.050183896310021
+            ],
+            [
+              -73.13098336162834,
+              -0.5519810601445347
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.6412954263341099,
+            0.7399092908082551
+          ]
+        },
+        "gyro_bias_rad_s": -0.025045474991202354,
+        "max_series_gap_s": 0.014408042000013666,
+        "reverse_seconds": 0.0,
+        "travel_m": 45.34895442385375
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-5af09a",
+      "segment": "2026-09-17-5af09a",
+      "route": "00000041--fdf9cede4b",
+      "session": "2026-09-17-gpt-6-astra-codex-af2796",
+      "model": "GPT-6 Astra",
+      "scope": "testing",
+      "label": "testing",
+      "outcome": "completed",
+      "operator_note": "",
+      "series_path": "runs/sim/series/00000041--fdf9cede4b.npz",
+      "start_t": 2026.047298846,
+      "command_start_t": 2026.0422039031982,
+      "end_t": 2052.162223901,
+      "start_index": 19961,
+      "end_index": 22561,
+      "segment_end_t": 2052.247487783432,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 3,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-5af09a.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": -64.96216268544386,
+        "y": 7.226974933776232,
+        "heading": 0.8977682514461138
+      },
+      "end_pose": {
+        "x": -56.492816543207184,
+        "y": 13.981770146237945,
+        "heading": 0.3755256391804761
+      },
+      "registration": {
+        "angle_rad": 0.8977682514461138,
+        "translation_m": [
+          -64.96216268544386,
+          7.226974933776232
+        ],
+        "camera_anchors": 9,
+        "camera_time_range_s": [
+          2029.487384467,
+          2051.4863490810003
+        ],
+        "nearest_start_camera_gap_s": 3.44008562099998,
+        "position_residual_median_m": 0.11153210038349129,
+        "position_residual_p95_m": 0.2483432694990529,
+        "heading_residual_median_deg": 0.18924971228010867,
+        "heading_residual_p95_deg": 0.8599555778408489,
+        "bootstrap": {
+          "blocks_5s": 4,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              -65.02982810379382,
+              7.16918732146996
+            ],
+            [
+              -64.93588693847362,
+              7.351504448142216
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.2032728418919711,
+            0.426724276391108
+          ]
+        },
+        "gyro_bias_rad_s": -0.025045474991202354,
+        "max_series_gap_s": 0.014267096000139645,
+        "reverse_seconds": 0.0,
+        "travel_m": 11.022687918188584
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-6d8e7d",
+      "segment": "2026-09-17-6d8e7d",
+      "route": "00000041--fdf9cede4b",
+      "session": "2026-09-17-gpt-6-astra-codex-af2796",
+      "model": "GPT-6 Astra",
+      "scope": "testing",
+      "label": "testing",
+      "outcome": "completed",
+      "operator_note": "",
+      "series_path": "runs/sim/series/00000041--fdf9cede4b.npz",
+      "start_t": 2307.152088845,
+      "command_start_t": 2307.148815870285,
+      "end_t": 2373.985406695,
+      "start_index": 47949,
+      "end_index": 54603,
+      "segment_end_t": 2374.0389337539673,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 5,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-6d8e7d.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": -71.07539292781614,
+        "y": 1.4191262606798654,
+        "heading": 0.8502256722509962
+      },
+      "end_pose": {
+        "x": -57.15899157420849,
+        "y": 13.138628907044781,
+        "heading": 0.41172044888021536
+      },
+      "registration": {
+        "angle_rad": 0.8502256722509962,
+        "translation_m": [
+          -71.07539292781614,
+          1.4191262606798654
+        ],
+        "camera_anchors": 41,
+        "camera_time_range_s": [
+          2310.501335531,
+          2373.5170956780003
+        ],
+        "nearest_start_camera_gap_s": 3.3492466860002423,
+        "position_residual_median_m": 0.1620901225321039,
+        "position_residual_p95_m": 0.26323648133904076,
+        "heading_residual_median_deg": 0.38992295105844726,
+        "heading_residual_p95_deg": 0.761449908455824,
+        "bootstrap": {
+          "blocks_5s": 11,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              -71.12917944391614,
+              1.373596908601748
+            ],
+            [
+              -71.0367684015483,
+              1.471962397005542
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.2376226708655704,
+            0.33940911398539975
+          ]
+        },
+        "gyro_bias_rad_s": -0.025045474991202354,
+        "max_series_gap_s": 0.014628450999680354,
+        "reverse_seconds": 0.0,
+        "travel_m": 18.46106655560497
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-6eb667",
+      "segment": "2026-09-17-6eb667",
+      "route": "00000041--fdf9cede4b",
+      "session": "2026-09-17-gpt-6-astra-codex-af2796",
+      "model": "GPT-6 Astra",
+      "scope": "testing",
+      "label": "testing",
+      "outcome": "completed",
+      "operator_note": "",
+      "series_path": "runs/sim/series/00000041--fdf9cede4b.npz",
+      "start_t": 2873.158150743,
+      "command_start_t": 2873.1552567481995,
+      "end_t": 2951.859592064,
+      "start_index": 104309,
+      "end_index": 112145,
+      "segment_end_t": 2951.9469628334045,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 8,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-6eb667.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": -68.00328607109255,
+        "y": 6.027202198841067,
+        "heading": 0.805047896649613
+      },
+      "end_pose": {
+        "x": -42.69747339504273,
+        "y": 17.20049565344814,
+        "heading": 0.059685886474286076
+      },
+      "registration": {
+        "angle_rad": 0.805047896649613,
+        "translation_m": [
+          -68.00328607109255,
+          6.027202198841067
+        ],
+        "camera_anchors": 62,
+        "camera_time_range_s": [
+          2880.542280438,
+          2951.539267812
+        ],
+        "nearest_start_camera_gap_s": 7.384129694999956,
+        "position_residual_median_m": 0.3742582973648996,
+        "position_residual_p95_m": 0.7554118424321705,
+        "heading_residual_median_deg": 0.556426103616231,
+        "heading_residual_p95_deg": 1.8269934319865984,
+        "bootstrap": {
+          "blocks_5s": 15,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              -68.07404952087428,
+              5.862286327493323
+            ],
+            [
+              -67.83064204671896,
+              6.151128108371179
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.2674488034189947,
+            0.5577520634199337
+          ]
+        },
+        "gyro_bias_rad_s": -0.025045474991202354,
+        "max_series_gap_s": 0.014776183999856585,
+        "reverse_seconds": 0.0,
+        "travel_m": 28.701831178768096
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-9bec1a",
+      "segment": "2026-09-17-9bec1a",
+      "route": "00000041--fdf9cede4b",
+      "session": "2026-09-17-gpt-6-astra-codex-af2796",
+      "model": "GPT-6 Astra",
+      "scope": "testing",
+      "label": "testing",
+      "outcome": "completed",
+      "operator_note": "",
+      "series_path": "runs/sim/series/00000041--fdf9cede4b.npz",
+      "start_t": 1965.325081122,
+      "command_start_t": 1965.322152853012,
+      "end_t": 1987.693306615,
+      "start_index": 13915,
+      "end_index": 16142,
+      "segment_end_t": 1987.719013929367,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 2,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-9bec1a.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": -69.34001888496414,
+        "y": 4.3321978281655245,
+        "heading": 0.8630819809133414
+      },
+      "end_pose": {
+        "x": -57.14464048850746,
+        "y": 12.298103855068426,
+        "heading": 0.1743291347796152
+      },
+      "registration": {
+        "angle_rad": 0.8630819809133414,
+        "translation_m": [
+          -69.34001888496414,
+          4.3321978281655245
+        ],
+        "camera_anchors": 15,
+        "camera_time_range_s": [
+          1969.4908504450002,
+          1987.4896933450002
+        ],
+        "nearest_start_camera_gap_s": 4.165769323000177,
+        "position_residual_median_m": 0.21160040093846075,
+        "position_residual_p95_m": 0.4065371189896093,
+        "heading_residual_median_deg": 0.3735277177420126,
+        "heading_residual_p95_deg": 0.782786562342016,
+        "bootstrap": {
+          "blocks_5s": 4,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              -69.39959449043641,
+              4.142086526990447
+            ],
+            [
+              -69.29650462324858,
+              4.508827457047706
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.24491377542014434,
+            0.4580451309549835
+          ]
+        },
+        "gyro_bias_rad_s": -0.025045474991202354,
+        "max_series_gap_s": 0.01441227100008291,
+        "reverse_seconds": 0.0,
+        "travel_m": 14.947843051867448
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-bd36c1",
+      "segment": "2026-09-17-bd36c1",
+      "route": "00000041--fdf9cede4b",
+      "session": "2026-09-17-gpt-6-astra-codex-af2796",
+      "model": "GPT-6 Astra",
+      "scope": "testing",
+      "label": "testing",
+      "outcome": "completed",
+      "operator_note": "",
+      "series_path": "runs/sim/series/00000041--fdf9cede4b.npz",
+      "start_t": 2767.987108021,
+      "command_start_t": 2767.9835839271545,
+      "end_t": 2831.734656573,
+      "start_index": 93837,
+      "end_index": 100184,
+      "segment_end_t": 2831.788925886154,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 6,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-bd36c1.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": -70.86680114426677,
+        "y": 3.3273237202161305,
+        "heading": 0.8095268907412074
+      },
+      "end_pose": {
+        "x": -56.06879738775274,
+        "y": 14.676986992533228,
+        "heading": 0.30049825716712497
+      },
+      "registration": {
+        "angle_rad": 0.8095268907412074,
+        "translation_m": [
+          -70.86680114426677,
+          3.3273237202161305
+        ],
+        "camera_anchors": 45,
+        "camera_time_range_s": [
+          2769.5498892620003,
+          2831.545130686
+        ],
+        "nearest_start_camera_gap_s": 1.5627812410002662,
+        "position_residual_median_m": 0.1603039309519413,
+        "position_residual_p95_m": 0.32642651784060633,
+        "heading_residual_median_deg": 0.5348720997277151,
+        "heading_residual_p95_deg": 0.9435038258656621,
+        "bootstrap": {
+          "blocks_5s": 12,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              -70.91099046458298,
+              3.249169015184265
+            ],
+            [
+              -70.83474049905075,
+              3.3878567404532878
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.33252489313975536,
+            0.45295180587049555
+          ]
+        },
+        "gyro_bias_rad_s": -0.025045474991202354,
+        "max_series_gap_s": 0.01441579999982423,
+        "reverse_seconds": 0.0,
+        "travel_m": 18.942006934819247
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-c82697",
+      "segment": "2026-09-17-c82697",
+      "route": "00000041--fdf9cede4b",
+      "session": "2026-09-17-gpt-6-astra-codex-af2796",
+      "model": "GPT-6 Astra",
+      "scope": "testing",
+      "label": "testing",
+      "outcome": "completed",
+      "operator_note": "",
+      "series_path": "runs/sim/series/00000041--fdf9cede4b.npz",
+      "start_t": 2096.207381908,
+      "command_start_t": 2096.204358816147,
+      "end_t": 2113.209753766,
+      "start_index": 26946,
+      "end_index": 28639,
+      "segment_end_t": 2113.25604391098,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 2,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-c82697.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": -74.23730359412724,
+        "y": -4.259011243813682,
+        "heading": 1.0112931442034838
+      },
+      "end_pose": {
+        "x": -64.24116031012613,
+        "y": 5.103157356978571,
+        "heading": 0.34530792206244876
+      },
+      "registration": {
+        "angle_rad": 1.0105068728154414,
+        "translation_m": [
+          -74.17774823937185,
+          -4.163991227125054
+        ],
+        "camera_anchors": 16,
+        "camera_time_range_s": [
+          2081.485065162,
+          2112.4838791280004
+        ],
+        "nearest_start_camera_gap_s": 2.277034848999847,
+        "position_residual_median_m": 0.22257490968922775,
+        "position_residual_p95_m": 0.4070115776864942,
+        "heading_residual_median_deg": 0.27580396586336625,
+        "heading_residual_p95_deg": 0.5667626433912146,
+        "bootstrap": {
+          "blocks_5s": 5,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              -74.2807920963993,
+              -4.450956150178487
+            ],
+            [
+              -74.21776707245948,
+              -4.01356061883485
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.19379591441295224,
+            0.3624587314628822
+          ]
+        },
+        "gyro_bias_rad_s": -0.025045474991202354,
+        "max_series_gap_s": 0.017531306999899243,
+        "reverse_seconds": 0.0,
+        "travel_m": 13.991511001037122
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-003b38",
+      "segment": "2026-09-17-003b38",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-client-picker-gpt-5-6-luna-fast-other-084176",
+      "model": "Separate client \u00b7 picker gpt-5.6-luna-fast",
+      "scope": "separate_client",
+      "label": "You are in a course delineated by mini-cones (small multicol",
+      "outcome": "aborted",
+      "operator_note": "ended by the separate client",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 3566.051982101,
+      "command_start_t": 3566.0489342212677,
+      "end_t": 3590.880481096,
+      "start_index": 352344,
+      "end_index": 354816,
+      "segment_end_t": 3590.906985282898,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 19,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-003b38.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 4.411073121542318,
+        "y": -2.120132472490132,
+        "heading": 2.7468004800584556
+      },
+      "end_pose": {
+        "x": -8.940608598502312,
+        "y": -0.5727255041152857,
+        "heading": 3.4009907799483625
+      },
+      "registration": {
+        "angle_rad": 2.7468004800584556,
+        "translation_m": [
+          4.411073121542318,
+          -2.120132472490132
+        ],
+        "camera_anchors": 23,
+        "camera_time_range_s": [
+          3568.775135191,
+          3590.775005498
+        ],
+        "nearest_start_camera_gap_s": 2.7231530900003236,
+        "position_residual_median_m": 0.3130610742682171,
+        "position_residual_p95_m": 0.4381321499635257,
+        "heading_residual_median_deg": 0.2745683772586628,
+        "heading_residual_p95_deg": 0.7302021281261468,
+        "bootstrap": {
+          "blocks_5s": 5,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              4.262475532541639,
+              -2.3852674343750357
+            ],
+            [
+              4.586782241640441,
+              -1.9299959058742127
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.3883509300699965,
+            0.14709113649733493
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.014029495999693609,
+        "reverse_seconds": 0.0,
+        "travel_m": 13.713251430280016
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-01f089",
+      "segment": "2026-09-17-01f089",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-gpt-5-6-sol-codex-414037",
+      "model": "GPT-5.6 Sol",
+      "scope": "supplemental",
+      "label": "final day lot, 2nd trial",
+      "outcome": "aborted",
+      "operator_note": "ignore this. turns out we'll just give all the models one total trial (with 3 sub attempts). we were removed fromt he parking lot so cna't do multiple trials",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 5706.039090566,
+      "command_start_t": 5706.036546230316,
+      "end_t": 5725.543506804,
+      "start_index": 553472,
+      "end_index": 555414,
+      "segment_end_t": 5725.584161281586,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 2,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-01f089.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 4.2770528529051814,
+        "y": -2.2070356292012945,
+        "heading": 2.6049447623992057
+      },
+      "end_pose": {
+        "x": -9.79665886130324,
+        "y": 6.035423200395822,
+        "heading": 2.620412825997082
+      },
+      "registration": {
+        "angle_rad": 2.6049447623992057,
+        "translation_m": [
+          4.2770528529051814,
+          -2.2070356292012945
+        ],
+        "camera_anchors": 13,
+        "camera_time_range_s": [
+          5709.739863172001,
+          5724.739671846
+        ],
+        "nearest_start_camera_gap_s": 3.70077260600101,
+        "position_residual_median_m": 0.054405954038932745,
+        "position_residual_p95_m": 0.12461750950096008,
+        "heading_residual_median_deg": 0.20783124910901768,
+        "heading_residual_p95_deg": 0.3599029583189898,
+        "bootstrap": {
+          "blocks_5s": 3,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              4.219785365392934,
+              -2.2434047882004227
+            ],
+            [
+              4.345161601980145,
+              -2.194974730406135
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.16951511316297063,
+            0.25375753941373375
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.014334265999423224,
+        "reverse_seconds": 0.0,
+        "travel_m": 16.33376337488322
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-18ade2",
+      "segment": "2026-09-17-18ade2",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-claude-fable-5-1-claude-b6d67a",
+      "model": "claude-fable-5.1",
+      "scope": "primary",
+      "label": "attempt-1--fail--18ade2",
+      "outcome": "failure",
+      "operator_note": "Attempt 1; 3 commands. Operator brake at 21:24:14: swung left across the cone line toward the median curb.",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 1961.13777534,
+      "command_start_t": 1961.133147239685,
+      "end_t": 2001.952547036,
+      "start_index": 192546,
+      "end_index": 196610,
+      "segment_end_t": 2001.991435289383,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 3,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-18ade2.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 3.1789512175672288,
+        "y": -2.274151424541578,
+        "heading": 2.631526518866926
+      },
+      "end_pose": {
+        "x": -12.0039522641259,
+        "y": 4.609493761995861,
+        "heading": 2.9707275786283804
+      },
+      "registration": {
+        "angle_rad": 2.631526518866926,
+        "translation_m": [
+          3.1789512175672288,
+          -2.274151424541578
+        ],
+        "camera_anchors": 18,
+        "camera_time_range_s": [
+          1964.7921168950002,
+          2001.792073669
+        ],
+        "nearest_start_camera_gap_s": 3.654341555000201,
+        "position_residual_median_m": 0.1574565299464959,
+        "position_residual_p95_m": 0.3016212023452977,
+        "heading_residual_median_deg": 0.3237327434874461,
+        "heading_residual_p95_deg": 0.4360765851005806,
+        "bootstrap": {
+          "blocks_5s": 5,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              3.0221963383425754,
+              -2.3086356825367043
+            ],
+            [
+              3.2799840894696053,
+              -2.240973090382607
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.29569814157704566,
+            0.25254765247529337
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.014514447999999902,
+        "reverse_seconds": 0.0,
+        "travel_m": 16.818640841112966
+      },
+      "outcome_source": "operator-curated attempt label and note; delayed Astra3 from session 2da073 note",
+      "attempt_outcome_known": true
+    },
+    {
+      "id": "2026-09-17-24137e",
+      "segment": "2026-09-17-24137e",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-gpt-6-astra-codex-664abe",
+      "model": "gpt-6-astra",
+      "scope": "primary",
+      "label": "attempt-1--fail--24137e",
+      "outcome": "failure",
+      "operator_note": "Attempt 1 of the trial, fresh thread from the objective at 21:02:18. Operator brake at 21:03:45: drifted toward the left cone line and the landscaped island at section D. Reflection prompt at 21:04:03.",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 695.541692273,
+      "command_start_t": 695.5364563465118,
+      "end_t": 773.368275364,
+      "start_index": 66531,
+      "end_index": 74279,
+      "segment_end_t": 773.375322341919,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 8,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-24137e.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 4.091317228770202,
+        "y": -2.5600609477118024,
+        "heading": 2.6891723591237224
+      },
+      "end_pose": {
+        "x": -38.87997960597078,
+        "y": -39.969360893219005,
+        "heading": 4.050247992342547
+      },
+      "registration": {
+        "angle_rad": 2.6891723591237224,
+        "translation_m": [
+          4.091317228770202,
+          -2.5600609477118024
+        ],
+        "camera_anchors": 59,
+        "camera_time_range_s": [
+          697.7938861690001,
+          772.7937987040001
+        ],
+        "nearest_start_camera_gap_s": 2.252193896000108,
+        "position_residual_median_m": 0.2344777629585873,
+        "position_residual_p95_m": 0.3578911984209141,
+        "heading_residual_median_deg": 0.8989775333007345,
+        "heading_residual_p95_deg": 4.899871376396139,
+        "bootstrap": {
+          "blocks_5s": 14,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              4.001989859900982,
+              -2.75467897957313
+            ],
+            [
+              4.197236440304847,
+              -2.4357588131122427
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.53707004976141,
+            0.23186450712220338
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.015245230000004995,
+        "reverse_seconds": 0.0,
+        "travel_m": 66.93375493472155
+      },
+      "outcome_source": "operator-curated attempt label and note; delayed Astra3 from session 2da073 note",
+      "attempt_outcome_known": true
+    },
+    {
+      "id": "2026-09-17-30e870",
+      "segment": "2026-09-17-30e870",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-gpt-6-astra-codex-457f46",
+      "model": "GPT-6 Astra",
+      "scope": "supplemental",
+      "label": "final day lot, 2nd trial",
+      "outcome": "completed",
+      "operator_note": "FF - trial 2 third attempt astra couldn't connect so gonna do later",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 4658.845519342,
+      "command_start_t": 4658.8444612026215,
+      "end_t": 4678.982583903,
+      "start_index": 449201,
+      "end_index": 451206,
+      "segment_end_t": 4679.019609212875,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 2,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-30e870.npz",
+      "registration_status": "registered_post_intervention_backtrack",
+      "start_pose": {
+        "x": 4.907363688395438,
+        "y": -4.386994214032771,
+        "heading": 2.5345292530681185
+      },
+      "end_pose": {
+        "x": 4.907363688395438,
+        "y": -4.386994214032771,
+        "heading": 2.5345292530681185
+      },
+      "registration": {
+        "angle_rad": 2.5345292530681185,
+        "translation_m": [
+          4.907363688395438,
+          -4.386994214032771
+        ],
+        "camera_anchors": 27,
+        "camera_time_range_s": [
+          4707.754271225001,
+          4738.753637078
+        ],
+        "nearest_start_camera_gap_s": 48.90875188300015,
+        "position_residual_median_m": 0.2882011261597032,
+        "position_residual_p95_m": 0.5271667568482153,
+        "heading_residual_median_deg": 0.5530383409366011,
+        "heading_residual_p95_deg": 0.7269207573938421,
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.014581394999368058,
+        "reverse_seconds": 0.0,
+        "travel_m": 0.0,
+        "uncertainty_warning": "No registered image during engagement; real gyro/signed-wheel odometry backtracked from registered cameras 48.9s after first command through operator repositioning. Car did not move before the comparison cutoff, but did move afterward; larger unquantified extrapolation error. Excluded from primary matched outcomes."
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-3c990f",
+      "segment": "2026-09-17-3c990f",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-client-picker-gpt-5-6-luna-fast-memory-other-a268b3",
+      "model": "Separate client \u00b7 picker gpt-5.6-luna-fast \u00b7 memory",
+      "scope": "separate_client",
+      "label": "You are in a course delineated by mini-cones (small multicol",
+      "outcome": "aborted",
+      "operator_note": "ended by the separate client",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 3808.33435343,
+      "command_start_t": 3808.3304393291473,
+      "end_t": 3881.26154881,
+      "start_index": 376467,
+      "end_index": 383728,
+      "segment_end_t": 3881.2670543193817,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 41,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-3c990f.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 3.784890624693425,
+        "y": -3.97510026121032,
+        "heading": 2.6134961685260407
+      },
+      "end_pose": {
+        "x": -23.884021005550938,
+        "y": -3.8457318773618296,
+        "heading": 3.7254179119734365
+      },
+      "registration": {
+        "angle_rad": 3.036476299209232,
+        "translation_m": [
+          -6.161571214184995,
+          -0.13656675697253634
+        ],
+        "camera_anchors": 51,
+        "camera_time_range_s": [
+          3793.7740084280003,
+          3880.7735972980004
+        ],
+        "nearest_start_camera_gap_s": 5.560389689999738,
+        "position_residual_median_m": 0.29457716435135484,
+        "position_residual_p95_m": 0.6217697815706604,
+        "heading_residual_median_deg": 0.5965600809849873,
+        "heading_residual_p95_deg": 1.480541751813204,
+        "bootstrap": {
+          "blocks_5s": 11,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              3.693174094930748,
+              -4.1165899792277685
+            ],
+            [
+              3.9193024058151975,
+              -3.8730451020372345
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.4176282738519919,
+            0.27358094315165715
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.0145355429999654,
+        "reverse_seconds": 0.0,
+        "travel_m": 29.336579206343792
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-48ff3a",
+      "segment": "2026-09-17-48ff3a",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-gpt-5-6-sol-codex-4fd054",
+      "model": "gpt-5.6-sol",
+      "scope": "primary",
+      "label": "attempt-3--fail--48ff3a",
+      "outcome": "failure",
+      "operator_note": "Attempt 3 after the continuation prompt at 21:21:09; 2 commands, peak 2.8 m/s. Operator brake: crossed the cone line at speed, heading for the landscaped island.",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 1832.94484499,
+      "command_start_t": 1832.940601348877,
+      "end_t": 1859.992168634,
+      "start_index": 179782,
+      "end_index": 182475,
+      "segment_end_t": 1860.0811712741852,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 2,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-48ff3a.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 4.604397244386976,
+        "y": -1.4303725514918837,
+        "heading": 2.7103983785068486
+      },
+      "end_pose": {
+        "x": -10.490095152485772,
+        "y": 5.4681189684289535,
+        "heading": 2.713003300364579
+      },
+      "registration": {
+        "angle_rad": 2.7103983785068486,
+        "translation_m": [
+          4.604397244386976,
+          -1.4303725514918837
+        ],
+        "camera_anchors": 11,
+        "camera_time_range_s": [
+          1849.7922890460002,
+          1859.79228693
+        ],
+        "nearest_start_camera_gap_s": 16.847444056000086,
+        "position_residual_median_m": 0.028555930149256697,
+        "position_residual_p95_m": 0.04935950389019976,
+        "heading_residual_median_deg": 0.06620645190927096,
+        "heading_residual_p95_deg": 0.1301448644649424,
+        "bootstrap": {
+          "blocks_5s": 2,
+          "draws": 0,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded"
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.015817731000197455,
+        "reverse_seconds": 0.0,
+        "travel_m": 16.5961784646524
+      },
+      "outcome_source": "operator-curated attempt label and note; delayed Astra3 from session 2da073 note",
+      "attempt_outcome_known": true
+    },
+    {
+      "id": "2026-09-17-503d24",
+      "segment": "2026-09-17-503d24",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-grok-4-6-cursor-255638",
+      "model": "grok-4.6",
+      "scope": "primary",
+      "label": "attempt-2--fail--503d24",
+      "outcome": "failure",
+      "operator_note": "Attempt 2 after the continuation at 21:43; 3 commands, peak 2.4 m/s. Operator brake: crossed the mini-cone line toward the median island.",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 3180.637500318,
+      "command_start_t": 3180.6334693431854,
+      "end_t": 3230.079206355,
+      "start_index": 313969,
+      "end_index": 318892,
+      "segment_end_t": 3230.084891319275,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 3,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-503d24.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 3.8762339039506117,
+        "y": -3.4307789581829535,
+        "heading": 2.5634604861600407
+      },
+      "end_pose": {
+        "x": -16.243519090296918,
+        "y": 3.5329191619937586,
+        "heading": 3.19705875132593
+      },
+      "registration": {
+        "angle_rad": 2.5634604861600407,
+        "translation_m": [
+          3.8762339039506117,
+          -3.4307789581829535
+        ],
+        "camera_anchors": 20,
+        "camera_time_range_s": [
+          3187.777343998,
+          3229.777085829
+        ],
+        "nearest_start_camera_gap_s": 7.139843680000013,
+        "position_residual_median_m": 0.23507865276951956,
+        "position_residual_p95_m": 0.3692140572650434,
+        "heading_residual_median_deg": 0.27785218633083164,
+        "heading_residual_p95_deg": 0.9984675596560256,
+        "bootstrap": {
+          "blocks_5s": 7,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              3.733157387605111,
+              -3.5380225825822804
+            ],
+            [
+              4.036409836392681,
+              -3.3844046540787622
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.4952724404161796,
+            0.19090409393936073
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.014308383999832586,
+        "reverse_seconds": 0.0,
+        "travel_m": 21.741727986098464
+      },
+      "outcome_source": "operator-curated attempt label and note; delayed Astra3 from session 2da073 note",
+      "attempt_outcome_known": true
+    },
+    {
+      "id": "2026-09-17-5c4479",
+      "segment": "2026-09-17-5c4479",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-gpt-6-astra-codex-664abe",
+      "model": "gpt-6-astra",
+      "scope": "primary",
+      "label": "attempt-2--success--5c4479",
+      "outcome": "success",
+      "operator_note": "Attempt 2, continuation prompt at 21:04:26. After it the model observed once while the car was still being reset (result: operator brake, 1.1 m/s) and ended its turn; 33 s later the operator typed \"Continue\" to restart it, with no other information. Completed the course: 24 commands, ending with the model's own stop_now inside the finish zone; the operator braked the stationary car 17 s later.",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 863.236406511,
+      "command_start_t": 863.2332592010498,
+      "end_t": 1184.985183786,
+      "start_index": 83227,
+      "end_index": 115262,
+      "segment_end_t": 1185.0938303470612,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 25,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-5c4479.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 4.386476861008899,
+        "y": -2.160767660392175,
+        "heading": 2.7048408693999324
+      },
+      "end_pose": {
+        "x": -73.9969263099975,
+        "y": 1.261501545017199,
+        "heading": 0.9576655601929249
+      },
+      "registration": {
+        "angle_rad": 2.7048408693999324,
+        "translation_m": [
+          4.386476861008899,
+          -2.160767660392175
+        ],
+        "camera_anchors": 202,
+        "camera_time_range_s": [
+          866.7936763140001,
+          1161.7932685540002
+        ],
+        "nearest_start_camera_gap_s": 3.557269803000054,
+        "position_residual_median_m": 0.6460567801309447,
+        "position_residual_p95_m": 1.6024422045959457,
+        "heading_residual_median_deg": 3.0897285478645617,
+        "heading_residual_p95_deg": 5.216804533779252,
+        "bootstrap": {
+          "blocks_5s": 54,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              4.2717913592417105,
+              -2.4169532120650934
+            ],
+            [
+              4.50002836918958,
+              -1.6978756976663525
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.20549691158189168,
+            0.26268702883225764
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.01526377200002571,
+        "reverse_seconds": 0.0,
+        "travel_m": 131.01726790068363
+      },
+      "outcome_source": "operator-curated attempt label and note; delayed Astra3 from session 2da073 note",
+      "attempt_outcome_known": true
+    },
+    {
+      "id": "2026-09-17-5ceee7",
+      "segment": "2026-09-17-5ceee7",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-gpt-6-astra-codex-664abe",
+      "model": "gpt-5.6-sol",
+      "scope": "primary",
+      "label": "attempt-1--fail--5ceee7",
+      "outcome": "failure",
+      "operator_note": "Attempt 1 from the objective at 21:18:13; 3 commands. Operator brake: crossed the mini-cone line at the start of the course.",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 1657.575892755,
+      "command_start_t": 1657.5691871643066,
+      "end_t": 1685.321074313,
+      "start_index": 162320,
+      "end_index": 165083,
+      "segment_end_t": 1685.336810350418,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 3,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-5ceee7.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 4.7502000742626045,
+        "y": -1.726703145378931,
+        "heading": 2.6550664934447274
+      },
+      "end_pose": {
+        "x": -7.973424066773385,
+        "y": 4.952329737425609,
+        "heading": 2.7149548969405126
+      },
+      "registration": {
+        "angle_rad": 2.6550664934447274,
+        "translation_m": [
+          4.7502000742626045,
+          -1.726703145378931
+        ],
+        "camera_anchors": 13,
+        "camera_time_range_s": [
+          1659.792554883,
+          1682.7925439
+        ],
+        "nearest_start_camera_gap_s": 2.2166621280000527,
+        "position_residual_median_m": 0.06290370313494677,
+        "position_residual_p95_m": 0.12310880486178886,
+        "heading_residual_median_deg": 0.10349660497078761,
+        "heading_residual_p95_deg": 0.2522827699923553,
+        "bootstrap": {
+          "blocks_5s": 4,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              4.695338395164334,
+              -1.7631548319089827
+            ],
+            [
+              4.794373226654224,
+              -1.6638441098631318
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.13036535283955106,
+            0.17404272273018032
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.014994604999856165,
+        "reverse_seconds": 0.0,
+        "travel_m": 14.424283660789346
+      },
+      "outcome_source": "operator-curated attempt label and note; delayed Astra3 from session 2da073 note",
+      "attempt_outcome_known": true
+    },
+    {
+      "id": "2026-09-17-627be4",
+      "segment": "2026-09-17-627be4",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-gpt-5-6-sol-codex-4fd054",
+      "model": "gpt-5.6-sol",
+      "scope": "primary",
+      "label": "attempt-2--fail--627be4",
+      "outcome": "failure",
+      "operator_note": "Attempt 2 after the continuation prompt at 21:19:45; 4 commands. Operator brake: drove over the mini-cone line toward the landscaped island.",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 1746.046576442,
+      "command_start_t": 1746.0391323566437,
+      "end_t": 1783.488498371,
+      "start_index": 171130,
+      "end_index": 174858,
+      "segment_end_t": 1783.5891933441162,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 4,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-627be4.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 4.031040547138956,
+        "y": -1.3369419944604217,
+        "heading": 2.6529143052874007
+      },
+      "end_pose": {
+        "x": -9.441445799614986,
+        "y": 4.930902951088844,
+        "heading": 2.8132970310574117
+      },
+      "registration": {
+        "angle_rad": 2.6529143052874007,
+        "translation_m": [
+          4.031040547138956,
+          -1.3369419944604217
+        ],
+        "camera_anchors": 17,
+        "camera_time_range_s": [
+          1749.792450158,
+          1782.7923931530001
+        ],
+        "nearest_start_camera_gap_s": 3.7458737160000055,
+        "position_residual_median_m": 0.12974040713785928,
+        "position_residual_p95_m": 0.2558886759331255,
+        "heading_residual_median_deg": 0.19305118278847883,
+        "heading_residual_p95_deg": 0.3336827539785923,
+        "bootstrap": {
+          "blocks_5s": 5,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              3.9168310617742845,
+              -1.4098476876266022
+            ],
+            [
+              4.188862438027315,
+              -1.2818640974374034
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.2373385709089227,
+            0.1670566041810114
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.014409552000188341,
+        "reverse_seconds": 0.0,
+        "travel_m": 14.932173587948531
+      },
+      "outcome_source": "operator-curated attempt label and note; delayed Astra3 from session 2da073 note",
+      "attempt_outcome_known": true
+    },
+    {
+      "id": "2026-09-17-667691",
+      "segment": "2026-09-17-667691",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-grok-4-6-cursor-255638",
+      "model": "grok-4.6",
+      "scope": "primary",
+      "label": "attempt-3--fail--667691",
+      "outcome": "failure",
+      "operator_note": "Attempt 3 after the continuation at 21:47; 3 commands. Operator brake: crossed the mini-cone line toward the median island.",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 3390.25718245,
+      "command_start_t": 3390.251617193222,
+      "end_t": 3432.926739413,
+      "start_index": 334841,
+      "end_index": 339089,
+      "segment_end_t": 3433.0028772354126,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 3,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-667691.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 4.0837344413562775,
+        "y": -2.1320015733159807,
+        "heading": 2.671432864550212
+      },
+      "end_pose": {
+        "x": -16.39352948862239,
+        "y": 3.4806891459705223,
+        "heading": 3.091139371386818
+      },
+      "registration": {
+        "angle_rad": 2.671432864550212,
+        "translation_m": [
+          4.0837344413562775,
+          -2.1320015733159807
+        ],
+        "camera_anchors": 22,
+        "camera_time_range_s": [
+          3393.7761035850003,
+          3432.7758657140002
+        ],
+        "nearest_start_camera_gap_s": 3.518921135000255,
+        "position_residual_median_m": 0.22141842020899438,
+        "position_residual_p95_m": 0.3421941872334749,
+        "heading_residual_median_deg": 0.23488813521511254,
+        "heading_residual_p95_deg": 0.8518138229832893,
+        "bootstrap": {
+          "blocks_5s": 7,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              3.9677419520067363,
+              -2.1829882428057266
+            ],
+            [
+              4.2489278773147605,
+              -2.098527230306615
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.3380444166779541,
+            0.15721374816137684
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.014301676000286534,
+        "reverse_seconds": 0.0,
+        "travel_m": 21.454459488782625
+      },
+      "outcome_source": "operator-curated attempt label and note; delayed Astra3 from session 2da073 note",
+      "attempt_outcome_known": true
+    },
+    {
+      "id": "2026-09-17-691a30",
+      "segment": "2026-09-17-691a30",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-gpt-6-astra-codex-2da073",
+      "model": "gpt-6-astra",
+      "scope": "primary",
+      "label": "attempt-3--fail--691a30",
+      "outcome": "failure",
+      "operator_note": "Session 2da073: final day lot, 1 ACTUAL - 3rd attempt failed; omitted from earlier curated11.",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 4400.31490347,
+      "command_start_t": 4400.310944318771,
+      "end_t": 4543.319891724,
+      "start_index": 423460,
+      "end_index": 437698,
+      "segment_end_t": 4543.365135192871,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 2,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-691a30.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 3.5312127555311115,
+        "y": -4.388797070101056,
+        "heading": 2.5195060260428788
+      },
+      "end_pose": {
+        "x": -11.319471949578633,
+        "y": -0.15337835315753434,
+        "heading": 3.342125343008123
+      },
+      "registration": {
+        "angle_rad": 2.5195060260428788,
+        "translation_m": [
+          3.5312127555311115,
+          -4.388797070101056
+        ],
+        "camera_anchors": 16,
+        "camera_time_range_s": [
+          4403.761959619001,
+          4542.758075985001
+        ],
+        "nearest_start_camera_gap_s": 3.447056149000673,
+        "position_residual_median_m": 0.35025237244783525,
+        "position_residual_p95_m": 0.5181675256127087,
+        "heading_residual_median_deg": 0.4171834653459687,
+        "heading_residual_p95_deg": 0.8589690793823558,
+        "bootstrap": {
+          "blocks_5s": 4,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              3.354065356219296,
+              -4.71650173907247
+            ],
+            [
+              3.7444189197507347,
+              -4.207115656009381
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.48653609446556556,
+            0.2766160750627437
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.015131918999941263,
+        "reverse_seconds": 0.0,
+        "travel_m": 16.053572205822885
+      },
+      "outcome_source": "operator-curated attempt label and note; delayed Astra3 from session 2da073 note",
+      "attempt_outcome_known": true
+    },
+    {
+      "id": "2026-09-17-77be4c",
+      "segment": "2026-09-17-77be4c",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-gpt-6-astra-codex-664abe",
+      "model": "GPT-6 Astra",
+      "scope": "supplemental",
+      "label": "final day lot, 1",
+      "outcome": "completed",
+      "operator_note": "",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 113.265754549,
+      "command_start_t": 113.26196813583374,
+      "end_t": 193.234381484,
+      "start_index": 8552,
+      "end_index": 16514,
+      "segment_end_t": 193.39957213401794,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 7,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-77be4c.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 3.754253971107522,
+        "y": -1.606909282395835,
+        "heading": 2.778797278119574
+      },
+      "end_pose": {
+        "x": -35.81670284645932,
+        "y": -36.11278401363848,
+        "heading": 4.474808093630794
+      },
+      "registration": {
+        "angle_rad": 2.778797278119574,
+        "translation_m": [
+          3.754253971107522,
+          -1.606909282395835
+        ],
+        "camera_anchors": 63,
+        "camera_time_range_s": [
+          116.79487172600001,
+          192.794688126
+        ],
+        "nearest_start_camera_gap_s": 3.5291171770000176,
+        "position_residual_median_m": 0.2512483191341182,
+        "position_residual_p95_m": 0.8859962600309128,
+        "heading_residual_median_deg": 2.7700175615531446,
+        "heading_residual_p95_deg": 7.058571612782513,
+        "bootstrap": {
+          "blocks_5s": 15,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              3.6260404176178773,
+              -2.2421510232683555
+            ],
+            [
+              3.8729702715265817,
+              -1.1912195229330897
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -1.791664174940106,
+            0.8108988685019498
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.01449657899999579,
+        "reverse_seconds": 0.0,
+        "travel_m": 61.66789919008674
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-8a2bbb",
+      "segment": "2026-09-17-8a2bbb",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-client-picker-gpt-5-6-luna-fast-memory-other-e77ea1",
+      "model": "Separate client \u00b7 picker gpt-5.6-luna-fast \u00b7 memory",
+      "scope": "separate_client",
+      "label": "You are in a course delineated by mini-cones (small multicol",
+      "outcome": "aborted",
+      "operator_note": "ended by the separate client",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 3734.085569027,
+      "command_start_t": 3734.0829043388367,
+      "end_t": 3786.397330304,
+      "start_index": 369075,
+      "end_index": 374283,
+      "segment_end_t": 3786.4326293468475,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 29,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-8a2bbb.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 3.8143640144902324,
+        "y": -2.5900634637065005,
+        "heading": 2.7229727796002035
+      },
+      "end_pose": {
+        "x": -10.183112483702677,
+        "y": -0.1946658435773747,
+        "heading": 3.35402365860728
+      },
+      "registration": {
+        "angle_rad": 2.769043836933585,
+        "translation_m": [
+          0.8264897317396603,
+          -1.3382371662764234
+        ],
+        "camera_anchors": 24,
+        "camera_time_range_s": [
+          3719.774358735,
+          3785.774051227
+        ],
+        "nearest_start_camera_gap_s": 11.3112118439999,
+        "position_residual_median_m": 0.33098092950843294,
+        "position_residual_p95_m": 0.44769370577951256,
+        "heading_residual_median_deg": 0.27242425600911324,
+        "heading_residual_p95_deg": 0.7272763008734009,
+        "bootstrap": {
+          "blocks_5s": 6,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              3.6527583842341085,
+              -2.7901919353193665
+            ],
+            [
+              4.031708091292859,
+              -2.429150771901115
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.4932034194836022,
+            0.17753527470833413
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.014713821999976062,
+        "reverse_seconds": 0.0,
+        "travel_m": 14.480832180915684
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-8a3ea8",
+      "segment": "2026-09-17-8a3ea8",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-gpt-6-astra-codex-664abe",
+      "model": "GPT-6 Astra",
+      "scope": "supplemental",
+      "label": "final day lot, 1",
+      "outcome": "completed",
+      "operator_note": "",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 345.28162944,
+      "command_start_t": 345.27713918685913,
+      "end_t": 475.21196106,
+      "start_index": 31655,
+      "end_index": 44592,
+      "segment_end_t": 475.2824013233185,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 10,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-8a3ea8.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 2.7428475087186044,
+        "y": -0.23238053721744867,
+        "heading": 2.770252936288688
+      },
+      "end_pose": {
+        "x": -34.814337155067,
+        "y": -25.820774024925818,
+        "heading": 4.356705100949043
+      },
+      "registration": {
+        "angle_rad": 2.770252936288688,
+        "translation_m": [
+          2.7428475087186044,
+          -0.23238053721744867
+        ],
+        "camera_anchors": 66,
+        "camera_time_range_s": [
+          352.79441074600004,
+          474.79415201700004
+        ],
+        "nearest_start_camera_gap_s": 7.512781306000022,
+        "position_residual_median_m": 0.3286421194649182,
+        "position_residual_p95_m": 0.6420479990910881,
+        "heading_residual_median_deg": 2.0160418007812755,
+        "heading_residual_p95_deg": 5.673241868689704,
+        "bootstrap": {
+          "blocks_5s": 19,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              2.6434979056537156,
+              -0.45157479664823685
+            ],
+            [
+              2.8290136452131684,
+              0.008632474172890151
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.9797963697190117,
+            0.6280363331043334
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.014521530999957122,
+        "reverse_seconds": 0.0,
+        "travel_m": 53.40283756979974
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-926568",
+      "segment": "2026-09-17-926568",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-claude-fable-5-1-claude-b6d67a",
+      "model": "claude-fable-5.1",
+      "scope": "primary",
+      "label": "attempt-2--fail--926568",
+      "outcome": "failure",
+      "operator_note": "Attempt 2 after the continuation at 21:24:56; 4 commands. Operator brake at 21:29:13: outside the cone line again, pointed at the median island's curb.",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 2110.959136643,
+      "command_start_t": 2110.950612306595,
+      "end_t": 2300.944385155,
+      "start_index": 207463,
+      "end_index": 226379,
+      "segment_end_t": 2300.9713962078094,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 4,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-926568.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 3.7063829218647544,
+        "y": -2.3455168021916575,
+        "heading": 2.662379343010899
+      },
+      "end_pose": {
+        "x": -17.435275604420028,
+        "y": 3.5525132754765205,
+        "heading": 3.3032410284346723
+      },
+      "registration": {
+        "angle_rad": 2.662379343010899,
+        "translation_m": [
+          3.7063829218647544,
+          -2.3455168021916575
+        ],
+        "camera_anchors": 29,
+        "camera_time_range_s": [
+          2114.7909858380003,
+          2297.7870402890003
+        ],
+        "nearest_start_camera_gap_s": 3.831849195000359,
+        "position_residual_median_m": 0.3338339967050606,
+        "position_residual_p95_m": 0.40332968216973586,
+        "heading_residual_median_deg": 0.3867290681428063,
+        "heading_residual_p95_deg": 0.9420736306760208,
+        "bootstrap": {
+          "blocks_5s": 8,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              3.553710282418199,
+              -2.414367889092201
+            ],
+            [
+              3.8908155666738176,
+              -2.289769300891387
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.5977994974402121,
+            0.23776442631856146
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.02534813000011127,
+        "reverse_seconds": 0.0,
+        "travel_m": 22.507666273428637
+      },
+      "outcome_source": "operator-curated attempt label and note; delayed Astra3 from session 2da073 note",
+      "attempt_outcome_known": true
+    },
+    {
+      "id": "2026-09-17-933cfc",
+      "segment": "2026-09-17-933cfc",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-grok-4-6-cursor-b022a2",
+      "model": "Grok 4.6",
+      "scope": "excluded_error",
+      "label": "final day lot, 1",
+      "outcome": "aborted",
+      "operator_note": "throw away this attempt, error",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 2937.92346008,
+      "command_start_t": 2937.9166991710663,
+      "end_t": 2979.726046733,
+      "start_index": 289802,
+      "end_index": 293964,
+      "segment_end_t": 2979.822578191757,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 2,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-933cfc.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 3.8715273890363364,
+        "y": -3.629386696845557,
+        "heading": 2.509727430787937
+      },
+      "end_pose": {
+        "x": -6.999500925164606,
+        "y": 4.139239281410015,
+        "heading": 2.5777311305694637
+      },
+      "registration": {
+        "angle_rad": 2.509727430787937,
+        "translation_m": [
+          3.8715273890363364,
+          -3.629386696845557
+        ],
+        "camera_anchors": 12,
+        "camera_time_range_s": [
+          2941.77913346,
+          2978.778832666
+        ],
+        "nearest_start_camera_gap_s": 3.8556733800000984,
+        "position_residual_median_m": 0.050250803844524045,
+        "position_residual_p95_m": 0.10518935582807572,
+        "heading_residual_median_deg": 0.08878624788822405,
+        "heading_residual_p95_deg": 0.19605168478408527,
+        "bootstrap": {
+          "blocks_5s": 4,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              3.834373114629282,
+              -3.6591150706253113
+            ],
+            [
+              3.8963189813757584,
+              -3.5677368830724028
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.08239175037852994,
+            0.1437113770018671
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.0149362770002881,
+        "reverse_seconds": 0.0,
+        "travel_m": 13.3848694982687
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-aba4fd",
+      "segment": "2026-09-17-aba4fd",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-client-picker-gpt-5-6-luna-fast-memory-other-e77ea1",
+      "model": "Separate client \u00b7 picker gpt-5.6-luna-fast \u00b7 memory",
+      "scope": "separate_client",
+      "label": "You are in a course delineated by mini-cones (small multicol",
+      "outcome": "aborted",
+      "operator_note": "ended by the separate client",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 3665.378606561,
+      "command_start_t": 3665.375326156616,
+      "end_t": 3702.099009181,
+      "start_index": 362234,
+      "end_index": 365890,
+      "segment_end_t": 3702.133709192276,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 27,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-aba4fd.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 3.892656283385809,
+        "y": -2.64715700117176,
+        "heading": 2.7733143973427725
+      },
+      "end_pose": {
+        "x": -14.851617512795423,
+        "y": 4.905037517688157,
+        "heading": 2.74671681906583
+      },
+      "registration": {
+        "angle_rad": 2.7733143973427725,
+        "translation_m": [
+          3.892656283385809,
+          -2.64715700117176
+        ],
+        "camera_anchors": 35,
+        "camera_time_range_s": [
+          3667.7746229580002,
+          3701.7744473840003
+        ],
+        "nearest_start_camera_gap_s": 2.3960163970000394,
+        "position_residual_median_m": 0.052568026334957524,
+        "position_residual_p95_m": 0.12432573681689009,
+        "heading_residual_median_deg": 0.12701956658852584,
+        "heading_residual_p95_deg": 0.2945853833015014,
+        "bootstrap": {
+          "blocks_5s": 7,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              3.870875915499574,
+              -2.6898392052515208
+            ],
+            [
+              3.926668463346649,
+              -2.605402646680879
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.11829154362690612,
+            0.10712340544154136
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.014304550000360905,
+        "reverse_seconds": 0.0,
+        "travel_m": 20.20908777009368
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-aec600",
+      "segment": "2026-09-17-aec600",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-gpt-6-astra-codex-457f46",
+      "model": "GPT-6 Astra",
+      "scope": "supplemental",
+      "label": "final day lot, 2nd trial",
+      "outcome": "completed",
+      "operator_note": "FF - trial 2 third attempt astra couldn't connect so gonna do later",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 4704.08357429,
+      "command_start_t": 4704.0802483558655,
+      "end_t": 4742.64659734,
+      "start_index": 453705,
+      "end_index": 457544,
+      "segment_end_t": 4742.682284355164,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 3,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-aec600.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 4.907363688395438,
+        "y": -4.386994214032771,
+        "heading": 2.5345292530681185
+      },
+      "end_pose": {
+        "x": -14.756171764255022,
+        "y": 4.676038842157735,
+        "heading": 3.2213163434925
+      },
+      "registration": {
+        "angle_rad": 2.5345292530681185,
+        "translation_m": [
+          4.907363688395438,
+          -4.386994214032771
+        ],
+        "camera_anchors": 27,
+        "camera_time_range_s": [
+          4707.754271225001,
+          4738.753637078
+        ],
+        "nearest_start_camera_gap_s": 3.6706969350007057,
+        "position_residual_median_m": 0.2882011261597032,
+        "position_residual_p95_m": 0.5271667568482153,
+        "heading_residual_median_deg": 0.5530383409366011,
+        "heading_residual_p95_deg": 0.7269207573938421,
+        "bootstrap": {
+          "blocks_5s": 7,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              4.713134520991993,
+              -4.466796123746542
+            ],
+            [
+              5.04385630908673,
+              -4.34321970275973
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.4605247246579508,
+            0.25588718197378746
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.01458463600010873,
+        "reverse_seconds": 0.0,
+        "travel_m": 22.258903082593854
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-ca2652",
+      "segment": "2026-09-17-ca2652",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-claude-fable-5-1-claude-b6d67a",
+      "model": "claude-fable-5.1",
+      "scope": "primary",
+      "label": "attempt-3--fail--ca2652",
+      "outcome": "failure",
+      "operator_note": "Attempt 3 after the continuation at 21:31:01; 8 commands, the furthest of Claude's attempts. Operator brake at 21:36:35: too little room for the turn at (D), pointed at the planter island.",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 2483.174162848,
+      "command_start_t": 2483.170620203018,
+      "end_t": 2743.21949972,
+      "start_index": 244523,
+      "end_index": 270415,
+      "segment_end_t": 2743.3140041828156,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 8,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-ca2652.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 3.5165076107442563,
+        "y": -3.4179532726657396,
+        "heading": 2.593780288401941
+      },
+      "end_pose": {
+        "x": -37.20000643618607,
+        "y": -40.842182656062654,
+        "heading": 4.187688098304313
+      },
+      "registration": {
+        "angle_rad": 2.593780288401941,
+        "translation_m": [
+          3.5165076107442563,
+          -3.4179532726657396
+        ],
+        "camera_anchors": 69,
+        "camera_time_range_s": [
+          2487.783968008,
+          2726.781085765
+        ],
+        "nearest_start_camera_gap_s": 4.609805160000178,
+        "position_residual_median_m": 0.30373536108532995,
+        "position_residual_p95_m": 0.5244496233325324,
+        "heading_residual_median_deg": 1.0340088571650785,
+        "heading_residual_p95_deg": 3.7141396931832342,
+        "bootstrap": {
+          "blocks_5s": 20,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              3.458496503536389,
+              -3.569521945595033
+            ],
+            [
+              3.560360313311321,
+              -3.289265555656478
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.23372967206579695,
+            0.10840116175971726
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.014407336999738618,
+        "reverse_seconds": 0.0,
+        "travel_m": 67.25815768817894
+      },
+      "outcome_source": "operator-curated attempt label and note; delayed Astra3 from session 2da073 note",
+      "attempt_outcome_known": true
+    },
+    {
+      "id": "2026-09-17-f173f0",
+      "segment": "2026-09-17-f173f0",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-gpt-6-astra-codex-457f46",
+      "model": "GPT-6 Astra",
+      "scope": "supplemental",
+      "label": "final day lot, 2nd trial",
+      "outcome": "completed",
+      "operator_note": "FF - trial 2 third attempt astra couldn't connect so gonna do later",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 4833.84324671,
+      "command_start_t": 4833.8388521671295,
+      "end_t": 4975.244021693,
+      "start_index": 466624,
+      "end_index": 480703,
+      "segment_end_t": 4975.363434314728,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 12,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-f173f0.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 3.348038373743793,
+        "y": -4.040956650224921,
+        "heading": 2.5903602824287213
+      },
+      "end_pose": {
+        "x": -40.93385588391597,
+        "y": -42.0273277473486,
+        "heading": 3.8785403284666904
+      },
+      "registration": {
+        "angle_rad": 2.5903602824287213,
+        "translation_m": [
+          3.348038373743793,
+          -4.040956650224921
+        ],
+        "camera_anchors": 94,
+        "camera_time_range_s": [
+          4838.751716045001,
+          4974.749353376001
+        ],
+        "nearest_start_camera_gap_s": 4.908469335000518,
+        "position_residual_median_m": 0.35847418746573434,
+        "position_residual_p95_m": 0.8734752477123251,
+        "heading_residual_median_deg": 0.7654141509619725,
+        "heading_residual_p95_deg": 2.3417606996182947,
+        "bootstrap": {
+          "blocks_5s": 25,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              3.257296324755583,
+              -4.302985887025969
+            ],
+            [
+              3.446684965492425,
+              -3.7588822851289834
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.30913568706022004,
+            0.20266860024592054
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.020627984999919136,
+        "reverse_seconds": 0.0,
+        "travel_m": 68.95988347760273
+      },
+      "outcome_source": "administrative session-end outcome; not verified individual attempt outcome",
+      "attempt_outcome_known": false
+    },
+    {
+      "id": "2026-09-17-f1762a",
+      "segment": "2026-09-17-f1762a",
+      "route": "00000042--544757d3f5",
+      "session": "2026-09-17-grok-4-6-cursor-255638",
+      "model": "grok-4.6",
+      "scope": "primary",
+      "label": "attempt-1--fail--f1762a",
+      "outcome": "failure",
+      "operator_note": "Attempt 1; 2 commands. Operator brake: drove straight into the mini-cone gate toward the landscaped island.",
+      "series_path": "runs/sim/series/00000042--544757d3f5.npz",
+      "start_t": 3099.935714817,
+      "command_start_t": 3099.9311323165894,
+      "end_t": 3134.647662253,
+      "start_index": 305934,
+      "end_index": 309390,
+      "segment_end_t": 3134.6759202480316,
+      "segment_end_reason": "operator_brake",
+      "intervention": {
+        "brake": 1.0,
+        "gas": 0.0,
+        "steer_pressed": 0.0,
+        "enabled": 1.0,
+        "gear": 2.0
+      },
+      "initial_operator_input": false,
+      "all_commands_count": 2,
+      "path_npz": "runs/sim/real-course-twin/registration/2026-09-17-f1762a.npz",
+      "registration_status": "registered",
+      "start_pose": {
+        "x": 4.548882181945196,
+        "y": -3.457134755461081,
+        "heading": 2.570709886861831
+      },
+      "end_pose": {
+        "x": -6.88890295259157,
+        "y": 3.978500709939955,
+        "heading": 2.5586195305152852
+      },
+      "registration": {
+        "angle_rad": 2.570709886861831,
+        "translation_m": [
+          4.548882181945196,
+          -3.457134755461081
+        ],
+        "camera_anchors": 12,
+        "camera_time_range_s": [
+          3103.777936462,
+          3133.777708694
+        ],
+        "nearest_start_camera_gap_s": 3.8422216449998814,
+        "position_residual_median_m": 0.08665655554349341,
+        "position_residual_p95_m": 0.13000263023210643,
+        "heading_residual_median_deg": 0.07964893759621337,
+        "heading_residual_p95_deg": 0.1715491569037455,
+        "bootstrap": {
+          "blocks_5s": 3,
+          "draws": 100,
+          "meaning": "conditional grouped camera-anchor sampling stability; systematic SfM/GPS/mount/body-reference errors excluded",
+          "start_xy_95_interval_m": [
+            [
+              4.493734638539987,
+              -3.5119650273136656
+            ],
+            [
+              4.59926185151314,
+              -3.379276185384148
+            ]
+          ],
+          "heading_offset_95_interval_deg": [
+            -0.07863662031589062,
+            0.11279683470632838
+          ]
+        },
+        "gyro_bias_rad_s": -0.02321287989616394,
+        "max_series_gap_s": 0.01472519899971303,
+        "reverse_seconds": 0.0,
+        "travel_m": 13.665835634468161
+      },
+      "outcome_source": "operator-curated attempt label and note; delayed Astra3 from session 2da073 note",
+      "attempt_outcome_known": true
+    }
+  ]
+}

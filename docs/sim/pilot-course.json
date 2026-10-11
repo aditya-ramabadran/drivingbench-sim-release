@@ -1,0 +1,1287 @@
+{
+  "status": "provisional observed landmark positions; not simulation or collision truth",
+  "frame": {
+    "axes": "east/north/up",
+    "units": "metres",
+    "origin_lat_lon": [
+      0.0,
+      0.0
+    ],
+    "map": "pilot SfM only; independent whole-site map requires separate registration"
+  },
+  "provenance": {
+    "source": "runs/sim/visual/cones/landmarks.json",
+    "review": "runs/sim/visual/cones/review.json",
+    "points3D_path": "runs/sim/visual/pilot/sfm/sparse/points3D.bin",
+    "points3D_sha256": "e445eb95f4165b5c7f0f241af650779c088f41cf6dc92bf4afe9261ea8cdf920",
+    "registration_sha256": "a33ddb2455d5b52a321b27539d722f3070fd10c4a71e2ab217cef4b1fae035c6",
+    "registration": {
+      "source": "COLMAP training cameras",
+      "target": "manifest metric ENU camera centers",
+      "scale": 4.827129452029559,
+      "rotation": [
+        [
+          -0.05533891278332024,
+          -0.13975292473848328,
+          -0.9886388242219704
+        ],
+        [
+          0.9966666787243451,
+          -0.06717546800608526,
+          -0.0462924185882119
+        ],
+        [
+          -0.059942774815175986,
+          -0.9879051455100352,
+          0.14300450070628473
+        ]
+      ],
+      "translation": [
+        -19.89941663983216,
+        -8.478172734965137,
+        1.2268537639569488
+      ],
+      "train_camera_count": 218,
+      "rms_m": 1.1988674785146578,
+      "median_m": 0.9839638311238512,
+      "max_m": 2.600668175617175
+    }
+  },
+  "uncertainty": "sigma_xy_m assumes independent 2px annotation errors and exact SfM cameras; excludes correlated pose, scale and geographic registration error. Position is approximate visible base center. Registration RMS is seed consistency, not accuracy.",
+  "physical_footprints": null,
+  "boundary_order": null,
+  "landmarks": [
+    {
+      "id": "marker_000",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -30.872,
+        -33.076,
+        0.061
+      ],
+      "views": 68,
+      "reprojection_median_px": 1.33,
+      "conditional_sigma_xy_m": 0.028,
+      "ray_baseline_deg": 27.25,
+      "candidate_ids": [
+        16,
+        134
+      ]
+    },
+    {
+      "id": "marker_001",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -28.515,
+        -6.877,
+        -0.025
+      ],
+      "views": 31,
+      "reprojection_median_px": 1.236,
+      "conditional_sigma_xy_m": 0.089,
+      "ray_baseline_deg": 12.47,
+      "candidate_ids": [
+        20
+      ]
+    },
+    {
+      "id": "marker_002",
+      "class": "tall_cone",
+      "color": "orange_red",
+      "position_enu_m": [
+        -35.227,
+        -28.371,
+        0.057
+      ],
+      "views": 35,
+      "reprojection_median_px": 1.081,
+      "conditional_sigma_xy_m": 0.189,
+      "ray_baseline_deg": 7.0,
+      "candidate_ids": [
+        73
+      ]
+    },
+    {
+      "id": "marker_003",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -31.12,
+        -21.615,
+        0.039
+      ],
+      "views": 31,
+      "reprojection_median_px": 1.118,
+      "conditional_sigma_xy_m": 0.038,
+      "ray_baseline_deg": 18.77,
+      "candidate_ids": [
+        32
+      ]
+    },
+    {
+      "id": "marker_004",
+      "class": "tall_cone",
+      "color": "orange_red",
+      "position_enu_m": [
+        -34.974,
+        -27.921,
+        0.084
+      ],
+      "views": 49,
+      "reprojection_median_px": 1.121,
+      "conditional_sigma_xy_m": 0.034,
+      "ray_baseline_deg": 20.34,
+      "candidate_ids": [
+        1,
+        107
+      ]
+    },
+    {
+      "id": "marker_005",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -28.141,
+        -29.557,
+        0.064
+      ],
+      "views": 45,
+      "reprojection_median_px": 1.214,
+      "conditional_sigma_xy_m": 0.038,
+      "ray_baseline_deg": 26.66,
+      "candidate_ids": [
+        104,
+        46
+      ]
+    },
+    {
+      "id": "marker_006",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -27.279,
+        -8.495,
+        -0.007
+      ],
+      "views": 25,
+      "reprojection_median_px": 1.173,
+      "conditional_sigma_xy_m": 0.06,
+      "ray_baseline_deg": 12.41,
+      "candidate_ids": [
+        31
+      ]
+    },
+    {
+      "id": "marker_007",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -33.332,
+        -20.305,
+        0.081
+      ],
+      "views": 38,
+      "reprojection_median_px": 1.21,
+      "conditional_sigma_xy_m": 0.045,
+      "ray_baseline_deg": 15.44,
+      "candidate_ids": [
+        117,
+        30
+      ]
+    },
+    {
+      "id": "marker_008",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -33.835,
+        -22.332,
+        0.098
+      ],
+      "views": 33,
+      "reprojection_median_px": 1.121,
+      "conditional_sigma_xy_m": 0.072,
+      "ray_baseline_deg": 10.39,
+      "candidate_ids": [
+        133,
+        38
+      ]
+    },
+    {
+      "id": "marker_009",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -28.285,
+        -11.285,
+        0.067
+      ],
+      "views": 23,
+      "reprojection_median_px": 0.886,
+      "conditional_sigma_xy_m": 0.066,
+      "ray_baseline_deg": 9.59,
+      "candidate_ids": [
+        14
+      ]
+    },
+    {
+      "id": "marker_010",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -26.977,
+        -2.974,
+        -0.063
+      ],
+      "views": 31,
+      "reprojection_median_px": 1.489,
+      "conditional_sigma_xy_m": 0.072,
+      "ray_baseline_deg": 12.93,
+      "candidate_ids": [
+        60,
+        81,
+        161,
+        175
+      ]
+    },
+    {
+      "id": "marker_011",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -25.669,
+        -0.227,
+        -0.107
+      ],
+      "views": 32,
+      "reprojection_median_px": 1.364,
+      "conditional_sigma_xy_m": 0.053,
+      "ray_baseline_deg": 16.08,
+      "candidate_ids": [
+        65,
+        93,
+        146
+      ]
+    },
+    {
+      "id": "marker_012",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -27.899,
+        -4.745,
+        -0.032
+      ],
+      "views": 33,
+      "reprojection_median_px": 1.422,
+      "conditional_sigma_xy_m": 0.072,
+      "ray_baseline_deg": 12.92,
+      "candidate_ids": [
+        80,
+        150,
+        43
+      ]
+    },
+    {
+      "id": "marker_013",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -26.586,
+        -6.555,
+        -0.018
+      ],
+      "views": 22,
+      "reprojection_median_px": 1.216,
+      "conditional_sigma_xy_m": 0.085,
+      "ray_baseline_deg": 12.6,
+      "candidate_ids": [
+        10,
+        149
+      ]
+    },
+    {
+      "id": "marker_014",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -8.273,
+        8.282,
+        -0.258
+      ],
+      "views": 34,
+      "reprojection_median_px": 1.266,
+      "conditional_sigma_xy_m": 0.028,
+      "ray_baseline_deg": 21.93,
+      "candidate_ids": [
+        36,
+        112
+      ]
+    },
+    {
+      "id": "marker_015",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -36.608,
+        -39.088,
+        0.121
+      ],
+      "views": 30,
+      "reprojection_median_px": 1.203,
+      "conditional_sigma_xy_m": 0.03,
+      "ray_baseline_deg": 21.27,
+      "candidate_ids": [
+        41,
+        135
+      ]
+    },
+    {
+      "id": "marker_016",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -35.709,
+        -30.376,
+        0.078
+      ],
+      "views": 38,
+      "reprojection_median_px": 1.115,
+      "conditional_sigma_xy_m": 0.048,
+      "ray_baseline_deg": 17.25,
+      "candidate_ids": [
+        47,
+        129
+      ]
+    },
+    {
+      "id": "marker_017",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -12.782,
+        7.881,
+        -0.245
+      ],
+      "views": 40,
+      "reprojection_median_px": 0.914,
+      "conditional_sigma_xy_m": 0.036,
+      "ray_baseline_deg": 20.71,
+      "candidate_ids": [
+        86,
+        58,
+        116,
+        92,
+        147
+      ]
+    },
+    {
+      "id": "marker_018",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -25.652,
+        -4.157,
+        -0.043
+      ],
+      "views": 18,
+      "reprojection_median_px": 1.148,
+      "conditional_sigma_xy_m": 0.092,
+      "ray_baseline_deg": 12.61,
+      "candidate_ids": [
+        34,
+        123
+      ]
+    },
+    {
+      "id": "marker_019",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -30.39,
+        -18.958,
+        0.083
+      ],
+      "views": 18,
+      "reprojection_median_px": 1.191,
+      "conditional_sigma_xy_m": 0.071,
+      "ray_baseline_deg": 10.12,
+      "candidate_ids": [
+        17
+      ]
+    },
+    {
+      "id": "marker_020",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -31.724,
+        -15.145,
+        0.111
+      ],
+      "views": 18,
+      "reprojection_median_px": 1.238,
+      "conditional_sigma_xy_m": 0.052,
+      "ray_baseline_deg": 13.75,
+      "candidate_ids": [
+        22
+      ]
+    },
+    {
+      "id": "marker_021",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -10.369,
+        7.922,
+        -0.246
+      ],
+      "views": 37,
+      "reprojection_median_px": 1.207,
+      "conditional_sigma_xy_m": 0.026,
+      "ray_baseline_deg": 23.72,
+      "candidate_ids": [
+        24,
+        85
+      ]
+    },
+    {
+      "id": "marker_022",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -34.719,
+        -37.949,
+        0.112
+      ],
+      "views": 33,
+      "reprojection_median_px": 1.203,
+      "conditional_sigma_xy_m": 0.031,
+      "ray_baseline_deg": 14.65,
+      "candidate_ids": [
+        27,
+        143
+      ]
+    },
+    {
+      "id": "marker_023",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -22.742,
+        3.75,
+        -0.247
+      ],
+      "views": 40,
+      "reprojection_median_px": 1.426,
+      "conditional_sigma_xy_m": 0.051,
+      "ray_baseline_deg": 17.03,
+      "candidate_ids": [
+        54,
+        100,
+        120
+      ]
+    },
+    {
+      "id": "marker_024",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -15.809,
+        7.864,
+        -0.279
+      ],
+      "views": 45,
+      "reprojection_median_px": 1.02,
+      "conditional_sigma_xy_m": 0.04,
+      "ray_baseline_deg": 20.89,
+      "candidate_ids": [
+        96,
+        121,
+        137,
+        84,
+        66,
+        162
+      ]
+    },
+    {
+      "id": "marker_025",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -32.156,
+        -24.026,
+        0.067
+      ],
+      "views": 31,
+      "reprojection_median_px": 1.447,
+      "conditional_sigma_xy_m": 0.04,
+      "ray_baseline_deg": 19.43,
+      "candidate_ids": [
+        154,
+        48
+      ]
+    },
+    {
+      "id": "marker_026",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -28.856,
+        -14.12,
+        0.084
+      ],
+      "views": 24,
+      "reprojection_median_px": 1.065,
+      "conditional_sigma_xy_m": 0.031,
+      "ray_baseline_deg": 16.45,
+      "candidate_ids": [
+        28,
+        181
+      ]
+    },
+    {
+      "id": "marker_027",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -24.846,
+        -1.248,
+        -0.077
+      ],
+      "views": 22,
+      "reprojection_median_px": 0.838,
+      "conditional_sigma_xy_m": 0.046,
+      "ray_baseline_deg": 19.5,
+      "candidate_ids": [
+        50,
+        111,
+        148
+      ]
+    },
+    {
+      "id": "marker_028",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -20.073,
+        5.925,
+        -0.25
+      ],
+      "views": 34,
+      "reprojection_median_px": 1.151,
+      "conditional_sigma_xy_m": 0.053,
+      "ray_baseline_deg": 18.26,
+      "candidate_ids": [
+        57,
+        140,
+        178
+      ]
+    },
+    {
+      "id": "marker_029",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -43.17,
+        -35.764,
+        0.127
+      ],
+      "views": 24,
+      "reprojection_median_px": 0.761,
+      "conditional_sigma_xy_m": 0.114,
+      "ray_baseline_deg": 12.38,
+      "candidate_ids": [
+        167,
+        128,
+        182
+      ]
+    },
+    {
+      "id": "marker_030",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -37.859,
+        -31.692,
+        0.067
+      ],
+      "views": 16,
+      "reprojection_median_px": 2.06,
+      "conditional_sigma_xy_m": 0.077,
+      "ray_baseline_deg": 18.19,
+      "candidate_ids": [
+        75
+      ]
+    },
+    {
+      "id": "marker_031",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -38.851,
+        -40.257,
+        0.142
+      ],
+      "views": 57,
+      "reprojection_median_px": 1.458,
+      "conditional_sigma_xy_m": 0.021,
+      "ray_baseline_deg": 22.09,
+      "candidate_ids": [
+        110,
+        95,
+        108,
+        144,
+        11,
+        76,
+        172
+      ]
+    },
+    {
+      "id": "marker_032",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -25.995,
+        -26.085,
+        0.0
+      ],
+      "views": 18,
+      "reprojection_median_px": 1.198,
+      "conditional_sigma_xy_m": 0.06,
+      "ray_baseline_deg": 20.9,
+      "candidate_ids": [
+        71,
+        115
+      ]
+    },
+    {
+      "id": "marker_033",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -40.226,
+        -41.304,
+        0.156
+      ],
+      "views": 41,
+      "reprojection_median_px": 0.802,
+      "conditional_sigma_xy_m": 0.023,
+      "ray_baseline_deg": 23.5,
+      "candidate_ids": [
+        97,
+        159,
+        19
+      ]
+    },
+    {
+      "id": "marker_034",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -29.393,
+        -9.802,
+        0.06
+      ],
+      "views": 23,
+      "reprojection_median_px": 1.652,
+      "conditional_sigma_xy_m": 0.091,
+      "ray_baseline_deg": 9.98,
+      "candidate_ids": [
+        119,
+        5
+      ]
+    },
+    {
+      "id": "marker_035",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -18.253,
+        7.062,
+        -0.274
+      ],
+      "views": 48,
+      "reprojection_median_px": 0.884,
+      "conditional_sigma_xy_m": 0.048,
+      "ray_baseline_deg": 18.19,
+      "candidate_ids": [
+        122,
+        138,
+        62,
+        156
+      ]
+    },
+    {
+      "id": "marker_036",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -34.036,
+        -26.709,
+        0.089
+      ],
+      "views": 22,
+      "reprojection_median_px": 1.114,
+      "conditional_sigma_xy_m": 0.06,
+      "ray_baseline_deg": 14.48,
+      "candidate_ids": [
+        125,
+        56
+      ]
+    },
+    {
+      "id": "marker_037",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -32.922,
+        -25.711,
+        0.083
+      ],
+      "views": 26,
+      "reprojection_median_px": 1.048,
+      "conditional_sigma_xy_m": 0.075,
+      "ray_baseline_deg": 10.64,
+      "candidate_ids": [
+        155,
+        21
+      ]
+    },
+    {
+      "id": "marker_038",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -24.932,
+        1.861,
+        -0.181
+      ],
+      "views": 27,
+      "reprojection_median_px": 1.468,
+      "conditional_sigma_xy_m": 0.101,
+      "ray_baseline_deg": 12.26,
+      "candidate_ids": [
+        87,
+        53,
+        153
+      ]
+    },
+    {
+      "id": "marker_039",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -30.938,
+        -12.807,
+        0.091
+      ],
+      "views": 22,
+      "reprojection_median_px": 1.479,
+      "conditional_sigma_xy_m": 0.042,
+      "ray_baseline_deg": 16.42,
+      "candidate_ids": [
+        113,
+        29
+      ]
+    },
+    {
+      "id": "marker_040",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -23.809,
+        1.31,
+        -0.137
+      ],
+      "views": 13,
+      "reprojection_median_px": 1.014,
+      "conditional_sigma_xy_m": 0.058,
+      "ray_baseline_deg": 17.31,
+      "candidate_ids": [
+        59,
+        90
+      ]
+    },
+    {
+      "id": "marker_041",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -32.441,
+        -17.182,
+        0.127
+      ],
+      "views": 18,
+      "reprojection_median_px": 1.71,
+      "conditional_sigma_xy_m": 0.058,
+      "ray_baseline_deg": 13.27,
+      "candidate_ids": [
+        103,
+        15
+      ]
+    },
+    {
+      "id": "marker_042",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -46.0,
+        -44.947,
+        0.203
+      ],
+      "views": 27,
+      "reprojection_median_px": 0.559,
+      "conditional_sigma_xy_m": 0.082,
+      "ray_baseline_deg": 16.58,
+      "candidate_ids": [
+        132,
+        176,
+        171
+      ]
+    },
+    {
+      "id": "marker_043",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -34.686,
+        -25.057,
+        0.108
+      ],
+      "views": 21,
+      "reprojection_median_px": 0.757,
+      "conditional_sigma_xy_m": 0.077,
+      "ray_baseline_deg": 9.85,
+      "candidate_ids": [
+        8,
+        23
+      ]
+    },
+    {
+      "id": "marker_044",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -43.951,
+        -42.28,
+        0.19
+      ],
+      "views": 48,
+      "reprojection_median_px": 0.805,
+      "conditional_sigma_xy_m": 0.024,
+      "ray_baseline_deg": 30.15,
+      "candidate_ids": [
+        109,
+        145,
+        70,
+        157,
+        177
+      ]
+    },
+    {
+      "id": "marker_045",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -42.207,
+        -41.797,
+        0.196
+      ],
+      "views": 44,
+      "reprojection_median_px": 0.833,
+      "conditional_sigma_xy_m": 0.023,
+      "ray_baseline_deg": 29.15,
+      "candidate_ids": [
+        118,
+        49,
+        101,
+        158,
+        169
+      ]
+    },
+    {
+      "id": "marker_046",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -20.254,
+        -5.43,
+        -0.057
+      ],
+      "views": 11,
+      "reprojection_median_px": 1.125,
+      "conditional_sigma_xy_m": 0.028,
+      "ray_baseline_deg": 25.88,
+      "candidate_ids": [
+        6
+      ]
+    },
+    {
+      "id": "marker_047",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -14.022,
+        -0.606,
+        -0.203
+      ],
+      "views": 16,
+      "reprojection_median_px": 1.411,
+      "conditional_sigma_xy_m": 0.04,
+      "ray_baseline_deg": 20.85,
+      "candidate_ids": [
+        12,
+        7
+      ]
+    },
+    {
+      "id": "marker_048",
+      "class": "tall_cone",
+      "color": "orange_red",
+      "position_enu_m": [
+        -41.807,
+        -44.78,
+        -0.006
+      ],
+      "views": 11,
+      "reprojection_median_px": 1.221,
+      "conditional_sigma_xy_m": 0.101,
+      "ray_baseline_deg": 13.26,
+      "candidate_ids": [
+        18
+      ]
+    },
+    {
+      "id": "marker_049",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -36.824,
+        -30.047,
+        0.09
+      ],
+      "views": 11,
+      "reprojection_median_px": 0.632,
+      "conditional_sigma_xy_m": 0.08,
+      "ray_baseline_deg": 14.2,
+      "candidate_ids": [
+        79
+      ]
+    },
+    {
+      "id": "marker_050",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -34.999,
+        -26.503,
+        0.112
+      ],
+      "views": 21,
+      "reprojection_median_px": 0.77,
+      "conditional_sigma_xy_m": 0.193,
+      "ray_baseline_deg": 6.3,
+      "candidate_ids": [
+        127,
+        160
+      ]
+    },
+    {
+      "id": "marker_051",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -40.829,
+        -34.244,
+        0.127
+      ],
+      "views": 16,
+      "reprojection_median_px": 0.799,
+      "conditional_sigma_xy_m": 0.107,
+      "ray_baseline_deg": 15.15,
+      "candidate_ids": [
+        142,
+        173
+      ]
+    },
+    {
+      "id": "marker_052",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -47.825,
+        -43.333,
+        0.166
+      ],
+      "views": 33,
+      "reprojection_median_px": 0.816,
+      "conditional_sigma_xy_m": 0.039,
+      "ray_baseline_deg": 27.95,
+      "candidate_ids": [
+        152,
+        168,
+        114,
+        91
+      ]
+    },
+    {
+      "id": "marker_053",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -18.791,
+        -3.747,
+        -0.142
+      ],
+      "views": 10,
+      "reprojection_median_px": 0.798,
+      "conditional_sigma_xy_m": 0.044,
+      "ray_baseline_deg": 18.88,
+      "candidate_ids": [
+        13
+      ]
+    },
+    {
+      "id": "marker_054",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -22.658,
+        -8.899,
+        0.02
+      ],
+      "views": 10,
+      "reprojection_median_px": 1.401,
+      "conditional_sigma_xy_m": 0.041,
+      "ray_baseline_deg": 20.27,
+      "candidate_ids": [
+        35
+      ]
+    },
+    {
+      "id": "marker_055",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -37.042,
+        -31.884,
+        0.102
+      ],
+      "views": 10,
+      "reprojection_median_px": 0.593,
+      "conditional_sigma_xy_m": 0.066,
+      "ray_baseline_deg": 16.44,
+      "candidate_ids": [
+        68
+      ]
+    },
+    {
+      "id": "marker_056",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -22.04,
+        1.977,
+        0.041
+      ],
+      "views": 9,
+      "reprojection_median_px": 2.201,
+      "conditional_sigma_xy_m": 0.248,
+      "ray_baseline_deg": 8.75,
+      "candidate_ids": [
+        82
+      ]
+    },
+    {
+      "id": "marker_057",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -17.154,
+        -2.522,
+        -0.167
+      ],
+      "views": 9,
+      "reprojection_median_px": 1.112,
+      "conditional_sigma_xy_m": 0.059,
+      "ray_baseline_deg": 15.42,
+      "candidate_ids": [
+        26
+      ]
+    },
+    {
+      "id": "marker_058",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -29.397,
+        -16.604,
+        0.077
+      ],
+      "views": 18,
+      "reprojection_median_px": 0.798,
+      "conditional_sigma_xy_m": 0.037,
+      "ray_baseline_deg": 16.37,
+      "candidate_ids": [
+        40,
+        141
+      ]
+    },
+    {
+      "id": "marker_059",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -24.471,
+        -22.554,
+        -0.051
+      ],
+      "views": 8,
+      "reprojection_median_px": 1.84,
+      "conditional_sigma_xy_m": 0.087,
+      "ray_baseline_deg": 18.3,
+      "candidate_ids": [
+        102
+      ]
+    },
+    {
+      "id": "marker_060",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -35.927,
+        -29.01,
+        0.092
+      ],
+      "views": 8,
+      "reprojection_median_px": 0.505,
+      "conditional_sigma_xy_m": 0.095,
+      "ray_baseline_deg": 15.26,
+      "candidate_ids": [
+        130
+      ]
+    },
+    {
+      "id": "marker_061",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -46.182,
+        -37.091,
+        0.118
+      ],
+      "views": 8,
+      "reprojection_median_px": 0.344,
+      "conditional_sigma_xy_m": 0.355,
+      "ray_baseline_deg": 7.58,
+      "candidate_ids": [
+        170
+      ]
+    },
+    {
+      "id": "marker_062",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -34.971,
+        -27.278,
+        0.201
+      ],
+      "views": 8,
+      "reprojection_median_px": 1.184,
+      "conditional_sigma_xy_m": 0.752,
+      "ray_baseline_deg": 4.08,
+      "candidate_ids": [
+        179
+      ]
+    },
+    {
+      "id": "marker_063",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -11.229,
+        0.289,
+        -0.226
+      ],
+      "views": 7,
+      "reprojection_median_px": 1.22,
+      "conditional_sigma_xy_m": 0.049,
+      "ray_baseline_deg": 17.44,
+      "candidate_ids": [
+        25
+      ]
+    },
+    {
+      "id": "marker_064",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -49.639,
+        -43.32,
+        0.172
+      ],
+      "views": 6,
+      "reprojection_median_px": 0.611,
+      "conditional_sigma_xy_m": 0.485,
+      "ray_baseline_deg": 6.6,
+      "candidate_ids": [
+        174
+      ]
+    },
+    {
+      "id": "marker_065",
+      "class": "tall_cone",
+      "color": "orange_red",
+      "position_enu_m": [
+        -23.291,
+        -16.379,
+        -0.047
+      ],
+      "views": 5,
+      "reprojection_median_px": 2.508,
+      "conditional_sigma_xy_m": 0.111,
+      "ray_baseline_deg": 12.25,
+      "candidate_ids": [
+        9
+      ]
+    },
+    {
+      "id": "marker_066",
+      "class": "dome_marker",
+      "color": "yellow_green",
+      "position_enu_m": [
+        -23.864,
+        -11.609,
+        0.004
+      ],
+      "views": 5,
+      "reprojection_median_px": 1.072,
+      "conditional_sigma_xy_m": 0.071,
+      "ray_baseline_deg": 15.93,
+      "candidate_ids": [
+        45
+      ]
+    },
+    {
+      "id": "marker_067",
+      "class": "dome_marker",
+      "color": "orange_red",
+      "position_enu_m": [
+        -24.425,
+        -12.845,
+        0.005
+      ],
+      "views": 5,
+      "reprojection_median_px": 0.834,
+      "conditional_sigma_xy_m": 0.096,
+      "ray_baseline_deg": 13.7,
+      "candidate_ids": [
+        77
+      ]
+    }
+  ]
+}

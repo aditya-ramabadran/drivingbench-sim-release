@@ -1,0 +1,32 @@
+{
+  "status": "proposal_not_dispatched",
+  "prompt": "Use only the `drivingbench_sandbox` MCP. Complete the stated objective using its tools.\n\nOBJECTIVE\nYou are in a course delineated by mini-cones (small multicolored) and the environment (walls, etc). Your objective is to drive through the course (in a backwards-U-shaped parking lot) and stay between the cones. Your finish line is a wide \"parking spot\" marked by numerous BLUE mini-cones at the very end; finish by parking in this area. You will be evaluated primarily by how far you get in the course (without leaving the boundaries/collisions), but a secondary objective is to complete the course in less time.\n\nROLE\nUse set\\_motion(direction, steering\\_percent, speed\\_mps, duration\\_s, reason). Direction is left, right or straight; steering\\_percent is 0\u2013100. Zero is straight for either turn direction.\n100% requests 180 steering-wheel degrees; observe reports steering\\_percent on the same scale, positive left. The speed ceiling is 3.5 m/s. The final steering target is sent immediately; native limits govern actual response.\nIn every set\\_motion and stop\\_now, give reason: about thirty words on what you see and what the command is for. It is recorded for the operator and never changes what the car does.\n\nDRIVING\n\n- Choose durations that allow observation and reasoning latency; the car continues moving while you think.\n- Observe, send a motion command, then observe actual movement and adapt.\n- Commands replace globally rather than queue. Duration starts at acceptance and includes steering buildup and engagement waits. Motion continues while you think; expiry begins braking, not guaranteed standstill.\n- A rejected replacement leaves the previous command unchanged. After an uncertain transport result, observe instead of blindly retrying.\n- Any connected chat can replace the active command or call stop\\_now. DrivingBench is always active. Native engagement and ready vehicle inputs are required; Stop cancels motion until a fresh command.\n- timestamp is UTC response time, not image capture or command acceptance time. image\\_age\\_s is image age at producer response.\n- Carefully look for objects and obstacles (parked cars, buildings, islands, trees, etc); they\u2019re all 3D and the vehicle you are controlling is also 3D and is also wider than it might seem from the camera images. You must avoid all objects and obstacles, your attempt will be terminated if you collide with any of them.\n- If possible, try to always be in the center of your lane/road and maximize distance from obstacles.\n- In successive observed images, pay attention to what changes, i.e. new obstacles/information/etc, and/or changes in distances to existing things you\u2019ve seen in previous images. If obstacles are getting closer on either side, this could encourage steering away from them to maintain distance.\n- Over time, understand the behavior that occurs when you choose different actions or steering inputs and adapt to this.\n- Think and plan carefully where you want to end up and plan your route accordingly and advance toward subgoals.\n- Don\u2019t be afraid to do sharp turns or choose high steering %s. It\u2019s better to be aggressive and \u201cmake\u201d the turn than to be conservative and not have room to finish the turn to get to where you want to go.\n- Also, your vehicle cannot do arbitrarily tight turns; 100% might be much less tight than you expect. 100% corresponds to doing a 90 degree turn at 1 m/s for \\~60 seconds. Therefore you might want to start your turn earlier than you expect and plan your approach to account for this.\n- Largely keep your turning %s for left/right in the set {30%, 60%, 100%}.",
+  "prompt_sha256": "dae67512e0cc9e3a1e2bb40e2958d7928e8c385ac80893dc691041066c53badf",
+  "normalization": "Remove app-specific leading context and Grok user_query wrapper; strip outer whitespace only. Common driving text matches all four sources exactly.",
+  "sources": [
+    {
+      "model": "astra",
+      "source": "traces/segments/2026-09-17-24137e/chat/codex-rollout-2026-09-17T14-02-15-01a0b12d-5f34-7490-8f29-8e5351dc2a3d.jsonl",
+      "line": 9,
+      "sha256": "71004931e63883f5421af86816a1614b861954d14cbebb50213fea2ec27f974d"
+    },
+    {
+      "model": "sol",
+      "source": "traces/segments/2026-09-17-5ceee7/chat/codex-rollout-2026-09-17T14-18-10-01a0b13b-f094-7361-be79-43c5ecfe3bea.jsonl",
+      "line": 9,
+      "sha256": "2a084c79e713ecbc0cd7766c4fd84644c60bdd92885c38e50421907fdb047827"
+    },
+    {
+      "model": "fable",
+      "source": "traces/segments/2026-09-17-18ade2/chat/claude-0b6ac292-e5ee-4ff4-83f2-aedb7eca089c.jsonl",
+      "line": 3,
+      "sha256": "7671368cf48cab39b1592cc68c6511714c77d99f82147b289a452cfa0845cf01"
+    },
+    {
+      "model": "grok",
+      "source": "traces/segments/2026-09-17-f1762a/chat/cursor-3fc87a13-fd86-494e-80ce-d256bc6b92a2.jsonl",
+      "line": 1,
+      "sha256": "6dad0db8f1ae1dedd5cfaae84e36a4979a13d9635dd0f279220ba0cd30399ed3"
+    }
+  ]
+}

@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DrivingBench simulator · Operator</title>
+<style>
+:root {
+  font:15px system-ui,sans-serif;
+  color:#dfe8f1;
+  background:#101720;
+  color-scheme:dark}
+* {
+  box-sizing:border-box}
+body {
+  margin:0}
+header {
+  position:sticky;top:0;z-index:10;background:#101720;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:18px 24px;
+  border-bottom:1px solid #314154}
+h1 {
+  margin:0;
+  font-size:22px}
+h2 {
+  font-size:16px;
+  margin:0 0 12px}
+.subtle {
+  color:#9baebe;
+  font-size:13px}
+.layout {
+  display:grid;
+  grid-template-columns:minmax(540px,1.65fr) minmax(330px,1fr);
+  gap:18px;
+  padding:18px 24px}
+.panel {
+  background:#17222e;
+  border:1px solid #314154;
+  border-radius:10px;
+  padding:16px;
+  margin-bottom:16px}
+.camera-view {
+  width:100%;
+  aspect-ratio:1344/760;
+  object-fit:contain;
+  background:#060b12;
+  border-radius:6px;
+  display:block}
+.camera-card {
+  margin:12px 0 0}
+.camera-card figcaption {
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:6px}
+.bar {
+  display:flex;
+  gap:10px;
+  align-items:center;
+  flex-wrap:wrap;
+  margin:10px 0}
+.bar>span:first-child {
+  flex:1}
+button,input,select {
+  font:inherit;
+  border:1px solid #536679;
+  border-radius:5px;
+  padding:8px;
+  background:#223242;
+  color:inherit}
+button {
+  cursor:pointer}
+button:hover {
+  background:#324a60}
+button:disabled {
+  cursor:default;
+  opacity:.45}
+.primary {
+  background:#126c90}
+.stop {
+  background:#94322f;
+  font-weight:700;
+  min-width:110px}
+button.active {
+  outline:2px solid #5bc7f0}
+fieldset {
+  border:0;
+  padding:0;
+  margin:0}
+.fields {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px}
+label {
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  font-size:13px}
+input,select {
+  min-width:0;
+  width:100%}
+.wide {
+  grid-column:1/-1}
+#map {
+  width:100%;
+  height:480px;
+  background:#0c151e;
+  border:1px solid #314154;
+  border-radius:6px;
+  touch-action:none}
+#map.browse {
+  cursor:crosshair}
+.legend {
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  font-size:12px;
+  margin:8px 0;
+  color:#adbac7}
+.legend b {
+  font-size:16px}
+pre {
+  font:12px ui-monospace,monospace;
+  overflow:auto;
+  max-height:260px;
+  background:#0c151e;
+  padding:12px;
+  border-radius:5px;
+  white-space:pre}
+details {
+  margin-top:12px}
+summary {
+  cursor:pointer;
+  font-size:13px}
+#feedback {
+  white-space:pre-wrap;
+  min-height:22px;
+  line-height:1.4;
+  color:#85d8b9}
+#feedback.error {
+  color:#ffb1a5}
+.note {
+  color:#e6c986;
+  font-size:13px;
+  line-height:1.5}
+.stats {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin:12px 0}
+.stats div {
+  background:#101a25;
+  padding:10px;
+  border-radius:5px}
+.stats strong {
+  display:block;
+  font-size:18px;
+  margin-top:5px}
+.hidden {
+  display:none!important}
+@media(max-width:980px) {
+  .layout {
+  grid-template-columns:1fr;
+  padding:14px}
+.fields {
+  grid-template-columns:repeat(2,1fr)}
+header {
+  position:sticky;top:0;z-index:10;background:#101720;
+  padding:14px}
+#map {
+  height:400px}
+}
+</style>
+</head>
+<body>
+<header>
+<div>
+<h1>DrivingBench simulator</h1>
+<div class="subtle">Local operator · UI v1 · live car dynamics</div>
+</div>
+<div class="bar">
+<button id="driveMode" class="active">Drive</button>
+<button id="browseMode">Browse</button>
+<button id="stop" class="stop" disabled>Stop now</button>
+</div>
+</header>
+<main class="layout">
+<section>
+<div class="panel">
+<div class="bar">
+<span id="viewLabel">Drive · waiting for observe</span>
+<span id="frameAge" class="subtle">No frame</span>
+</div>
+<div id="driveViews"></div>
+<img id="view" class="camera-view hidden" alt="Browse narrow-camera view">
+<div class="stats">
+<div>Speed<strong id="speed">—</strong>
+</div>
+<div>Steering<strong id="steering">—</strong>
+</div>
+<div>State<strong id="driveState">—</strong>
+</div>
+</div>
+<div id="feedback" role="status" aria-live="polite">Connecting to simulator…</div>
+<details>
+<summary>Exact latest /observe JSON (including image data)</summary>
+<pre id="observeJson">Waiting for /observe</pre>
+</details>
+</div>
+<div class="panel" id="drivePanel">
+<h2>Drive controls</h2>
+<form id="motionForm">
+<fieldset id="motionControls" disabled>
+<div class="fields">
+<label>Direction<select id="direction">
+<option value="straight">Straight</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</label>
+<label>Steering (%)<input id="steeringInput" type="number" min="0" max="100" step="any" value="0" required>
+</label>
+<label>Speed (m/s)<input id="speedInput" type="number" step="any" value="1" required>
+</label>
+<label>Duration (s)<input id="durationInput" type="number" step="any" value="10" required>
+</label>
+<label class="wide">Reason (optional, recorded only)<input id="reason" maxlength="200" placeholder="Optional note">
+</label>
+</div>
+<div class="bar">
+<span id="limits" class="subtle">Loading shared command limits…</span>
+<button class="primary" type="submit">Set motion</button>
+</div>
+</fieldset>
+</form>
+<p class="subtle">These controls call the producer’s /motion and /stop endpoints. Commands run for their declared duration; the map does not steer the car.</p>
+</div>
+<div class="panel hidden" id="browsePanel">
+<h2>Browse viewpoints</h2>
+<p class="note">Browse shows only the narrow camera at a free viewpoint. Physics and any active driving command continue. Stop now remains available.</p>
+<form id="browseForm">
+<div class="fields">
+<label>Map X (m)<input id="browseX" type="number" step="any" required>
+</label>
+<label>Map Y (m)<input id="browseY" type="number" step="any" required>
+</label>
+<label>Heading (degrees)<input id="browseHeading" type="number" step="any" required>
+</label>
+<label>Translation step (m)<input id="browseStep" type="number" step="0.1" min="0.1" value="1" required>
+</label>
+</div>
+<div class="bar">
+<button type="button" id="carView">Use car pose</button>
+<button type="submit" class="primary">Render viewpoint</button>
+</div>
+</form>
+<p class="subtle">Click the map to move the viewpoint. Arrow keys translate forward/back/left/right; Q/E turn by 5°. Coordinates use the authored ground map and the car’s camera mounting offset. Requests are serialized; live Drive capture has priority.</p>
+</div>
+</section>
+<aside>
+<div class="panel">
+<div class="bar">
+<h2>Course map</h2>
+<span class="subtle" id="simTime">—</span>
+</div>
+<svg id="map" aria-label="Course map: click to place a Browse viewpoint" tabindex="0">
+</svg>
+<div class="legend">
+<span>
+<b style="color:#76d9f6">▰</b> Car</span>
+<span>
+<b style="color:#bbb0fa">─</b> Trail</span>
+<span>
+<b style="color:#59c59c">▧</b> Finish</span>
+<span>
+<b style="color:#ff7388">●</b> Touched marker</span>
+</div>
+<div id="episodeStatus" class="subtle">Waiting for episode state</div>
+<details>
+<summary>Episode outcome and camera diagnostics</summary>
+<pre id="episodeJson">
+</pre>
+</details>
+</div>
+<div class="panel">
+<h2>Scenario restrictions</h2>
+<p class="subtle" id="restrictionStatus">Loading active declaration…</p>
+<pre id="declarationJson"></pre>
+<details>
+<summary>Active episode stop policy</summary>
+<pre id="policyJson">
+</pre>
+</details>
+</div>
+</aside>
+</main>
+<script>
+'use strict';
+const UI_VERSION=1,$=id=>document.getElementById(id),svgNS='http://www.w3.org/2000/svg';
+let mode='drive',controlsReady=false,state=null,protocol=null,lastObserve=null,trail=[],lastTrailTime=null,browsePose=null,browsePending=null,browseBusy=false,browseUrl=null;
+function feedback(text,error=false){
+  $('feedback').textContent=text;
+  $('feedback').classList.toggle('error',error)
+}
+function headers(){
+  return {
+    'Content-Type':'application/json','X-Drivingbench-Protocol':String(protocol),'X-Sim-Operator-Version':String(UI_VERSION),'X-Client':'sim-operator/v1'
+  }
+}
+async function getJson(path,options={
+}
+){
+  const response=await fetch(path,{
+    cache:'no-store',...options
+  }
+  );
+  const raw=await response.text();
+  let value;
+  try{
+    value=JSON.parse(raw)
+  }
+  catch{
+    throw new Error(`${path}: ${response.status} ${raw.slice(0,180)}`)
+  }
+  if(!response.ok)throw new Error(`${path}: ${response.status} ${JSON.stringify(value)}`);
+  return {
+    value,raw
+  }
+}
+function showDrive(){
+  $('driveViews').classList.remove('hidden');
+  $('view').classList.add('hidden');
+  $('driveViews').replaceChildren();
+  const images=(lastObserve?.images||[]).filter(image=>['narrow','wide'].includes(image.camera));
+  for(const image of images){
+    const card=document.createElement('figure'),caption=document.createElement('figcaption'),name=document.createElement('span'),age=document.createElement('span'),view=document.createElement('img');
+    card.className='camera-card';
+    name.textContent=image.camera==='narrow'?'Narrow':'Wide';
+    age.className='subtle';
+    age.textContent=typeof image.age_s==='number'&&Number.isFinite(image.age_s)?`Observed image age ${image.age_s.toFixed(2)} s`:'Image age unavailable';
+    caption.append(name,age);
+    view.className='camera-view';
+    view.alt=`${name.textContent} road-camera observe image`;
+    view.src=`data:${image.mime_type};base64,${image.data}`;
+    card.append(caption,view);
+    $('driveViews').append(card)
+  }
+  $('frameAge').textContent=images.length?`${images.length} camera${images.length===1?'':'s'}`:lastObserve?'Camera unavailable':'No frame';
+  $('viewLabel').textContent='Drive · exact latest observe images'
+}
+function setMode(next){
+  mode=next;
+  $('driveMode').classList.toggle('active',mode==='drive');
+  $('browseMode').classList.toggle('active',mode==='browse');
+  $('drivePanel').classList.toggle('hidden',mode!=='drive');
+  $('browsePanel').classList.toggle('hidden',mode!=='browse');
+  $('map').classList.toggle('browse',mode==='browse');
+  $('motionControls').disabled=mode!=='drive'||!controlsReady;
+  if(mode==='browse'){
+    $('driveViews').classList.add('hidden');
+    $('view').classList.remove('hidden');
+    $('view').removeAttribute('src');
+    $('viewLabel').textContent='Browse · narrow camera';
+    $('frameAge').textContent='Free viewpoint — not an observe frame';
+    if(!browsePose&&state)browsePose=[...state.pose.map_pose];
+    if(browsePose){
+      writeBrowse();
+      queueBrowse()
+    }
+  }
+  else{
+    browsePending=null;
+    showDrive()
+  }
+  drawMap()
+}
+function writeBrowse(){
+  if(!browsePose)return;
+  ['browseX','browseY','browseHeading'].forEach((id,i)=>$(id).value=Number(browsePose[i]).toFixed(2))
+}
+function readBrowse(){
+  const pose=['browseX','browseY','browseHeading'].map(id=>Number($(id).value));
+  if(!pose.every(Number.isFinite))throw new Error('Browse coordinates must be finite');
+  browsePose=pose;
+  return pose
+}
+async function queueBrowse(){
+  if(!browsePose||mode!=='browse'||!state)return;
+  browsePending=[...browsePose];
+  drawMap();
+  if(browseBusy)return;
+  browseBusy=true;
+  try{
+    while(browsePending&&mode==='browse'){
+      const pose=browsePending;
+      browsePending=null;
+      $('viewLabel').textContent='Browse · narrow camera · waiting for worker';
+      const response=await fetch('/sim/browse',{
+        method:'POST',headers:headers(),body:JSON.stringify({
+          x:pose[0],y:pose[1],heading_deg:pose[2]
+        }
+        )
+      }
+      );
+      if(!response.ok)throw new Error(`Browse ${response.status}: ${await response.text()}`);
+      const blob=await response.blob();
+      if(mode==='browse'){
+        if(browseUrl)URL.revokeObjectURL(browseUrl);
+        browseUrl=URL.createObjectURL(blob);
+        $('view').src=browseUrl;
+        $('viewLabel').textContent=`Browse · narrow camera · (${pose[0].toFixed(1)}, ${pose[1].toFixed(1)}) m · ${pose[2].toFixed(1)}°`;
+        $('frameAge').textContent='Free viewpoint — not an observe frame';
+        feedback('Browse ready. Live car dynamics continue.')
+      }
+    }
+  }
+  catch(error){
+    feedback(error.message,true)
+  }
+  finally{
+    browseBusy=false
+  }
+}
+function element(tag,attrs,parent){
+  const node=document.createElementNS(svgNS,tag);
+  Object.entries(attrs).forEach(([key,value])=>node.setAttribute(key,String(value)));
+  parent.append(node);
+  return node
+}
+function drawMap(){
+  if(!state)return;
+  const map=$('map'),scene=state.scene;
+  map.replaceChildren();
+  const polygon=[...scene.boundaries.left,...[...scene.boundaries.right].reverse()];
+  const all=[...polygon,...scene.finish.polygon,[...state.pose.map_pose]];
+  if(browsePose)all.push(browsePose);
+  const xs=all.map(p=>p[0]),ys=all.map(p=>p[1]);
+  const xmin=Math.min(...xs)-5,xmax=Math.max(...xs)+5,ymin=Math.min(...ys)-5,ymax=Math.max(...ys)+5;
+  map.setAttribute('viewBox',`${xmin} ${-ymax} ${xmax-xmin} ${ymax-ymin}`);
+  const group=element('g',{
+    'transform':'scale(1,-1)'
+  }
+  ,map);
+  const points=values=>values.map(p=>`${p[0]},${p[1]}`).join(' ');
+  element('polygon',{
+    points:points(polygon),fill:'#243441',stroke:'#8197a7','stroke-width':.12
+  }
+  ,group);
+  element('polygon',{
+    points:points(scene.finish.polygon),fill:'#255e4c',stroke:'#65bd98','stroke-width':.12
+  }
+  ,group);
+  element('polyline',{
+    points:points(trail),fill:'none',stroke:'#bbb0fa','stroke-width':.18
+  }
+  ,group);
+  const touched=new Set(state.episode?.touched_ids||[]);
+  for(const marker of scene.markers){
+    element('circle',{
+      cx:marker.x,cy:marker.y,r:Math.max(marker.collision_radius_m,.19),fill:touched.has(marker.id)?'#ff7388':`rgb(${(marker.color_srgb||[.8,.5,.3]).map(v=>Math.round(v*255)).join(',')})`,stroke:touched.has(marker.id)?'#fff':'none','stroke-width':.06
+    }
+    ,group)
+  }
+  function vehicle(pose,color,outline=false){
+    const car=element('g',{
+      transform:`translate(${pose[0]} ${pose[1]}) rotate(${pose[2]})`
+    }
+    ,group);
+    element('rect',{
+      x:-state.vehicle.length_m/2,y:-state.vehicle.width_m/2,width:state.vehicle.length_m,height:state.vehicle.width_m,rx:.2,fill:outline?'none':color,stroke:color,'stroke-width':.15
+    }
+    ,car);
+    element('path',{
+      d:'M 0 0 L 3 0 M 2.3 -.5 L 3 0 L 2.3 .5',fill:'none',stroke:color,'stroke-width':.2
+    }
+    ,car)
+  }
+  vehicle(state.pose.map_pose,state.pose.outside_course?'#ff7388':'#76d9f6');
+  if(mode==='browse'&&browsePose)vehicle(browsePose,'#ffd585',true)
+}
+async function refreshState(){
+  try{
+    const {
+      value
+    }
+    =await getJson('/sim/state');
+    if(value.ui_version!==UI_VERSION)throw new Error('Operator version changed. Reload this page.');
+    if(!state)feedback('Connected. Drive commands use the producer directly.');
+    state=value;
+    controlsReady=true;
+    protocol=value.protocol;
+    $('stop').disabled=false;
+    $('motionControls').disabled=mode!=='drive';
+    const speedRange=value.controls.speed_range_mps,durationRange=value.controls.duration_range_s;
+    $('speedInput').min=speedRange[0];
+    $('speedInput').max=value.settings.speed_limit_mps;
+    $('durationInput').min=durationRange[0];
+    $('durationInput').max=durationRange[1];
+    $('limits').textContent=`Speed ${speedRange[0]}–${value.settings.speed_limit_mps} m/s · duration ${durationRange[0]}–${durationRange[1]} s`;
+    if(lastTrailTime!==value.pose.sim_time_s){
+      trail.push([...value.pose.map_pose]);
+      if(trail.length>10000)trail.shift();
+      lastTrailTime=value.pose.sim_time_s
+    }
+    $('simTime').textContent=`${value.pose.sim_time_s.toFixed(2)} s`;
+    $('episodeStatus').textContent=`${value.episode?.outcome||'Starting'} · touched ${value.episode?.touched_ids?.length||0} · exits ${value.episode?.exit_count||0} · ${value.pose.finish_reached?'inside finish':'finish pending'}${value.pose.outside_course?' · OUTSIDE CORRIDOR':''}`;
+    $('episodeJson').textContent=JSON.stringify({
+      episode:value.episode,camera:value.camera
+    }
+    ,null,2);
+    $('policyJson').textContent=JSON.stringify(value.episode_policy,null,2);
+    const restrictions=value.declaration?.restrictions||{};
+    $('restrictionStatus').textContent=Object.keys(restrictions).length?'Declared configuration shown below. This panel does not change or enable restriction enforcement.':'Declared restrictions: none. No Step 5 restrictions are enabled. This panel is read-only.';
+    $('declarationJson').textContent=JSON.stringify(value.declaration,null,2);
+    drawMap()
+  }
+  catch(error){
+    controlsReady=false;
+    $('motionControls').disabled=true;
+    feedback(error.message,true)
+  }
+  finally{
+    setTimeout(refreshState,250)
+  }
+}
+async function refreshObserve(){
+  try{
+    const {
+      value,raw
+    }
+    =await getJson('/observe',{
+      headers:{
+        'X-Client':'sim-operator/v1'
+      }
+    }
+    );
+    lastObserve=value;
+    $('observeJson').textContent=raw;
+    $('speed').textContent=value.speed_mps==null?'—':`${Number(value.speed_mps).toFixed(2)} m/s`;
+    $('steering').textContent=value.steering_percent==null?'—':`${value.steering_percent}%`;
+    $('driveState').textContent=value.state||'—';
+    if(mode==='drive')showDrive()
+  }
+  catch(error){
+    feedback(error.message,true)
+  }
+  finally{
+    setTimeout(refreshObserve,500)
+  }
+}
+$('driveMode').onclick=()=>setMode('drive');
+$('browseMode').onclick=()=>setMode('browse');
+$('motionForm').onsubmit=async event=>{
+  event.preventDefault();
+  if(!controlsReady||mode!=='drive')return;
+  const body={
+    direction:$('direction').value,steering_percent:Number($('steeringInput').value),speed_mps:Number($('speedInput').value),duration_s:Number($('durationInput').value)
+  }
+  ;
+  if($('reason').value)body.reason=$('reason').value;
+  try{
+    const {
+      value
+    }
+    =await getJson('/motion',{
+      method:'POST',headers:headers(),body:JSON.stringify(body)
+    }
+    );
+    feedback(JSON.stringify(value),Boolean(value.error))
+  }
+  catch(error){
+    feedback(error.message,true)
+  }
+}
+;
+$('stop').onclick=async()=>{
+  try{
+    const {
+      value
+    }
+    =await getJson('/stop',{
+      method:'POST',headers:headers(),body:'{}'
+    }
+    );
+    feedback(JSON.stringify(value),Boolean(value.error))
+  }
+  catch(error){
+    feedback(error.message,true)
+  }
+}
+;
+$('browseForm').onsubmit=event=>{
+  event.preventDefault();
+  try{
+    readBrowse();
+    queueBrowse()
+  }
+  catch(error){
+    feedback(error.message,true)
+  }
+}
+;
+$('carView').onclick=()=>{
+  if(state){
+    browsePose=[...state.pose.map_pose];
+    writeBrowse();
+    queueBrowse()
+  }
+}
+;
+$('map').onclick=event=>{
+  if(mode!=='browse'||!state)return;
+  const point=$('map').createSVGPoint();
+  point.x=event.clientX;
+  point.y=event.clientY;
+  const local=point.matrixTransform($('map').getScreenCTM().inverse());
+  browsePose=[local.x,-local.y,browsePose?.[2]??state.pose.map_pose[2]];
+  writeBrowse();
+  queueBrowse()
+}
+;
+window.addEventListener('keydown',event=>{
+  if(event.ctrlKey||event.metaKey||event.altKey||mode!=='browse'||!browsePose||['INPUT','TEXTAREA','SELECT'].includes(event.target.tagName))return;
+  const key=event.key.toLowerCase();
+  if(!['arrowup','arrowdown','arrowleft','arrowright','q','e'].includes(key))return;
+  event.preventDefault();
+  const step=Number($('browseStep').value);
+  if(!Number.isFinite(step)||step<=0){
+    feedback('Translation step must be positive',true);
+    return
+  }
+  const angle=browsePose[2]*Math.PI/180,c=Math.cos(angle),s=Math.sin(angle);
+  if(key==='q')browsePose[2]+=5;
+  else if(key==='e')browsePose[2]-=5;
+  else{
+    const forward=key==='arrowup'?step:key==='arrowdown'?-step:0,left=key==='arrowleft'?step:key==='arrowright'?-step:0;
+    browsePose[0]+=c*forward-s*left;
+    browsePose[1]+=s*forward+c*left
+  }
+  writeBrowse();
+  queueBrowse()
+}
+);
+refreshState();
+refreshObserve();
+</script>
+</body></html>

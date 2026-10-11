@@ -1,0 +1,278 @@
+{
+  "status": "bounded visual presence index, not per-session geometry or movement truth",
+  "coverage": "13 unique sessions,14 session/route overlaps;12 course-present examples,1 earlier empty sampled patch,1 overlap with no registered image",
+  "method": "Existing registered frames only; maximize projected marker-area visibility, then manually inspect actual crop. Pilot geometry is not assigned to these sessions.",
+  "figure": "docs/sim/marker-session-layouts.jpg",
+  "source": "runs/sim/visual/marker-layouts/broad/sessions.json",
+  "records": [
+    {
+      "session": "2026-09-17-gpt-6-astra-codex-af2796",
+      "notes": "testing",
+      "route": "00000041--fdf9cede4b",
+      "registered_frames_available": 596,
+      "course_presence": "not visible in sampled patch",
+      "layout_geometry": "unassigned; no per-session marker correspondence established",
+      "utc": "2026-09-17T20:38:24.079965+00:00",
+      "crop_bounds": [
+        0,
+        380,
+        1344,
+        760
+      ],
+      "review": "Reviewed actual pavement crop: expected course rows absent in this unobstructed sampled area. Does not establish absence at every marker location.",
+      "frame_name": "00000041--fdf9cede4b--052--0480.jpg",
+      "route_time_s": 3169.535605299,
+      "image_path": "runs/sim/visual/site1/images/00000041--fdf9cede4b--052--0480.jpg",
+      "image_sha256": "c768098f0f9264de22c7b3cc6c4ad9a12d1f3fb3395edf560599f6f43ba67288"
+    },
+    {
+      "session": "2026-09-17-gpt-6-astra-codex-664abe",
+      "notes": "final day lot, 1",
+      "route": "00000042--544757d3f5",
+      "registered_frames_available": 587,
+      "course_presence": "yes",
+      "layout_geometry": "unassigned; no per-session marker correspondence established",
+      "utc": "2026-09-17T20:58:41.995364+00:00",
+      "crop_bounds": [
+        0,
+        380,
+        1344,
+        760
+      ],
+      "review": "Reviewed actual crop: multiple colored dome markers visibly delineate a course. Per-marker identity, precise layout and movement remain unverified.",
+      "frame_name": "00000042--544757d3f5--007--0540.jpg",
+      "route_time_s": 469.79417474400003,
+      "image_path": "runs/sim/visual/site1/images/00000042--544757d3f5--007--0540.jpg",
+      "image_sha256": "aeab9864541709a828ec60018b68a317a1245f87a80c0aae2a38d7a92dda6160"
+    },
+    {
+      "session": "2026-09-17-gpt-5-6-sol-codex-4fd054",
+      "notes": "final day lot, 1",
+      "route": "00000042--544757d3f5",
+      "registered_frames_available": 63,
+      "course_presence": "yes",
+      "layout_geometry": "unassigned; no per-session marker correspondence established",
+      "utc": "2026-09-17T21:20:28.993600+00:00",
+      "crop_bounds": [
+        0,
+        380,
+        1344,
+        760
+      ],
+      "review": "Reviewed actual crop: multiple colored dome markers visibly delineate a course. Per-marker identity, precise layout and movement remain unverified.",
+      "frame_name": "00000042--544757d3f5--029--0280.jpg",
+      "route_time_s": 1776.792410038,
+      "image_path": "runs/sim/visual/site1/images/00000042--544757d3f5--029--0280.jpg",
+      "image_sha256": "c72a8ab759b58c2b67efdb1c5b6faa6ae0cf0c75f61db2503f68d178c1bf788b"
+    },
+    {
+      "session": "2026-09-17-claude-fable-5-1-claude-b6d67a",
+      "notes": "final day lot, 1",
+      "route": "00000042--544757d3f5",
+      "registered_frames_available": 241,
+      "course_presence": "yes",
+      "layout_geometry": "unassigned; no per-session marker correspondence established",
+      "utc": "2026-09-17T21:37:40.981453+00:00",
+      "crop_bounds": [
+        0,
+        380,
+        1344,
+        760
+      ],
+      "review": "Reviewed actual crop: multiple colored dome markers visibly delineate a course. Per-marker identity, precise layout and movement remain unverified.",
+      "frame_name": "00000042--544757d3f5--046--0520.jpg",
+      "route_time_s": 2808.780262873,
+      "image_path": "runs/sim/visual/site1/images/00000042--544757d3f5--046--0520.jpg",
+      "image_sha256": "e1037477d667e26a921f0ea3b733f8b2f50a989ccbdf2b765b419339ea99a5c7"
+    },
+    {
+      "session": "2026-09-17-grok-4-6-cursor-b022a2",
+      "notes": "final day lot, 1",
+      "route": "00000042--544757d3f5",
+      "registered_frames_available": 26,
+      "course_presence": "yes",
+      "layout_geometry": "unassigned; no per-session marker correspondence established",
+      "utc": "2026-09-17T21:41:25.979604+00:00",
+      "crop_bounds": [
+        0,
+        380,
+        1344,
+        760
+      ],
+      "review": "Reviewed actual crop: multiple colored dome markers visibly delineate a course. Per-marker identity, precise layout and movement remain unverified.",
+      "frame_name": "00000042--544757d3f5--050--0220.jpg",
+      "route_time_s": 3033.7784145640003,
+      "image_path": "runs/sim/visual/site1/images/00000042--544757d3f5--050--0220.jpg",
+      "image_sha256": "43934ce8b0e4b935ae4c77013d417f7d08d262e13cdb6ac3b9aa3b3b30cc6e83"
+    },
+    {
+      "session": "2026-09-17-grok-4-6-cursor-255638",
+      "notes": "final day lot, 1 ACTUAL",
+      "route": "00000042--544757d3f5",
+      "registered_frames_available": 129,
+      "course_presence": "yes",
+      "layout_geometry": "unassigned; no per-session marker correspondence established",
+      "utc": "2026-09-17T21:48:25.976955+00:00",
+      "crop_bounds": [
+        0,
+        380,
+        1344,
+        760
+      ],
+      "review": "Reviewed actual crop: multiple colored dome markers visibly delineate a course. Per-marker identity, precise layout and movement remain unverified.",
+      "frame_name": "00000042--544757d3f5--057--0220.jpg",
+      "route_time_s": 3453.775765411,
+      "image_path": "runs/sim/visual/site1/images/00000042--544757d3f5--057--0220.jpg",
+      "image_sha256": "27f1a37d50b3cbca3aaea945c096a1730bb7d4bba4c32a0f5a8d32f664ce76a0"
+    },
+    {
+      "session": "2026-09-17-client-picker-gpt-5-6-luna-fast-other-084176",
+      "notes": "You are in a course delineated by mini-cones (small multicol",
+      "route": "00000042--544757d3f5",
+      "registered_frames_available": 23,
+      "course_presence": "yes",
+      "layout_geometry": "unassigned; no per-session marker correspondence established",
+      "utc": "2026-09-17T21:50:42.976195+00:00",
+      "crop_bounds": [
+        0,
+        380,
+        1344,
+        760
+      ],
+      "review": "Reviewed actual crop: multiple colored dome markers visibly delineate a course. Per-marker identity, precise layout and movement remain unverified.",
+      "frame_name": "00000042--544757d3f5--059--0560.jpg",
+      "route_time_s": 3590.775005498,
+      "image_path": "runs/sim/visual/site1/images/00000042--544757d3f5--059--0560.jpg",
+      "image_sha256": "6714ddf2833070f442b4ee9d832d057a918d2c38dfc9eaade1ae1b1b3b598950"
+    },
+    {
+      "session": "2026-09-17-client-picker-gpt-5-6-luna-fast-memory-other-e77ea1",
+      "notes": "You are in a course delineated by mini-cones (small multicol",
+      "route": "00000042--544757d3f5",
+      "registered_frames_available": 53,
+      "course_presence": "yes",
+      "layout_geometry": "unassigned; no per-session marker correspondence established",
+      "utc": "2026-09-17T21:52:48.975579+00:00",
+      "crop_bounds": [
+        0,
+        380,
+        1344,
+        760
+      ],
+      "review": "Reviewed actual crop: multiple colored dome markers visibly delineate a course. Per-marker identity, precise layout and movement remain unverified.",
+      "frame_name": "00000042--544757d3f5--061--0680.jpg",
+      "route_time_s": 3716.77438926,
+      "image_path": "runs/sim/visual/site1/images/00000042--544757d3f5--061--0680.jpg",
+      "image_sha256": "0e42dcaaf85fd2f31e7739e265366e578ad5ab08a4325b523436e912dfe76035"
+    },
+    {
+      "session": "2026-09-17-client-picker-gpt-5-6-luna-fast-memory-other-a268b3",
+      "notes": "You are in a course delineated by mini-cones (small multicol",
+      "route": "00000042--544757d3f5",
+      "registered_frames_available": 34,
+      "course_presence": "yes",
+      "layout_geometry": "unassigned; no per-session marker correspondence established",
+      "utc": "2026-09-17T21:54:03.975198+00:00",
+      "crop_bounds": [
+        0,
+        380,
+        1344,
+        760
+      ],
+      "review": "Reviewed actual crop: multiple colored dome markers visibly delineate a course. Per-marker identity, precise layout and movement remain unverified.",
+      "frame_name": "00000042--544757d3f5--062--0980.jpg",
+      "route_time_s": 3791.774007843,
+      "image_path": "runs/sim/visual/site1/images/00000042--544757d3f5--062--0980.jpg",
+      "image_sha256": "fd1471a3381bedc53da44a62161855c6c7ec202ba3351733215cfeb2fd917db9"
+    },
+    {
+      "session": "2026-09-17-client-picker-gpt-5-6-luna-fast-memory-other-84266d",
+      "notes": "You are in a course delineated by mini-cones (small multicol",
+      "route": "00000042--544757d3f5",
+      "registered_frames_available": 48,
+      "course_presence": "yes",
+      "layout_geometry": "unassigned; no per-session marker correspondence established",
+      "utc": "2026-09-17T21:55:25.974816+00:00",
+      "crop_bounds": [
+        0,
+        380,
+        1344,
+        760
+      ],
+      "review": "Reviewed actual crop: multiple colored dome markers visibly delineate a course. Per-marker identity, precise layout and movement remain unverified.",
+      "frame_name": "00000042--544757d3f5--064--0220.jpg",
+      "route_time_s": 3873.7736266180004,
+      "image_path": "runs/sim/visual/site1/images/00000042--544757d3f5--064--0220.jpg",
+      "image_sha256": "5a1f468eb2e8977e56f3aece115d2814ef99ca184c1a5f36fbb87fb16c4a9ced"
+    },
+    {
+      "session": "2026-09-17-gpt-6-astra-codex-2da073",
+      "notes": "final day lot, 1 ACTUAL - 3rd attempt",
+      "route": "00000042--544757d3f5",
+      "registered_frames_available": 39,
+      "course_presence": "yes",
+      "layout_geometry": "unassigned; no per-session marker correspondence established",
+      "utc": "2026-09-17T22:06:35.959239+00:00",
+      "crop_bounds": [
+        0,
+        380,
+        1344,
+        760
+      ],
+      "review": "Reviewed actual crop: multiple colored dome markers visibly delineate a course. Per-marker identity, precise layout and movement remain unverified.",
+      "frame_name": "00000042--544757d3f5--075--0420.jpg",
+      "route_time_s": 4543.758049627,
+      "image_path": "runs/sim/visual/site1/images/00000042--544757d3f5--075--0420.jpg",
+      "image_sha256": "d15be838b5167ba212556772fbc06ed5f77474876cca95955be4d195be008401"
+    },
+    {
+      "session": "2026-09-17-gpt-6-astra-codex-457f46",
+      "notes": "final day lot, 2nd trial",
+      "route": "00000042--544757d3f5",
+      "registered_frames_available": 191,
+      "course_presence": "yes",
+      "layout_geometry": "unassigned; no per-session marker correspondence established",
+      "utc": "2026-09-17T22:13:02.951272+00:00",
+      "crop_bounds": [
+        0,
+        380,
+        1344,
+        760
+      ],
+      "review": "Reviewed actual crop: multiple colored dome markers visibly delineate a course. Per-marker identity, precise layout and movement remain unverified.",
+      "frame_name": "00000042--544757d3f5--081--0960.jpg",
+      "route_time_s": 4930.750082052,
+      "image_path": "runs/sim/visual/site1/images/00000042--544757d3f5--081--0960.jpg",
+      "image_sha256": "02c27c293cb4ac8af0bdf0eb3ac22ed27a185c63910f7c313ce056e1fec2566d"
+    },
+    {
+      "session": "2026-09-17-gpt-5-6-sol-codex-414037",
+      "notes": "final day lot, 2nd trial",
+      "route": "00000042--544757d3f5",
+      "registered_frames_available": 34,
+      "course_presence": "yes",
+      "layout_geometry": "unassigned; no per-session marker correspondence established",
+      "utc": "2026-09-17T22:26:11.940917+00:00",
+      "crop_bounds": [
+        0,
+        380,
+        1344,
+        760
+      ],
+      "review": "Reviewed actual crop: multiple colored dome markers visibly delineate a course. Per-marker identity, precise layout and movement remain unverified.",
+      "frame_name": "00000042--544757d3f5--094--1140.jpg",
+      "route_time_s": 5719.739727676,
+      "image_path": "runs/sim/visual/site1/images/00000042--544757d3f5--094--1140.jpg",
+      "image_sha256": "466e42c2377a49d593adde161a794d6778392ee85ded17d3b438ba7875cfaeaa"
+    },
+    {
+      "session": "2026-09-17-gpt-6-astra-codex-af2796",
+      "notes": "testing",
+      "route": "00000042--544757d3f5",
+      "registered_frames_available": 0,
+      "course_presence": "unknown",
+      "layout_geometry": "unassigned; no per-session marker correspondence established",
+      "review": "No registered moving image in this session/route overlap; no appearance conclusion."
+    }
+  ]
+}

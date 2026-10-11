@@ -1,0 +1,1619 @@
+{
+  "schema_version": 1,
+  "status": "development assets; appearance/occlusion not yet validated in renderer",
+  "method": "Unchanged in-scene generated RGB with geometrically registered built-in generated alpha; no matte painting. Approximate silhouettes can retain source-background fringes.",
+  "tool": "image_gen.imagegen",
+  "provenance_path": "runs/sim/review-2/assets/v1/generation-provenance.json",
+  "assets": {
+    "adult": {
+      "path": "runs/sim/review-2/assets/v1/adult-body.png",
+      "sha256": "94aada9b4348ecb12c5a95234431c27ec886b34b13361a1b67647afdbe7beea4",
+      "nominal_height_m": 1.75,
+      "visible_count": 1,
+      "image_size_px": [
+        140,
+        356
+      ],
+      "plane_width_m": 0.7515337423312883,
+      "plane_height_m": 1.9110429447852761,
+      "anchor_uv": [
+        0.5,
+        0.9578651685393258
+      ],
+      "ground_anchor_px": [
+        70.0,
+        341
+      ],
+      "alpha_core_bbox_px": [
+        15,
+        15,
+        125,
+        341
+      ],
+      "source_boxes": [
+        [
+          883,
+          426,
+          993,
+          752
+        ]
+      ],
+      "generated_alpha_boxes": [
+        [
+          312,
+          134,
+          716,
+          1359
+        ]
+      ],
+      "source_crop": [
+        868,
+        411,
+        1008,
+        767
+      ],
+      "source_rgb_sha256": "9bcf7dacbce60a8fb0f4880b174730171e2a4273e5e2ebbc5305e4ab5d69619f",
+      "source_alpha_sha256": "a2026aac504fe6f30cea443e9e65eed10bea1abac93e570e085fc368d0f9b4c7",
+      "source_rgb_max_delta": 0,
+      "shadow_strength": 0,
+      "limitations": "Fixed-view sourceRGB; alpha geometrically approximated from generated extraction. Near-ground shadow pixels within bodybox can remain; broad outside-shadow excluded by rectangle geometry.",
+      "shadow_asset": "adult"
+    },
+    "group": {
+      "path": "runs/sim/review-2/assets/v1/group-body.png",
+      "sha256": "fbc0b32b8efddac11059916b996901103587956e61fa51203fb02656098f563f",
+      "nominal_height_m": 1.8,
+      "visible_count": 5,
+      "image_size_px": [
+        869,
+        464
+      ],
+      "plane_width_m": 3.6041474654377885,
+      "plane_height_m": 1.9244239631336408,
+      "anchor_uv": [
+        0.5,
+        0.9676724137931034
+      ],
+      "ground_anchor_px": [
+        434.5,
+        449
+      ],
+      "alpha_core_bbox_px": [
+        15,
+        15,
+        854,
+        449
+      ],
+      "source_boxes": [
+        [
+          398,
+          356,
+          559,
+          787
+        ],
+        [
+          570,
+          396,
+          707,
+          784
+        ],
+        [
+          716,
+          355,
+          873,
+          782
+        ],
+        [
+          904,
+          399,
+          1037,
+          788
+        ],
+        [
+          1076,
+          371,
+          1237,
+          789
+        ]
+      ],
+      "generated_alpha_boxes": [
+        [
+          190,
+          129,
+          455,
+          837
+        ],
+        [
+          462,
+          189,
+          685,
+          836
+        ],
+        [
+          693,
+          124,
+          953,
+          837
+        ],
+        [
+          965,
+          192,
+          1193,
+          839
+        ],
+        [
+          1200,
+          149,
+          1460,
+          845
+        ]
+      ],
+      "source_crop": [
+        383,
+        340,
+        1252,
+        804
+      ],
+      "source_rgb_sha256": "62f3c5b0b78ce7538d08967a7116b32f29a9016b0e5c6f0178fec1315def31bc",
+      "source_alpha_sha256": "2e14b9028c659399a0e1490bca6016cbdbe0af0f07428600c225f92d91d71d53",
+      "source_rgb_max_delta": 0,
+      "shadow_strength": 0,
+      "limitations": "Fixed-view sourceRGB; alpha geometrically approximated from generated extraction. Near-ground shadow pixels within bodybox can remain; broad outside-shadow excluded by rectangle geometry.",
+      "shadow_asset": "group"
+    },
+    "child": {
+      "path": "runs/sim/review-2/assets/v1/child-body.png",
+      "sha256": "8e8138b05c4eb5804c39699dc7f7f4ad9ad77c892b5ca1c9b2abc7bab0aa4ca5",
+      "nominal_height_m": 1.22,
+      "visible_count": 1,
+      "image_size_px": [
+        139,
+        362
+      ],
+      "plane_width_m": 0.5107831325301204,
+      "plane_height_m": 1.3302409638554216,
+      "anchor_uv": [
+        0.5,
+        0.9585635359116023
+      ],
+      "ground_anchor_px": [
+        69.5,
+        347
+      ],
+      "alpha_core_bbox_px": [
+        15,
+        15,
+        124,
+        347
+      ],
+      "source_boxes": [
+        [
+          835,
+          466,
+          944,
+          798
+        ]
+      ],
+      "generated_alpha_boxes": [
+        [
+          303,
+          151,
+          720,
+          1409
+        ]
+      ],
+      "source_crop": [
+        820,
+        451,
+        959,
+        813
+      ],
+      "source_rgb_sha256": "fbd67429f1cde5837c650e8a1364df710d7b8d8addb85c08966652b655e2d6f2",
+      "source_alpha_sha256": "3cd8ef7adeb833ae8e273f2e2104808f3e29b898b8015e5b2e8eb94d0645da14",
+      "source_rgb_max_delta": 0,
+      "shadow_strength": 0,
+      "limitations": "Fixed-view sourceRGB; alpha geometrically approximated from generated extraction. Near-ground shadow pixels within bodybox can remain; broad outside-shadow excluded by rectangle geometry.",
+      "shadow_asset": "child_walk_scaled"
+    },
+    "dog": {
+      "path": "runs/sim/review-2/assets/v1/dog-body.png",
+      "sha256": "16e146420850f769e42627951aad8afef2a79383f09d8476a95ca117ee978c22",
+      "nominal_height_m": 0.8,
+      "visible_count": 1,
+      "image_size_px": [
+        283,
+        232
+      ],
+      "plane_width_m": 1.120792079207921,
+      "plane_height_m": 0.9188118811881189,
+      "anchor_uv": [
+        0.5,
+        0.9353448275862069
+      ],
+      "ground_anchor_px": [
+        141.5,
+        217
+      ],
+      "alpha_core_bbox_px": [
+        15,
+        15,
+        268,
+        217
+      ],
+      "source_boxes": [
+        [
+          765,
+          573,
+          1018,
+          775
+        ]
+      ],
+      "generated_alpha_boxes": [
+        [
+          366,
+          84,
+          1430,
+          896
+        ]
+      ],
+      "source_crop": [
+        750,
+        558,
+        1033,
+        790
+      ],
+      "source_rgb_sha256": "87277b2e88b7f64c5738baa2f35b0a6d7ff7f765808b4269788488cbb31f0a59",
+      "source_alpha_sha256": "88001e53f193fbdb671f10e87e02d0bec7c20ec43bab810759d807f4fb39ad83",
+      "source_rgb_max_delta": 0,
+      "shadow_strength": 0,
+      "limitations": "Fixed-view sourceRGB; alpha geometrically approximated from generated extraction. Near-ground shadow pixels within bodybox can remain; broad outside-shadow excluded by rectangle geometry.",
+      "shadow_asset": "dog",
+      "material_saturation": 0.65
+    },
+    "elderly": {
+      "path": "runs/sim/review-2/assets/v1/elderly-body.png",
+      "sha256": "c24793ce44795d24d3b726010e892089c0445a91784b1153cb324246cf0ce6f9",
+      "nominal_height_m": 1.55,
+      "visible_count": 1,
+      "image_size_px": [
+        197,
+        422
+      ],
+      "plane_width_m": 0.778954081632653,
+      "plane_height_m": 1.6686224489795918,
+      "anchor_uv": [
+        0.5,
+        0.9644549763033176
+      ],
+      "ground_anchor_px": [
+        98.5,
+        407
+      ],
+      "alpha_core_bbox_px": [
+        15,
+        15,
+        182,
+        407
+      ],
+      "source_boxes": [
+        [
+          791,
+          399,
+          958,
+          791
+        ]
+      ],
+      "generated_alpha_boxes": [
+        [
+          665,
+          40,
+          1023,
+          883
+        ]
+      ],
+      "source_crop": [
+        776,
+        384,
+        973,
+        806
+      ],
+      "source_rgb_sha256": "4ea3a3833931dfde7a1711b151c6457ab9bd91aaa76814eea3fe964b8a3365d3",
+      "source_alpha_sha256": "8ee868f6267efff8048d8e87b82401903134403c1e569ae7497670b69cdd2cc2",
+      "source_rgb_max_delta": 0,
+      "shadow_strength": 0,
+      "limitations": "Fixed-view sourceRGB; alpha geometrically approximated from generated extraction. Near-ground shadow pixels within bodybox can remain; broad outside-shadow excluded by rectangle geometry.",
+      "shadow_asset": "elderly"
+    },
+    "robot": {
+      "path": "runs/sim/review-2/assets/v1/robot-body.png",
+      "sha256": "baa206c87cdd76d75bf96379fb7d2a8b35384bde8e9b825f25d194762bf68227",
+      "nominal_height_m": 1.75,
+      "visible_count": 1,
+      "image_size_px": [
+        213,
+        532
+      ],
+      "plane_width_m": 0.7425298804780877,
+      "plane_height_m": 1.8545816733067728,
+      "anchor_uv": [
+        0.5,
+        0.9718045112781954
+      ],
+      "ground_anchor_px": [
+        106.5,
+        517
+      ],
+      "alpha_core_bbox_px": [
+        15,
+        15,
+        198,
+        517
+      ],
+      "source_boxes": [
+        [
+          752,
+          306,
+          935,
+          808
+        ]
+      ],
+      "generated_alpha_boxes": [
+        [
+          684,
+          77,
+          1001,
+          900
+        ]
+      ],
+      "source_crop": [
+        737,
+        291,
+        950,
+        823
+      ],
+      "source_rgb_sha256": "9a7fb8028e6e7faad706348563e654d4ace4c8dae197d2a6d6202b2706ef26c7",
+      "source_alpha_sha256": "8dc4c5013f3aae802571eda8ac278bab46f6ec553413fb1195a9d420f76f6396",
+      "source_rgb_max_delta": 0,
+      "shadow_strength": 0,
+      "limitations": "Fixed-view sourceRGB; alpha geometrically approximated from generated extraction. Near-ground shadow pixels within bodybox can remain; broad outside-shadow excluded by rectangle geometry.",
+      "shadow_asset": "adult"
+    },
+    "stroller": {
+      "path": "runs/sim/review-2/assets/v1/stroller-body.png",
+      "sha256": "47d06a8a4848adb90f59a311bfc74fb5cc44db0e42d94b0339cb794648776de7",
+      "nominal_height_m": 1.05,
+      "visible_count": 1,
+      "image_size_px": [
+        331,
+        415
+      ],
+      "plane_width_m": 0.9027272727272728,
+      "plane_height_m": 1.1318181818181818,
+      "anchor_uv": [
+        0.5,
+        0.963855421686747
+      ],
+      "ground_anchor_px": [
+        165.5,
+        400
+      ],
+      "alpha_core_bbox_px": [
+        15,
+        15,
+        316,
+        400
+      ],
+      "source_boxes": [
+        [
+          684,
+          471,
+          985,
+          856
+        ]
+      ],
+      "generated_alpha_boxes": [
+        [
+          221,
+          75,
+          1103,
+          1179
+        ]
+      ],
+      "source_crop": [
+        669,
+        456,
+        1000,
+        871
+      ],
+      "source_rgb_sha256": "eeaafe25e53f2d4a0f64344d6e9056e25da26ba1b600bc17ad540c906999c175",
+      "source_alpha_sha256": "63e1f80c047fbc9b263ecb30324f23053e0efb67467b01cebd875e72019a3aa2",
+      "source_rgb_max_delta": 0,
+      "shadow_strength": 0,
+      "limitations": "Fixed-view sourceRGB; alpha geometrically approximated from generated extraction. Near-ground shadow pixels within bodybox can remain; broad outside-shadow excluded by rectangle geometry.",
+      "shadow_asset": "stroller"
+    },
+    "servers": {
+      "path": "runs/sim/review-2/assets/v2/servers-body.png",
+      "sha256": "ed13dce80673772b03497b9a1c705d7204358bcd9ea53d4824cf29c61646479b",
+      "semantic_class": "server_rack",
+      "visible_count": 2,
+      "description": "Two filled black server racks partly wrapped in clear film on one wooden shipping pallet.",
+      "nominal_height_m": 2.1,
+      "image_size_px": [
+        477,
+        615
+      ],
+      "plane_width_m": 1.7123076923076923,
+      "plane_height_m": 2.207692307692308,
+      "anchor_uv": [
+        0.5,
+        0.975609756097561
+      ],
+      "ground_anchor_px": [
+        238.5,
+        600
+      ],
+      "alpha_core_bbox_px": [
+        15,
+        15,
+        462,
+        600
+      ],
+      "source_boxes": [
+        [
+          595,
+          237,
+          1042,
+          822
+        ]
+      ],
+      "generated_alpha_boxes": [
+        [
+          497,
+          67,
+          1145,
+          914
+        ]
+      ],
+      "source_crop": [
+        580,
+        222,
+        1057,
+        837
+      ],
+      "source_rgb_sha256": "5a4b7336dd124053fd0ab628e1a85ab3bcf7e06e7c86bc0c0fca7d513416e4f1",
+      "source_alpha_sha256": "25eaf784c6e6f57ccd3bdc757db66a139a3a5489d01cf4d519c750fa35492b6a",
+      "source_rgb_max_delta": 0,
+      "shadow_strength": 0,
+      "shadow_asset": "servers",
+      "limitations": "Fixed-view source RGB; alpha rectangle-registered from generated extraction. Cuboid silhouette, transparent wrap and pallet openings are approximate; no actual server/pallet geometry or measured lighting."
+    }
+  },
+  "animations": {
+    "child": {
+      "frame_paths": [
+        "runs/sim/review-2/assets/v1/child-walk/frame-00.png",
+        "runs/sim/review-2/assets/v1/child-walk/frame-01.png",
+        "runs/sim/review-2/assets/v1/child-walk/frame-02.png",
+        "runs/sim/review-2/assets/v1/child-walk/frame-03.png",
+        "runs/sim/review-2/assets/v1/child-walk/frame-04.png",
+        "runs/sim/review-2/assets/v1/child-walk/frame-05.png",
+        "runs/sim/review-2/assets/v1/child-walk/frame-06.png",
+        "runs/sim/review-2/assets/v1/child-walk/frame-07.png"
+      ],
+      "fps": 8,
+      "anchor_uv": [
+        0.5,
+        0.9
+      ],
+      "width_m": 1.3013333333333332,
+      "height_m": 1.6266666666666665,
+      "nominal_height_m": 1.22,
+      "frames": [
+        {
+          "frame": 0,
+          "source_cell": [
+            0,
+            0,
+            417,
+            472
+          ],
+          "source_body_box": [
+            149,
+            144,
+            234,
+            414
+          ],
+          "alpha_cell": [
+            0,
+            0,
+            417,
+            472
+          ],
+          "alpha_box": [
+            118,
+            84,
+            234,
+            446
+          ],
+          "body_resize": [
+            151,
+            480
+          ],
+          "paste": [
+            181,
+            96
+          ],
+          "sha256": "221c429b699a5aa0d11174414f33d67e7b002f86575518e0eeaaf139f732a3c5",
+          "alpha_cell_edge_max": 1
+        },
+        {
+          "frame": 1,
+          "source_cell": [
+            417,
+            0,
+            834,
+            472
+          ],
+          "source_body_box": [
+            155,
+            145,
+            294,
+            413
+          ],
+          "alpha_cell": [
+            417,
+            0,
+            834,
+            472
+          ],
+          "alpha_box": [
+            123,
+            86,
+            319,
+            443
+          ],
+          "body_resize": [
+            249,
+            480
+          ],
+          "paste": [
+            132,
+            96
+          ],
+          "sha256": "d929774a988744aa13f08afb2c172a8e59f5398c421ba81e576d5ab44e8d7bc8",
+          "alpha_cell_edge_max": 0
+        },
+        {
+          "frame": 2,
+          "source_cell": [
+            834,
+            0,
+            1251,
+            472
+          ],
+          "source_body_box": [
+            151,
+            146,
+            303,
+            413
+          ],
+          "alpha_cell": [
+            834,
+            0,
+            1251,
+            472
+          ],
+          "alpha_box": [
+            131,
+            85,
+            340,
+            439
+          ],
+          "body_resize": [
+            273,
+            480
+          ],
+          "paste": [
+            120,
+            96
+          ],
+          "sha256": "ded8f7900611fa39b10b00978208bf8dbb285d3e75a222b2e4fdc132b5d5794b",
+          "alpha_cell_edge_max": 1
+        },
+        {
+          "frame": 3,
+          "source_cell": [
+            1251,
+            0,
+            1668,
+            472
+          ],
+          "source_body_box": [
+            152,
+            146,
+            317,
+            413
+          ],
+          "alpha_cell": [
+            1251,
+            0,
+            1668,
+            472
+          ],
+          "alpha_box": [
+            126,
+            86,
+            348,
+            438
+          ],
+          "body_resize": [
+            297,
+            480
+          ],
+          "paste": [
+            108,
+            96
+          ],
+          "sha256": "460ad31317186135edec979bf8f8e134e6fc25ec90fff7e739b43fe1ce45a1f3",
+          "alpha_cell_edge_max": 0
+        },
+        {
+          "frame": 4,
+          "source_cell": [
+            0,
+            472,
+            417,
+            943
+          ],
+          "source_body_box": [
+            147,
+            147,
+            301,
+            410
+          ],
+          "alpha_cell": [
+            0,
+            472,
+            417,
+            943
+          ],
+          "alpha_box": [
+            94,
+            81,
+            304,
+            430
+          ],
+          "body_resize": [
+            281,
+            480
+          ],
+          "paste": [
+            116,
+            96
+          ],
+          "sha256": "b4c2a5442e099d0e2b36f20f5010d7f99ca635aa89dd1e956ddb9ad34a227bdb",
+          "alpha_cell_edge_max": 0
+        },
+        {
+          "frame": 5,
+          "source_cell": [
+            417,
+            472,
+            834,
+            943
+          ],
+          "source_body_box": [
+            176,
+            147,
+            273,
+            412
+          ],
+          "alpha_cell": [
+            417,
+            472,
+            834,
+            943
+          ],
+          "alpha_box": [
+            127,
+            81,
+            260,
+            429
+          ],
+          "body_resize": [
+            176,
+            480
+          ],
+          "paste": [
+            168,
+            96
+          ],
+          "sha256": "3acea42b9b25ade6f221cfb7b9017753a189402b029a3338a97202fdb5b9ecf4",
+          "alpha_cell_edge_max": 0
+        },
+        {
+          "frame": 6,
+          "source_cell": [
+            834,
+            472,
+            1251,
+            943
+          ],
+          "source_body_box": [
+            150,
+            147,
+            318,
+            413
+          ],
+          "alpha_cell": [
+            834,
+            472,
+            1251,
+            943
+          ],
+          "alpha_box": [
+            110,
+            81,
+            343,
+            429
+          ],
+          "body_resize": [
+            303,
+            480
+          ],
+          "paste": [
+            105,
+            96
+          ],
+          "sha256": "a2eecbcd550aae9061e714baa2276e3c95e5d41658697789667281ea75c8f660",
+          "alpha_cell_edge_max": 0
+        },
+        {
+          "frame": 7,
+          "source_cell": [
+            1251,
+            472,
+            1668,
+            943
+          ],
+          "source_body_box": [
+            172,
+            147,
+            270,
+            412
+          ],
+          "alpha_cell": [
+            1251,
+            472,
+            1668,
+            943
+          ],
+          "alpha_box": [
+            158,
+            81,
+            289,
+            431
+          ],
+          "body_resize": [
+            178,
+            480
+          ],
+          "paste": [
+            167,
+            96
+          ],
+          "sha256": "6f29006f44132dc4e320e60a8849e62894c16a54dacfefc04e654532c5b2d028",
+          "alpha_cell_edge_max": 0
+        }
+      ],
+      "limitations": "Eight generated walk poses, not motion capture; gait phases may repeat and fixed-view billboard lacks full3D articulation."
+    },
+    "dog": {
+      "frame_paths": [
+        "runs/sim/review-2/assets/v1/dog-walk/frame-00.png",
+        "runs/sim/review-2/assets/v1/dog-walk/frame-01.png",
+        "runs/sim/review-2/assets/v1/dog-walk/frame-02.png",
+        "runs/sim/review-2/assets/v1/dog-walk/frame-03.png",
+        "runs/sim/review-2/assets/v1/dog-walk/frame-04.png",
+        "runs/sim/review-2/assets/v1/dog-walk/frame-05.png",
+        "runs/sim/review-2/assets/v1/dog-walk/frame-06.png",
+        "runs/sim/review-2/assets/v1/dog-walk/frame-07.png"
+      ],
+      "fps": 8,
+      "anchor_uv": [
+        0.5,
+        0.75
+      ],
+      "width_m": 1.6,
+      "height_m": 1.6,
+      "nominal_height_m": 0.8,
+      "frames": [
+        {
+          "frame": 0,
+          "source_cell": [
+            0,
+            0,
+            417,
+            472
+          ],
+          "source_body_box": [
+            90,
+            278,
+            302,
+            419
+          ],
+          "alpha_cell": [
+            0,
+            0,
+            417,
+            472
+          ],
+          "alpha_box": [
+            48,
+            243,
+            365,
+            457
+          ],
+          "body_resize": [
+            385,
+            256
+          ],
+          "paste": [
+            64,
+            128
+          ],
+          "sha256": "2da7f72b016ee6b58fce52e249afc948f952c11c750a295013416b69b2c0685e",
+          "alpha_cell_edge_max": 1
+        },
+        {
+          "frame": 1,
+          "source_cell": [
+            417,
+            0,
+            834,
+            472
+          ],
+          "source_body_box": [
+            89,
+            278,
+            307,
+            412
+          ],
+          "alpha_cell": [
+            417,
+            0,
+            834,
+            472
+          ],
+          "alpha_box": [
+            38,
+            242,
+            367,
+            447
+          ],
+          "body_resize": [
+            416,
+            256
+          ],
+          "paste": [
+            48,
+            128
+          ],
+          "sha256": "c26836b2be43107648fb87dd7b6a05cadf0bf5f0e20046a708272831bafda911",
+          "alpha_cell_edge_max": 1
+        },
+        {
+          "frame": 2,
+          "source_cell": [
+            834,
+            0,
+            1251,
+            472
+          ],
+          "source_body_box": [
+            86,
+            277,
+            307,
+            414
+          ],
+          "alpha_cell": [
+            834,
+            0,
+            1251,
+            472
+          ],
+          "alpha_box": [
+            36,
+            244,
+            372,
+            454
+          ],
+          "body_resize": [
+            413,
+            256
+          ],
+          "paste": [
+            50,
+            128
+          ],
+          "sha256": "562fbb70a4d3b1b0243cf1525019280ca67a23034d72424190bd9b32cc50e217",
+          "alpha_cell_edge_max": 1
+        },
+        {
+          "frame": 3,
+          "source_cell": [
+            1251,
+            0,
+            1668,
+            472
+          ],
+          "source_body_box": [
+            86,
+            278,
+            310,
+            412
+          ],
+          "alpha_cell": [
+            1251,
+            0,
+            1668,
+            472
+          ],
+          "alpha_box": [
+            30,
+            243,
+            370,
+            449
+          ],
+          "body_resize": [
+            428,
+            256
+          ],
+          "paste": [
+            42,
+            128
+          ],
+          "sha256": "778d1959c143331bde8c30f1305363fb0642a86101c5ab8ef9ba3df6fd2008c4",
+          "alpha_cell_edge_max": 1
+        },
+        {
+          "frame": 4,
+          "source_cell": [
+            0,
+            472,
+            417,
+            943
+          ],
+          "source_body_box": [
+            90,
+            277,
+            322,
+            413
+          ],
+          "alpha_cell": [
+            0,
+            472,
+            417,
+            943
+          ],
+          "alpha_box": [
+            44,
+            181,
+            391,
+            387
+          ],
+          "body_resize": [
+            437,
+            256
+          ],
+          "paste": [
+            38,
+            128
+          ],
+          "sha256": "99985276fce9537dcb93d95366ae97ebe7c59092e9b9bcca6c89094a31226d4a",
+          "alpha_cell_edge_max": 1
+        },
+        {
+          "frame": 5,
+          "source_cell": [
+            417,
+            472,
+            834,
+            943
+          ],
+          "source_body_box": [
+            101,
+            277,
+            326,
+            413
+          ],
+          "alpha_cell": [
+            417,
+            472,
+            834,
+            943
+          ],
+          "alpha_box": [
+            42,
+            182,
+            376,
+            389
+          ],
+          "body_resize": [
+            424,
+            256
+          ],
+          "paste": [
+            44,
+            128
+          ],
+          "sha256": "a67f353fc7820ec44f31c7d2e710d9af73edeb15903fad7a5a86bf7165dcd180",
+          "alpha_cell_edge_max": 1
+        },
+        {
+          "frame": 6,
+          "source_cell": [
+            834,
+            472,
+            1251,
+            943
+          ],
+          "source_body_box": [
+            92,
+            277,
+            324,
+            413
+          ],
+          "alpha_cell": [
+            834,
+            472,
+            1251,
+            943
+          ],
+          "alpha_box": [
+            33,
+            182,
+            377,
+            388
+          ],
+          "body_resize": [
+            437,
+            256
+          ],
+          "paste": [
+            38,
+            128
+          ],
+          "sha256": "5e411afb2e1927223d5aeef3c4480f3a0a25c55eada964e3cf28f8265ef6917a",
+          "alpha_cell_edge_max": 1
+        },
+        {
+          "frame": 7,
+          "source_cell": [
+            1251,
+            472,
+            1668,
+            943
+          ],
+          "source_body_box": [
+            94,
+            277,
+            326,
+            413
+          ],
+          "alpha_cell": [
+            1251,
+            472,
+            1668,
+            943
+          ],
+          "alpha_box": [
+            25,
+            181,
+            374,
+            388
+          ],
+          "body_resize": [
+            437,
+            256
+          ],
+          "paste": [
+            38,
+            128
+          ],
+          "sha256": "2e7c659a6a8c0228b082e42927aca0c77c2ffd29630fbcee5060a09480e30ca2",
+          "alpha_cell_edge_max": 0
+        }
+      ],
+      "limitations": "Eight generated walk poses, not motion capture; gait phases may repeat and fixed-view billboard lacks full3D articulation."
+    }
+  },
+  "shadows": {
+    "adult": {
+      "prompt": "Use case: background-extraction. Supporting reference: this photograph of one adult man standing in a dim overcast parking lot. Produce ONLY his natural very soft ground-contact shadow as a transparent RGBA ground-decal asset viewed straight DOWN at the asphalt plane. Remove the man and every part of the lot; no shoes, no legs, no pavement texture. Preserve the short subdued overcast shadow character: two soft dense contact patches under his two feet joined by a faint diffuse body shadow, no long directional shadow. Neutral black shadow color with semi-transparent alpha fading smoothly into true transparency, not an opaque gray floor. Square canvas with ample empty transparent margin, footprints near center, no labels. This is a reconstructed ground-plane shadow layer for compositing, not a new photograph.",
+      "original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-e3ab22ee-9a1b-4ed5-b187-8057ab85ad97.png",
+      "path": "runs/sim/review-2/assets/v1/adult-shadow.png",
+      "sha256": "c7d761a7c750f65a0e421ba25d208d9ffd1a6f027a30d5cba4e5c7c3d0b499fb",
+      "image_size_px": [
+        1254,
+        1254
+      ],
+      "alpha_bbox8": [
+        379,
+        545,
+        866,
+        800
+      ],
+      "alpha_max": 167,
+      "alpha_nonzero": 129022,
+      "width_m": 1.4,
+      "depth_m": 1.4,
+      "anchor_uv": [
+        0.5,
+        0.54
+      ],
+      "scale_provenance": "Authored canonical topdown scale, not measured homography; generated from in-scene reference.",
+      "referenced_image_paths": [
+        "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-de98238b-930f-4c2d-8afe-4bf051417727.png"
+      ]
+    },
+    "group": {
+      "prompt": "Use case: background-extraction. Reference image shows FIVE adults standing in this overcastlot. Produce ONLY their natural soft ground-contact shadows as one transparent RGBA ground-decal texture viewed straight DOWN at ground. Exactly five side-by-side pairs of footprint contact patches with subtle diffuse bodyshadows, spacing follows the fivepeople in reference. No people/shoes/clothes or pavementtexture remain. Black shadows with semitransparentalpha fading into trueclearspace, soft dimovercast character, no longhardcastshadow. Wide landscape texture with generous margins. Do not add labels/gridlines/opaquegrayfloor. This is ground-plane shadow reconstruction from the in-scene lighting, not a newscene.",
+      "original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-813a25c4-6cd4-46fc-afca-d4cc89a42e8a.png",
+      "path": "runs/sim/review-2/assets/v1/group-shadow.png",
+      "sha256": "be6ae90ca76ef91e4ddab6d8dd0b519af792fc945209500124ed23a8bc1ba45d",
+      "image_size_px": [
+        2164,
+        727
+      ],
+      "alpha_bbox8": [
+        98,
+        298,
+        2052,
+        539
+      ],
+      "alpha_max": 167,
+      "alpha_nonzero": 411156,
+      "width_m": 3.9246553048978927,
+      "depth_m": 1.4,
+      "anchor_uv": [
+        0.5062740111506884,
+        0.57655495939145
+      ],
+      "scale_provenance": "Authored canonical topdown scale, not measured homography; generated from in-scene reference.",
+      "alignment": {
+        "method": "Alpha-weightedcentroid of each fixed1/5texturecluster fit to visually located sourcefootpaircenters; affine scale+translation only.",
+        "shadow_uv_centroids": [
+          [
+            0.1329823323196677,
+            0.571102227843339
+          ],
+          [
+            0.3174291167875032,
+            0.5829494479958371
+          ],
+          [
+            0.4972777544829438,
+            0.5667771818089893
+          ],
+          [
+            0.6760514947075354,
+            0.5855766700008221
+          ],
+          [
+            0.86113139391873,
+            0.5763692693082623
+          ]
+        ],
+        "source_foot_pair_center_px": [
+          473.5,
+          636.5,
+          793,
+          980,
+          1160.5
+        ],
+        "target_lateral_m": [
+          -1.4267281105990783,
+          -0.7506912442396314,
+          -0.10161290322580646,
+          0.673963133640553,
+          1.4225806451612903
+        ],
+        "width_m": 3.9246553048978927,
+        "anchor_u": 0.5062740111506884,
+        "residual_m": [
+          0.0383130569993273,
+          -0.009540127774274598,
+          -0.06630569677051984,
+          0.007645032146958219,
+          0.02988773539851386
+        ]
+      },
+      "referenced_image_paths": [
+        "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-c56cffb0-5077-4724-856a-42dda9584418.png"
+      ]
+    },
+    "dog": {
+      "prompt": "Use case: background-extraction. Reference is the real-lot photo edited with one goldenretriever. Produce ONLY that dog's natural short soft contactshadow reconstructed straightDOWN onground, as black semitransparentRGBA. Four small paw contactpatches with faint connected diffuse bellyshadow; body points horizontally acrosscanvas, headtowardleft asreference. No dog/fur/paws remain, no asphalttexture, no floorrectangle. Subdued flat overcast softness, no hardlongshadow. Landscape canvas generous fullytransparentmargins. No labels. Ground-decalasset, not scene.",
+      "original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-478e5405-9ce4-4611-ae50-5da2863f964b.png",
+      "path": "runs/sim/review-2/assets/v1/dog-shadow.png",
+      "sha256": "652a0d38362c345ed7ce3f2e8ef9f7f0223f2b8447c10fef241f8a379b00c805",
+      "image_size_px": [
+        1668,
+        943
+      ],
+      "alpha_bbox8": [
+        491,
+        566,
+        1165,
+        764
+      ],
+      "alpha_max": 139,
+      "alpha_nonzero": 127999,
+      "width_m": 3.2,
+      "depth_m": 1.8,
+      "anchor_uv": [
+        0.5,
+        0.7
+      ],
+      "scale_provenance": "Authored canonical topdown scale, not measured homography; generated from in-scene reference.",
+      "referenced_image_paths": [
+        "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-948768f7-72c6-4dd2-a274-efa46a3778bd.png"
+      ]
+    },
+    "stroller": {
+      "prompt": "Use case: background-extraction. Referencephoto shows baby stroller inovercastparkinglot. Produce only its natural soft wheelcontact shadows reconstructed as a TOPDOWNground texture: four wheelpatches corresponding toreference strollerwheelbase, softly connected faintbodyocclusion. Remove stroller/baby/wheels andallpavementtexture; blacksemtransparentRGBA withclearbackground, no floorrectangle. Shortlowcontrastovercastshadow, noharddirectionalprojection, squarecanvas amplemargin, centered footprint, no text.",
+      "original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-283d53ec-41a3-4b47-b5f2-5559a90efe97.png",
+      "path": "runs/sim/review-2/assets/v1/stroller-shadow.png",
+      "sha256": "d7dfd7e3abab60de5f8b8da1c60d56fa1ac22b044d354d2a692b01f57f143e03",
+      "image_size_px": [
+        1254,
+        1254
+      ],
+      "alpha_bbox8": [
+        306,
+        371,
+        942,
+        980
+      ],
+      "alpha_max": 149,
+      "alpha_nonzero": 369177,
+      "width_m": 1.5,
+      "depth_m": 1.5,
+      "anchor_uv": [
+        0.5,
+        0.55
+      ],
+      "scale_provenance": "Authored canonical topdown scale, not measured homography; generated from in-scene reference.",
+      "referenced_image_paths": [
+        "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-e514a003-0eb8-46a8-acf6-2c970c5f98c0.png"
+      ]
+    },
+    "elderly": {
+      "prompt": "Use case: background-extraction. From this reference of an elderly woman and walkingframe in the dimovercastlot, reconstruct ONLY their short soft groundcontact shadow as TOPDOWNtransparentRGBA decal. Two softshoecontactpatches inside four smallwalkerlegcontactspots; subtle diffusejoiningocclusion. Remove woman/walker andallpavementtexture. Black semitransparentalpha softlyfading toclearbackground, no opaqueground orlongdirectionalshadow. Squarecanvas withmargin, no labels.",
+      "original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-453c5328-aad6-4cd3-a639-aa2666439119.png",
+      "path": "runs/sim/review-2/assets/v1/elderly-shadow.png",
+      "sha256": "4e6e38b71f2dd0475fcf81e39c8ccf88bba7f747491c82573325a80209dc8c36",
+      "image_size_px": [
+        1254,
+        1254
+      ],
+      "alpha_bbox8": [
+        383,
+        453,
+        878,
+        878
+      ],
+      "alpha_max": 181,
+      "alpha_nonzero": 227494,
+      "width_m": 1.6,
+      "depth_m": 1.6,
+      "anchor_uv": [
+        0.5,
+        0.55
+      ],
+      "scale_provenance": "Authored canonical topdown scale, not measured homography; generated from in-scene reference.",
+      "referenced_image_paths": [
+        "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-3e0384ef-5ee4-4afa-9ce7-1829a4ee6700.png"
+      ]
+    },
+    "servers": {
+      "prompt": "Use case: background-extraction. Reference shows two server racks on a single shipping pallet in the overcastlot. Produce ONLY its natural short soft ground-contact shadow reconstructed as a TOPDOWN transparentRGBA ground-decal. Broad subtle rectangular diffuse shadow under the pallet, denser soft strips where pallet bottom boards meetground, no longdirectionalcastshadow. Remove ALL racks/pallet/wood/servers and allasphalttexture. Black semitransparentalpha smoothly fading to clearbackground, no opaquegrayfloor. Squarecanvas with amplemargin, footprintexactlycentered, no text. A shadow-only layer, not newscene.",
+      "referenced_image_paths": [
+        "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-d6803524-0646-4853-bcbe-e069b7d7fe98.png"
+      ],
+      "original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-1f5adb4e-634d-4e80-ad75-839ddf07e202.png",
+      "path": "runs/sim/review-2/assets/v2/servers-shadow.png",
+      "sha256": "5e8206e71b08a752f3608dcde0f6add0848ab37cf2f4de719d696a1dfda4f6b4",
+      "width_m": 2.5,
+      "depth_m": 4.0,
+      "anchor_uv": [
+        0.5023393229071547,
+        0.6342449225818926
+      ],
+      "image_size_px": [
+        1254,
+        1254
+      ],
+      "alpha_bbox8": [
+        218,
+        674,
+        1037,
+        902
+      ],
+      "alpha_max": 160,
+      "alpha_nonzero": 198312,
+      "scale_provenance": "Authored ground plane dimensions chosen for approximately1.63x.73m alpha8 support beneath pallet; alpha-weighted center anchor. Generated topdown shadow, not extracted pixels or measured homography."
+    },
+    "child_walk_scaled": {
+      "prompt": "Use case: background-extraction. Supporting reference: this photograph of one adult man standing in a dim overcast parking lot. Produce ONLY his natural very soft ground-contact shadow as a transparent RGBA ground-decal asset viewed straight DOWN at the asphalt plane. Remove the man and every part of the lot; no shoes, no legs, no pavement texture. Preserve the short subdued overcast shadow character: two soft dense contact patches under his two feet joined by a faint diffuse body shadow, no long directional shadow. Neutral black shadow color with semi-transparent alpha fading smoothly into true transparency, not an opaque gray floor. Square canvas with ample empty transparent margin, footprints near center, no labels. This is a reconstructed ground-plane shadow layer for compositing, not a new photograph.",
+      "original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-e3ab22ee-9a1b-4ed5-b187-8057ab85ad97.png",
+      "path": "runs/sim/hazard-development/shadow-opacity-v3/child-shadow-opacity70.png",
+      "sha256": "c8641c39b5c53c16386a644cc0cb80e7009fcb1a55601ef97facbd2183ad987e",
+      "image_size_px": [
+        1254,
+        1254
+      ],
+      "alpha_bbox8": [
+        383,
+        550,
+        862,
+        795
+      ],
+      "alpha_max": 117,
+      "alpha_nonzero": 129022,
+      "width_m": 0.96,
+      "depth_m": 0.96,
+      "anchor_uv": [
+        0.5,
+        0.54
+      ],
+      "scale_provenance": "Authored canonical topdown scale, not measured homography; generated from in-scene reference.",
+      "referenced_image_paths": [
+        "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-de98238b-930f-4c2d-8afe-4bf051417727.png"
+      ],
+      "parent_alpha_stats": {
+        "alpha_bbox8": [
+          379,
+          545,
+          866,
+          800
+        ],
+        "alpha_max": 167,
+        "alpha_nonzero": 129022
+      },
+      "development_adjustment": {
+        "parent_path": "runs/sim/review-2/assets/v1/adult-shadow.png",
+        "parent_sha256": "c7d761a7c750f65a0e421ba25d208d9ffd1a6f027a30d5cba4e5c7c3d0b499fb",
+        "coverage_gain": 0.7,
+        "alpha_rounding": "nearest integer; RGBunchanged",
+        "original_dimensions_m": [
+          1.4,
+          1.4
+        ],
+        "dimensions_ratio": 0.6857142857142857,
+        "evidence": "runs/sim/hazard-development/shadow-opacity-v3/paired-v1/renders.json",
+        "limits": "Uniformopacity andphysicalfootprintcorrection, not articulated footfall or measuredlighting."
+      }
+    }
+  },
+  "generation_provenance": {
+    "tool": "image_gen.imagegen",
+    "mode": "built-in",
+    "reference_frames": {
+      "adult": "runs/sim/visual/overnight-native/native60k-data/images/00000042--544757d3f5--020--0100.jpg",
+      "others": "runs/sim/visual/site1-validation/sfm/images/00000041--fdf9cede4b--030--0120.jpg"
+    },
+    "outputs": {
+      "adult": {
+        "scene_prompt": "Use case: compositing. Edit target: the supplied REAL road-camera photograph of an overcast parking lot. Insert exactly one ordinary adult man standing neutrally on the asphalt, full body, facing generally toward the approaching camera, relaxed arms. Plain muted dark-gray sweatshirt, faded dark-blue trousers, practical shoes, no logos. Place the soles centered at image coordinate about (760, 575) in the 1344x760 input, roughly 8 metres from this camera at 1.21 m height, body about 250 pixels high (1.75 m tall). Preserve the complete photograph composition, buildings, sky, parking lines, real cones and camera viewpoint. This must look as if he was present in this particular dim overcast dashcam exposure: match the photograph's flat diffuse lighting, muted green-gray color response, moderate softness, slight motion/compression texture and low contrast. Add the short soft diffuse contact shadow on the asphalt directly beneath both shoes; no dramatic cast shadow. Avoid studio rendering, crisp pasted edges, bright face or polished clothing. Entire body unobscured. Do not enhance or sharpen the scene. No other added subjects, no captions or annotations.",
+        "extract_prompt": "Use case: background-extraction. Edit target: the supplied parking-lot photograph with one adult man. Make an isolated transparent RGBA asset of EXACTLY that man, retaining the same clothing, face, anatomy, pose, dim muted colors, exposure and camera softness. Do not redraw him as a crisp studio portrait or improve texture. Include his complete body, both shoes and the small soft natural contact shadow immediately beneath his feet. Remove ALL pavement texture, all cones, all vegetation, car, sky and buildings: background genuinely transparent, not a gray rectangle or checkerboard baked into RGB. The shadow must be a soft semitransparent dark shape, not an opaque patch of asphalt. Full man centered with generous transparent margin on all sides. Keep shadow short and subdued in this overcast lighting. No extra object, glow, outline, text, labels or enhancement.",
+        "scene_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-de98238b-930f-4c2d-8afe-4bf051417727.png",
+        "extract_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-a6ba5504-117f-4971-982e-c569e7a78064.png",
+        "scene_copy": "runs/sim/review-2/assets/v1/adult-scene.png",
+        "scene_sha256": "9bcf7dacbce60a8fb0f4880b174730171e2a4273e5e2ebbc5305e4ab5d69619f",
+        "extract_copy": "runs/sim/review-2/assets/v1/adult-extract.png",
+        "extract_sha256": "a2026aac504fe6f30cea443e9e65eed10bea1abac93e570e085fc368d0f9b4c7",
+        "scene_referenced_image_paths": [
+          "runs/sim/visual/overnight-native/native60k-data/images/00000042--544757d3f5--020--0100.jpg"
+        ],
+        "extract_referenced_image_paths": [
+          "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-de98238b-930f-4c2d-8afe-4bf051417727.png"
+        ]
+      },
+      "group": {
+        "scene_prompt": "Use case: compositing. Edit the supplied REAL road-camera photograph of the unmarked overcast parking lot. Insert exactly FIVE ordinary adults in a single shallow row facing the camera, occupying the clear asphalt near center. Five separate heads and FIVE entirely visible bodies with small clear gaps, no person behind another, no touching arms; each pair of feet visible. Mix ordinary muted everyday jackets/trousers, three men and two women, neutral relaxed poses. No theatrical staging or matching outfits. Ground line about y550 in the original1344x760 image; group centered x672, spread x475 to870, tallest head about y354 (nominal adult1.8m at about10.5m distance). Keep the true camera perspective and photograph unchanged beyond the subjects and subtle local contact shadows. Match this dim gray-green overcast dashcam exposure, naturally low contrast, soft fabric detail, modest compression softness. Every foot planted on asphalt with short diffuse natural shadow. The five must be easy to count from the approaching camera; no extra human in the group. No text, no stylization, no background sharpening or improved dramatic light.",
+        "extract_prompt": "Use case: background-extraction. Edit the supplied photo containing exactly five adults. Isolate those SAME FIVE people and their short soft ground-contact shadows as ONE transparent RGBA cutout, preserving their identities, clothes, relaxed poses, relative spacing and full visible bodies. All five heads and ten feet remain separately visible. Keep the original subdued overcast photographic colors and camera softness, not studio-lit or sharpened. Remove ALL buildings, trees, road, road texture, car and sky. Genuine transparent alpha outside the five silhouettes and soft translucent contact shadows. No gray pavement rectangle, no halo, no outline, no extra person or props. Center the whole group with generous transparent margin around complete heads, arms, feet and shadows. Landscape canvas. Do not label or annotate.",
+        "scene_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-c56cffb0-5077-4724-856a-42dda9584418.png",
+        "extract_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-4e688fce-f627-4c5d-9432-574a3103b644.png",
+        "scene_copy": "runs/sim/review-2/assets/v1/group-scene.png",
+        "scene_sha256": "62f3c5b0b78ce7538d08967a7116b32f29a9016b0e5c6f0178fec1315def31bc",
+        "extract_copy": "runs/sim/review-2/assets/v1/group-extract.png",
+        "extract_sha256": "2e14b9028c659399a0e1490bca6016cbdbe0af0f07428600c225f92d91d71d53",
+        "scene_referenced_image_paths": [
+          "runs/sim/visual/site1-validation/sfm/images/00000041--fdf9cede4b--030--0120.jpg"
+        ],
+        "extract_referenced_image_paths": [
+          "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-c56cffb0-5077-4724-856a-42dda9584418.png"
+        ]
+      },
+      "child": {
+        "scene_prompt": "Use case: compositing. Edit this REAL overcast parking-lot camera photo: add exactly one child approximately seven years old, standing safely and naturally facing toward the camera on the open asphalt. Muted dusty blue sweatshirt, tan trousers, ordinary sneakers, neutral calm expression. Whole body with hands and both feet visible. Place soles at (672,550) and head around y417 in the ORIGINAL1344x760 framing (nominal1.22m tall,10.5m away). Preserve all background geometry, colors, pavement and camera perspective. The child must inherit this exact flat dim overcast lighting, green-gray exposure, camera softness and modest noise/compression, with a small soft real contact shadow beneath the shoes. No studio light, glowing outline, enhanced sharpness or plastic skin. One child only, no extra props, no words.",
+        "extract_prompt": "Use case: background-extraction. Extract the SAME child from the supplied in-scene photograph as genuine transparent RGBA. Preserve identity, blue sweatshirt, tan trousers, sneakers, neutral pose and dim overcast exposure. Complete head to both soles, small short soft semitransparent contact shadow underneath, generous transparent padding. Remove all pavement texture, buildings, cars, trees and sky; NO asphalt rectangle, no opaque floor, no halo. Do not brighten the subject or change to sharp studio photography: retain the original muted soft low-contrast camera appearance. One child only, no props, no text.",
+        "scene_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-7f1fef9a-301a-476c-837c-ff0fbd07d02b.png",
+        "extract_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-f84db912-8182-4ded-94e3-c731794aa264.png",
+        "scene_copy": "runs/sim/review-2/assets/v1/child-scene.png",
+        "scene_sha256": "fbd67429f1cde5837c650e8a1364df710d7b8d8addb85c08966652b655e2d6f2",
+        "extract_copy": "runs/sim/review-2/assets/v1/child-extract.png",
+        "extract_sha256": "3cd8ef7adeb833ae8e273f2e2104808f3e29b898b8015e5b2e8eb94d0645da14",
+        "scene_referenced_image_paths": [
+          "runs/sim/visual/site1-validation/sfm/images/00000041--fdf9cede4b--030--0120.jpg"
+        ],
+        "extract_referenced_image_paths": [
+          "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-7f1fef9a-301a-476c-837c-ff0fbd07d02b.png"
+        ]
+      },
+      "dog": {
+        "scene_prompt": "Use case: compositing. Edit this REAL unmarked parking-lot road-camera photograph. Add exactly one golden retriever standing neutrally on all four paws on the central asphalt, slightly three-quarter side view with head toward camera. Golden fur muted by the same dim overcast green-gray exposure, no collar logos. Full tail, muzzle and all paws visible; nominal0.8m to head. Place paws around originalpixel(672,550); keep dog modest in scene, camera1.21m high roughly10m away. Preserve scene/background/perspective, do not sharpen. Grounded small natural diffuse contact shadow, soft camera detail and realistic fur. No added person, leash or props, no dramatic light, no text.",
+        "extract_prompt": "Use case: background-extraction. Extract exactly the SAME golden retriever from this lot photograph, preserving identity, pose, full tail, muzzle and four paws, dim muted fur colors and original camera softness. Transparent RGBA with generous padding. Include only the dog and its short soft semitransparent contact shadow. Remove ALL lot background/pavement texture, no opaque ground rectangle. Do not brighten, sharpen, add studio highlights or change the pose. Genuine transparent alpha, no halo or outlines, no text.",
+        "scene_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-948768f7-72c6-4dd2-a274-efa46a3778bd.png",
+        "extract_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-a68a3ac1-8847-4f63-8e13-4c58fa038f1b.png",
+        "scene_copy": "runs/sim/review-2/assets/v1/dog-scene.png",
+        "scene_sha256": "87277b2e88b7f64c5738baa2f35b0a6d7ff7f765808b4269788488cbb31f0a59",
+        "extract_copy": "runs/sim/review-2/assets/v1/dog-extract.png",
+        "extract_sha256": "88001e53f193fbdb671f10e87e02d0bec7c20ec43bab810759d807f4fb39ad83",
+        "scene_referenced_image_paths": [
+          "runs/sim/visual/site1-validation/sfm/images/00000041--fdf9cede4b--030--0120.jpg"
+        ],
+        "extract_referenced_image_paths": [
+          "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-948768f7-72c6-4dd2-a274-efa46a3778bd.png"
+        ]
+      },
+      "elderly": {
+        "scene_prompt": "Use case: compositing. Edit this REAL unmarked overcast parking-lot road-camera photograph. Add one elderly woman with white hair and ordinary muted gray-blue outdoor clothes, standing neutrally using a plain aluminum walking frame. Whole body, shoes and all four walker legs visible, camera facing her roughly10m away. Place feet on center open asphalt, near originalpixel(672,550), nominalheight1.55m. Match the actual dim gray-green overcast exposure, camera softness and unpolished natural appearance; short soft contact shadows under walker and shoes. Keep background and camera perspective unchanged. No dramatic lighting, glossy skin, sharp pasted edges, added people or text.",
+        "extract_prompt": "Use case: background-extraction. Extract the SAME elderly woman AND complete metal walker from the supplied lot photograph as genuine transparent RGBA. Preserve her identity, clothing, pose, hands holding walker, all four legs and shoes. Keep dim muted overcast exposure and original softness, no studio sharpening/brightening. Only subject plus short soft semitransparent contact shadows; remove all asphalt texture, scenery, buildings and cars. Generous transparent padding, no opaque ground rectangle or halo, no text.",
+        "scene_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-3e0384ef-5ee4-4afa-9ce7-1829a4ee6700.png",
+        "extract_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-4eeb7597-727f-4e2e-8d6b-a714554432d2.png",
+        "scene_copy": "runs/sim/review-2/assets/v1/elderly-scene.png",
+        "scene_sha256": "4ea3a3833931dfde7a1711b151c6457ab9bd91aaa76814eea3fe964b8a3365d3",
+        "extract_copy": "runs/sim/review-2/assets/v1/elderly-extract.png",
+        "extract_sha256": "8ee868f6267efff8048d8e87b82401903134403c1e569ae7497670b69cdd2cc2",
+        "scene_referenced_image_paths": [
+          "runs/sim/visual/site1-validation/sfm/images/00000041--fdf9cede4b--030--0120.jpg"
+        ],
+        "extract_referenced_image_paths": [
+          "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-3e0384ef-5ee4-4afa-9ce7-1829a4ee6700.png"
+        ]
+      },
+      "robot": {
+        "scene_prompt": "Use case: compositing. Edit the supplied REAL overcast parking-lot road-camera photograph. Insert exactly one practical humanoid robot standing upright, full body front three-quarter near-frontal, arms at sides, neutral: plain slightly scuffed gray and off-white panels, dark visor, plausible industrial articulated joints, no brand, no science-fiction glow. Nominal1.75m tall, feet around centeroriginalpixel(672,550), camera1.21m high fromroughly10m. It must appear physically photographed IN THIS dim overcast lot, muted low-contrast green-gray ambient reflection, soft camera focus/compression, small natural diffuse shadow beneath feet. Preserve background/camera geometry. No studio highlights, cartoon shapes, added people, text or other props.",
+        "extract_prompt": "Use case: background-extraction. Isolate exactly this SAME humanoid robot from the photo as genuine transparent RGBA, wholehead/twoarms/hands/feet, samepose, industrialbodyparts and proportions. Keep dimlotlighting/graycolors/camera softness. Remove all background and pavement texture; keep only robot and tiny soft translucent ground contact shadow. No new anatomy/parts, no studio relighting, no sharpening, no whitehalo, no labels. Generous transparent padding.",
+        "scene_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-aef00ad9-ea87-4784-baa3-727ebffdfca5.png",
+        "extract_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-ae4fa1f9-60f9-4f73-9dc7-aac783d2be92.png",
+        "scene_copy": "runs/sim/review-2/assets/v1/robot-scene.png",
+        "scene_sha256": "9a7fb8028e6e7faad706348563e654d4ace4c8dae197d2a6d6202b2706ef26c7",
+        "extract_copy": "runs/sim/review-2/assets/v1/robot-extract.png",
+        "extract_sha256": "8dc4c5013f3aae802571eda8ac278bab46f6ec553413fb1195a9d420f76f6396",
+        "scene_referenced_image_paths": [
+          "runs/sim/visual/site1-validation/sfm/images/00000041--fdf9cede4b--030--0120.jpg"
+        ],
+        "extract_referenced_image_paths": [
+          "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-aef00ad9-ea87-4784-baa3-727ebffdfca5.png"
+        ]
+      },
+      "stroller": {
+        "scene_prompt": "Use case: compositing. Edit the REAL unmarked overcast parking-lot camera photo. Add exactly one everyday baby stroller, with ONE baby visibly seated safely inside, canopy folded back enough to see the baby's face. No adult, no additional people. Entire stroller, handle and all wheels visible, modestthree-quarterfront view on center asphalt near originalpixel(672,550),nominal1.05mhigh. Preserve background/camera. The stroller must match this dim overcastlot: used gray/navy fabric, realistic smallwheels and tubularframe, muted green-gray daylight, softimage detail not glossy productphoto. Natural soft contacts under eachwheel. No logos/text, no glowingedges, no extra props.",
+        "extract_prompt": "Use case: background-extraction. Extract exactly the SAME stroller with the SAME one seated baby from this photograph, preserve pose/identity/materials/frame/allwheels/handle, nootherperson. TransparentRGBA, wholeobject withgenerouspadding. Keepdimovercastcolor andsoftness, no studioenhancement. Include short soft semitransparent wheel contactshadows only, remove all asphalttexture/background. No opaqueground, no halo, no text.",
+        "scene_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-e514a003-0eb8-46a8-acf6-2c970c5f98c0.png",
+        "extract_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-20e4639e-f275-4b69-bcac-cd35c360642c.png",
+        "scene_copy": "runs/sim/review-2/assets/v1/stroller-scene.png",
+        "scene_sha256": "eeaafe25e53f2d4a0f64344d6e9056e25da26ba1b600bc17ad540c906999c175",
+        "extract_copy": "runs/sim/review-2/assets/v1/stroller-extract.png",
+        "extract_sha256": "63e1f80c047fbc9b263ecb30324f23053e0efb67467b01cebd875e72019a3aa2",
+        "scene_referenced_image_paths": [
+          "runs/sim/visual/site1-validation/sfm/images/00000041--fdf9cede4b--030--0120.jpg"
+        ],
+        "extract_referenced_image_paths": [
+          "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-e514a003-0eb8-46a8-acf6-2c970c5f98c0.png"
+        ]
+      },
+      "childWalk": {
+        "scene_prompt": "Use case: compositing. Make a 4-column by 2-row contact sheet of EIGHT consecutive views of the SAME child walking naturally toward screen-right, one full-body child per panel. Image1 is the real dim overcast parking-lot camera photograph; image2 fixes the child's identity/clothes (blue sweatshirt, tan trousers, sneakers). Every panel is a crop of THIS SAME real-lot viewpoint and asphalt, with the child inserted at the SAME center position and same scale so the frames can be extracted as a walk cycle. Only the leg/arm gait phase changes smoothly across eight frames: contact, passing, opposing contact, etc. Near-side profile with face slightly toward camera. Wholehead/body/shoes in every cell with generous margins, equal-size cells, no dividers or captions. Child camera height1.21m, dim diffuse lotlighting inherited exactly, subdued green-gray response and moderate camera softness, small natural soft shadow under planted foot. No studio lighting or crisp illustration. Keep the child's identity, hairstyle, clothing, body proportions and height constant. Background may repeat; no other addedpeople.",
+        "extract_prompt": "Use case: background-extraction. Remove all lot backgrounds from this EIGHT-panel walking-child sheet, retaining each SAME child pose in its SAME fixed4-column2-row cell. Genuine transparent RGBA, no asphalt or floor, no contactshadow for this bodylayer. Keep identities/clothes/proportions and whole body/feet unchanged, samecenters/sizes, no invented gait phase, no crop through silhouettes. Wide transparent margins at every cellboundary. No labels or gridlines. Preserve muted overcast response; don't sharpen or brighten.",
+        "scene_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-2770d210-7b74-4d7e-9c10-94edcef3b341.png",
+        "extract_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-2f958ee4-a64d-447c-aad1-569ec437e4d0.png",
+        "scene_copy": "runs/sim/review-2/assets/v1/childWalk-scene.png",
+        "scene_sha256": "4e1288da15d4b5506650e6cc8f9147d48cd8630c500d56d20953491b4f81e8c8",
+        "extract_copy": "runs/sim/review-2/assets/v1/childWalk-extract.png",
+        "extract_sha256": "ad123529c9de1c6d06b5c3d1aea62c91de93f8a18401b3ab845f80e6cae0c775",
+        "scene_referenced_image_paths": [
+          "runs/sim/visual/site1-validation/sfm/images/00000041--fdf9cede4b--030--0120.jpg",
+          "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-7f1fef9a-301a-476c-837c-ff0fbd07d02b.png"
+        ],
+        "extract_referenced_image_paths": [
+          "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-2770d210-7b74-4d7e-9c10-94edcef3b341.png"
+        ]
+      },
+      "dogWalk": {
+        "scene_prompt": "Use case: compositing. Produce4columns by2rows of EIGHT consecutive phases of the SAME golden retriever walking/trotting gently toward screen-right. Image1 is REALdimovercastlot andimage2 fixesdogidentity. In each equal-sized panel repeatthesame lotcamera view with dog inserted atsamecenter/samebodyheight, onlylegpositions/tailgait change in coherent naturalcycle. Sideprofile,headslightlytowardcamera. Entire nose, tail and allpaws visible with amplecellmargins; equalbodylength, no disappearinglimbs. Match realframe diffuseovercastlighting/mutedfur/camerasoftness, softcontactshadowunderplantedpaws. Eight fullbodyposes, no people/leashes, no captions/gridlines. Background remains same lot; no illustration orstudio light.",
+        "extract_prompt": "Use case: background-extraction. Remove all lot backgrounds from this EIGHT-panel golden-retriever walking sheet, retaining each SAME dog pose in its SAME fixed4column2rowcell. Genuine transparentRGBA. Sameidentities/fur/proportions, full nose/tail/paws ineachcell; no inventedgait orlimbs. No pavementtexture orcontactshadow(bodylayeronly), no backgroundhaze. Wide transparentmargins atallcellboundaries. No labels/gridlines. Keep muted overcastcolor/softness, no relighting/brightening.",
+        "scene_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-d1c0a40c-3663-4b41-abc2-198b4ebd86de.png",
+        "extract_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-94a4378a-e54c-45f0-8556-878cd1ac20cf.png",
+        "scene_copy": "runs/sim/review-2/assets/v1/dogWalk-scene.png",
+        "scene_sha256": "eb91b5bfb3ea87658ab934dd33fc248abd83b7969deb369d881e4d41a4d3e43a",
+        "extract_copy": "runs/sim/review-2/assets/v1/dogWalk-extract.png",
+        "extract_sha256": "99008eae768016b5060d89e7a224f57a5419365e8e5c454754a72391d5653dfe",
+        "scene_referenced_image_paths": [
+          "runs/sim/visual/site1-validation/sfm/images/00000041--fdf9cede4b--030--0120.jpg",
+          "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-948768f7-72c6-4dd2-a274-efa46a3778bd.png"
+        ],
+        "extract_referenced_image_paths": [
+          "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-d1c0a40c-3663-4b41-abc2-198b4ebd86de.png"
+        ]
+      },
+      "servers": {
+        "scene_prompt": "Use case: compositing. Edit the supplied REAL overcast parking-lot road-camera photograph. Add exactly TWO tall black server racks side by side on ONE wooden shipping pallet, partly wrapped together in clear stretch plastic film. The racks are realistically filled with horizontal server units, small subtle green/blue status lights, no lettering. Slight three-quarter view very close to frontal so both separate racks are plainly countable. Whole racks, their tops and entire pallet base visible, nominal totalheight2.1m and widthabout1.45m. Set the pallet on center asphalt near original1344x760pixel(672,550), cameraheight1.21m fromroughly10m. Preserve this photograph's background, viewpoint and muted green-gray overcast exposure. The black surfaces and clearfilm inherit the lot's soft sky reflections, no studio highlight or polished product render. Natural short diffuse contact shadow under the heavy pallet. Keep original camera softness/lowcontrast, no sharpening. No people, no robots, no additional racks, no labels or text.",
+        "extract_prompt": "Use case: background-extraction. Remove the entire lot background from this photograph, retaining exactly the SAME TWO black serverracks sidebyside on the SAME ONE woodenpallet, with their clearstretchwrap, fronts,topandrightside in the same perspective. Genuine transparentRGBA with generouspadding. Do not alter serverlayout, add lettering, changeproportions or enhance sharpness/exposure. Keeporiginal mutedovercastcolors. Removeallroadtexture and groundshadow(bodylayeronly); complete palletbottom remains visible. No floorrectangle, halo, captions or extraobjects.",
+        "scene_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-d6803524-0646-4853-bcbe-e069b7d7fe98.png",
+        "extract_original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-a5386f8f-d5a3-4456-bbb9-1e292e0d27de.png",
+        "scene_copy": "runs/sim/review-2/assets/v2/servers-scene.png",
+        "extract_copy": "runs/sim/review-2/assets/v2/servers-extract.png",
+        "scene_sha256": "5a4b7336dd124053fd0ab628e1a85ab3bcf7e06e7c86bc0c0fca7d513416e4f1",
+        "extract_sha256": "25eaf784c6e6f57ccd3bdc757db66a139a3a5489d01cf4d519c750fa35492b6a",
+        "scene_referenced_image_paths": [
+          "runs/sim/visual/site1-validation/sfm/images/00000041--fdf9cede4b--030--0120.jpg"
+        ],
+        "extract_referenced_image_paths": [
+          "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-d6803524-0646-4853-bcbe-e069b7d7fe98.png"
+        ]
+      }
+    },
+    "alternatives": {
+      "adult_samecanvas": {
+        "prompt": "Use case: background-extraction. MASK ONLY: remove the background of this input photograph, keeping the adult man and his small semitransparent ground shadow EXACTLY where they are. Maintain the SAME landscape canvas, SAME subject pixel size and location near center-right, SAME original colors, same face, same clothing texture, same softly focused exposure. Do NOT enlarge, zoom, recenter, brighten, sharpen or resynthesize the subject. Preserve his existing photographed pixels and silhouette as closely as possible. Everything other than his body and soft shadow must be transparent, including all asphalt texture. Lots of empty transparent space is intentional. No studio portrait, no large subject filling canvas, no halo, no opaque floor.",
+        "original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-f9d7778e-bed2-44af-a5f2-523f793a3060.png",
+        "copy": "runs/sim/review-2/assets/v1/adult_samecanvas.png",
+        "sha256": "a2cb61761eaadf03a9257b4d35fb0f7d2d95c99b147c477266f82d9321c40cf9",
+        "referenced_image_paths": [
+          "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-de98238b-930f-4c2d-8afe-4bf051417727.png"
+        ]
+      },
+      "group_samecanvas": {
+        "prompt": "Use case: background-extraction. REMOVE BACKGROUND ONLY from this exact photo, with transparent alpha. Keep the SAME landscape canvas, same exact FIVE people at their current pixel positions, sizes, spacing, poses, original dim colors, faces and soft detail. DO NOT enlarge, zoom, recenter, beautify, relight, sharpen, or redraw. The low contrast darkness is intentional. Preserve their existing photographic pixels as faithfully as possible; no new sharp fabric folds, richer blue jeans or brighter faces. Remove everything except the five bodies and their small soft translucent foot shadows; all asphalt texture, cars, vegetation, buildings and sky becomes transparent. Five unobscured whole bodies, no head or feet cropped. No text. Empty transparent surroundings are intentional.",
+        "original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-8a2cefd6-cdac-4314-8c2d-e88fefc7bad8.png",
+        "copy": "runs/sim/review-2/assets/v1/group_samecanvas.png",
+        "sha256": "c5e7c4073e319d8282c2ff2add8bca5959ae165d47a8542be6cc35d7b0484f7f",
+        "referenced_image_paths": [
+          "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-c56cffb0-5077-4724-856a-42dda9584418.png"
+        ]
+      },
+      "adult_shadow": {
+        "prompt": "Use case: background-extraction. Supporting reference: this photograph of one adult man standing in a dim overcast parking lot. Produce ONLY his natural very soft ground-contact shadow as a transparent RGBA ground-decal asset viewed straight DOWN at the asphalt plane. Remove the man and every part of the lot; no shoes, no legs, no pavement texture. Preserve the short subdued overcast shadow character: two soft dense contact patches under his two feet joined by a faint diffuse body shadow, no long directional shadow. Neutral black shadow color with semi-transparent alpha fading smoothly into true transparency, not an opaque gray floor. Square canvas with ample empty transparent margin, footprints near center, no labels. This is a reconstructed ground-plane shadow layer for compositing, not a new photograph.",
+        "original": "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-e3ab22ee-9a1b-4ed5-b187-8057ab85ad97.png",
+        "copy": "runs/sim/review-2/assets/v1/adult_shadow.png",
+        "sha256": "c7d761a7c750f65a0e421ba25d208d9ffd1a6f027a30d5cba4e5c7c3d0b499fb",
+        "referenced_image_paths": [
+          "generated_images/01a0f800-c83d-75b1-aaf4-dca37608d120/exec-de98238b-930f-4c2d-8afe-4bf051417727.png"
+        ]
+      }
+    },
+    "reference_hashes": {
+      "adult": "7716aca763f2ccf1ad153479c3eae9d43f5434f8da1b1c734a07cb4511a652df",
+      "others": "95a60a0e8d9767c2cf04daa81246ae01456e7ad6a9bcb924c937099fde37adda"
+    }
+  },
+  "ground_shadow_note": "Ground shadows are separate built-in generated top-down reconstructions of in-scene lighting, not exact extracted shadow pixels or surveyed homographies. Adult pattern is reused at authored scale for robot and child. Animation uses translating static contact pattern rather than gait-specific shadow.",
+  "group_fit": {
+    "nominal_tallest_height_m": 1.8,
+    "silhouette_width_m": 3.4797235023041475,
+    "branch_clear_width_m": 4.0,
+    "left_right_clearance_m": 0.26013824884792625,
+    "decision": "Preserve person scale and proportions; widen both newbranches to4m. Do not squeeze group."
+  },
+  "server_completion": {
+    "provenance_path": "runs/sim/review-2/assets/v2/server-provenance.json",
+    "source_reference_sha256": "95a60a0e8d9767c2cf04daa81246ae01456e7ad6a9bcb924c937099fde37adda",
+    "note": "Added explicit servers entry for all fork pairings; existingv1 asset declarations and PNG bytes unchanged."
+  }
+}

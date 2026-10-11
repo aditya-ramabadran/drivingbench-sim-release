@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "materials": {
+    "concrete": {
+      "path": "runs/sim/review-1/assets/materials-v1/concrete.png",
+      "sha256": "2e872fbad4f71092cae5f53dcd4bbaa342a8bdf0307e4f5b929236dbd9fd255a",
+      "image_size_px": [
+        1254,
+        1254
+      ],
+      "tile_size_m": 1.0,
+      "source": "Built-in image generation; synthetic albedo tile, not a measured or scanned material.",
+      "mode": "builtin_imagegen_generate",
+      "prompt": "Use case: photorealistic-natural. Asset type: seamless physically based base-color texture for a real weathered cast concrete Jersey traffic barrier. Generate a square flat orthographic scan of an approximately one-metre-square pale medium-grey aged concrete surface, completely filling the image. Realistic fine exposed aggregate, tiny air pores, occasional hairline cracks, muted subtle irregular grime and soft small water stains. Neutral overcast diffuse light with no directional shading, no specular highlights, no perspective or vignette. Seamless tile on all four edges. Texture detail like actual roadside concrete, restrained contrast, desaturated neutral warm grey. No barrier outline, no scene, no ground, no sky, no letters, no labels, no borders. No large rhythmic streaks, no marbling, no waves. This will be applied to existing exact 3D geometry; output only the flat surface texture, not a picture of a barrier.",
+      "original": "generated_images/01a0f4fe-c1ec-7b01-9364-b1ddd505483b/exec-489dbac2-3987-4a67-96b6-4b7fe90bbc6c.png",
+      "tool_wall_time_s": 45.9
+    }
+  }
+}

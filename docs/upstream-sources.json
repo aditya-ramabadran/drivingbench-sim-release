@@ -1,0 +1,66 @@
+{
+  "imported_at_utc": "2026-09-08T09:05:19.496684+00:00",
+  "source_ref": "commaai/openpilot master at import time; exact commits below are authoritative",
+  "method": "Tracked Git blobs exported recursively at pinned commits, preserving file modes and symlinks; nested Git repositories flattened into ordinary directories.",
+  "assets": "Git LFS pointer blobs are preserved. Large assets have not been imported or configured for runtime use.",
+  "adjustments": {
+    "description": "Replaced filter=lfs with -filter to prevent automatic LFS downloads/uploads against this repository, and changed the inherited text=auto default to -text to preserve original Git blob line endings when flattening nested repositories. All other imported Git blobs are unchanged.",
+    "files": [
+      "vendor/openpilot/.gitattributes"
+    ]
+  },
+  "gitmodules_note": "Vendored .gitmodules and .lfsconfig files are retained as upstream metadata; they do not configure the monorepo root.",
+  "local_modifications": "See docs/deployment.md#native-changes in this repository for the current DrivingBench modifications (controlsd.py, drive_helpers.py) and the retained modeld/SConscript backport.",
+  "components": [
+    {
+      "path": "vendor/openpilot",
+      "url": "https://github.com/commaai/openpilot.git",
+      "commit": "25d9d41c9007e64de7bb28ff8f27c7148a34b5ab",
+      "files": 1196,
+      "lfs_pointer_files": 239
+    },
+    {
+      "path": "vendor/openpilot/msgq_repo",
+      "url": "https://github.com/commaai/msgq.git",
+      "commit": "0e266c1dbcf7328beee3e57b4a8688555387c877",
+      "files": 47,
+      "lfs_pointer_files": 0
+    },
+    {
+      "path": "vendor/openpilot/opendbc_repo",
+      "url": "https://github.com/commaai/opendbc.git",
+      "commit": "b4ef5e1cf406ff143fa67bdbfb154739d43279c9",
+      "files": 446,
+      "lfs_pointer_files": 0
+    },
+    {
+      "path": "vendor/openpilot/panda",
+      "url": "https://github.com/commaai/panda.git",
+      "commit": "75aa44bec9140849868239b1f1e3f22624adb8fe",
+      "files": 210,
+      "lfs_pointer_files": 0
+    },
+    {
+      "path": "vendor/openpilot/rednose_repo",
+      "url": "https://github.com/commaai/rednose.git",
+      "commit": "28d4a7f69e80e1c3e0d24ca0733d7daeaeade3d0",
+      "files": 37,
+      "lfs_pointer_files": 0
+    },
+    {
+      "path": "vendor/openpilot/teleoprtc_repo",
+      "url": "https://github.com/commaai/teleoprtc",
+      "commit": "1aa8fc433bef1519a95c0700c96258c3be6dfb34",
+      "files": 20,
+      "lfs_pointer_files": 0
+    },
+    {
+      "path": "vendor/openpilot/tinygrad_repo",
+      "url": "https://github.com/tinygrad/tinygrad.git",
+      "commit": "f6fc4e3f2c3db5fae1e19cbfbc3ad9fc579a12ae",
+      "files": 1580,
+      "lfs_pointer_files": 0
+    }
+  ],
+  "copied_from": "drivingbench-harness (old repository) main 06b43f5, vendor tree byte-identical at import into this repository"
+}

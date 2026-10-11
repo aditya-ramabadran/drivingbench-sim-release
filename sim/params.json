@@ -1,0 +1,15 @@
+{
+  "accel_delay_s": 0.038,
+  "accel_tau_s": 0.5654,
+  "accel_gain": 2.6667,
+  "accel_bias_mps2": -0.0375,
+  "launch_s": 1.385,
+  "launch_accel_mps2": 1.3359,
+  "hold_launch_s": 3.25,
+  "steer_gain": 24.0,
+  "return_gain": 71.375,
+  "steer_gain_per_mps": 57.9062,
+  "steer_hold_deg": 250.6406,
+  "steer_friction": 0.3511,
+  "eps_torque_scale": 2102.5659
+}

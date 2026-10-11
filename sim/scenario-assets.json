@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "transparent_background": true,
+  "asset_root": "runs/sim/visual/scenario-assets/v1",
+  "lighting_reference": {
+    "path": "docs/sim/simulator-smoke.jpg",
+    "sha256": "e93ce358c9600716cb76be8c23c2e6f75db07da98bc21f1f1cf9ddabc085db99",
+    "use": "Visually inspected; lighting described in text prompts. Not supplied as image input."
+  },
+  "dimensions_note": "Nominal authored display scale, not measured dimensions or collision footprints. Height spans alpha>128 bounds. Plane dimensions retain the full untouched PNG canvas. Ground anchor is image pixel coordinates from top-left.",
+  "representation": "Fixed-view RGBA cutout; not a rigged or multi-view 3D asset.",
+  "assets": {
+    "adult": {
+      "path": "runs/sim/visual/scenario-assets/v1/adult.png",
+      "sha256": "2be956b3fe191f7a5a7a4d62d9b715e2a8caf7a57c199b9c66d0f6edea405796",
+      "original_path": "generated_images/01a0f4ff-9b99-7860-a798-17323ebb48ec/exec-f8751efc-cf7d-4182-b162-9827cf0bd589.png",
+      "original_sha256": "2be956b3fe191f7a5a7a4d62d9b715e2a8caf7a57c199b9c66d0f6edea405796",
+      "semantic_class": "human",
+      "visible_count": 1,
+      "nominal_height_m": 1.75,
+      "image_size_px": [
+        1024,
+        1536
+      ],
+      "alpha_core_bbox_px": [
+        271,
+        49,
+        748,
+        1457
+      ],
+      "ground_anchor_px": [
+        509.5,
+        1457
+      ],
+      "plane_width_m": 1.272727,
+      "plane_height_m": 1.909091,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.731951,
+      "prompt": "Use case: photorealistic-natural. Asset type: transparent cutout for an offline driving simulator. Generate exactly one full-body adult man in a dark charcoal jacket, plain blue jeans and everyday shoes, standing naturally facing the camera, arms relaxed, neutral expression. Natural human anatomy, believable fabric and skin texture. Reference lighting is a dim overcast parking lot: flat soft cool-neutral daylight, muted colors, no hard rim light, no studio highlights. Camera height 1.2 metres, near-frontal view from about 10 metres away, minimal perspective distortion. Entire person from head to soles visible with transparent margin on every side. Genuine transparent alpha background, no pavement, no scenery, no cast shadow outside the subject, no text, logos, watermarks, props or other people. Preserve fine natural edges. Portrait composition, subject centered.",
+      "visual_qa": "Complete silhouette, intended identity/count, no scenery; generated alpha preserved unchanged."
+    },
+    "group": {
+      "path": "runs/sim/visual/scenario-assets/v1/group.png",
+      "sha256": "adf8138f4b26a2b8acc6f9ef6776defcc3aed9a1e74ac2f8cdd24b6cc5d70dad",
+      "original_path": "generated_images/01a0f4ff-9b99-7860-a798-17323ebb48ec/exec-a81d88ca-cd98-487c-b32c-eb85748a45b2.png",
+      "original_sha256": "adf8138f4b26a2b8acc6f9ef6776defcc3aed9a1e74ac2f8cdd24b6cc5d70dad",
+      "semantic_class": "human",
+      "visible_count": 5,
+      "nominal_height_m": 1.8,
+      "image_size_px": [
+        1536,
+        1024
+      ],
+      "alpha_core_bbox_px": [
+        95,
+        38,
+        1467,
+        965
+      ],
+      "ground_anchor_px": [
+        781.0,
+        965
+      ],
+      "plane_width_m": 2.982524,
+      "plane_height_m": 1.98835,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.461818,
+      "prompt": "Use case: photorealistic-natural. Asset type: transparent full-body cutout for an offline driving simulator. Diffuse dim overcast parking-lot daylight, soft cool-neutral low-contrast lighting, muted natural colors, realistic materials, no hard rim light or studio highlights. Camera 1.2 metres above ground, near-frontal view about 10 metres away, minimal perspective distortion. Whole subject including feet or wheels unclipped, transparent margin on every side. Genuine transparent alpha background without scenery, pavement, floor, haze, glow, halo or cast shadow outside the subject. No text, logos or watermarks. Generate exactly FIVE adult humans in ordinary varied everyday clothing, a mixed group of three men and two women. Five clearly distinct heads and five complete bodies, all standing neutrally facing the camera, compact shallow staggered row with slight gaps and all feet visible. No one hidden behind anyone, no extra people, no props, no gestures. Landscape composition.",
+      "visual_qa": "Complete silhouette, intended identity/count, no scenery; generated alpha preserved unchanged."
+    },
+    "elderly": {
+      "path": "runs/sim/visual/scenario-assets/v1/elderly.png",
+      "sha256": "228c4277818715c071f91c0396687c6b94027637cda59d2ee179a15b6c80ac79",
+      "original_path": "generated_images/01a0f4ff-9b99-7860-a798-17323ebb48ec/exec-3022564d-1de2-4922-8d45-30b8b82bf5c3.png",
+      "original_sha256": "228c4277818715c071f91c0396687c6b94027637cda59d2ee179a15b6c80ac79",
+      "semantic_class": "human",
+      "visible_count": 1,
+      "nominal_height_m": 1.55,
+      "image_size_px": [
+        1024,
+        1536
+      ],
+      "alpha_core_bbox_px": [
+        229,
+        26,
+        796,
+        1464
+      ],
+      "ground_anchor_px": [
+        512.5,
+        1464
+      ],
+      "plane_width_m": 1.103755,
+      "plane_height_m": 1.655633,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.654203,
+      "prompt": "Use case: photorealistic-natural. Asset type: transparent full-body cutout for an offline driving simulator. Diffuse dim overcast parking-lot daylight, soft cool-neutral low-contrast lighting, muted natural colors, realistic materials, no hard rim light or studio highlights. Camera 1.2 metres above ground, near-frontal view about 10 metres away, minimal perspective distortion. Whole subject including feet or wheels unclipped, transparent margin on every side. Genuine transparent alpha background without scenery, pavement, floor, haze, glow, halo or cast shadow outside the subject. No text, logos or watermarks. Generate exactly one elderly woman with white hair in ordinary modest everyday clothes, standing naturally and gently leaning with both hands on a metal walking frame. Entire metal walker and all its legs and the woman's feet visible. One woman, one walker, no other people. Neutral calm expression. Portrait composition.",
+      "visual_qa": "Complete silhouette, intended identity/count, no scenery; generated alpha preserved unchanged."
+    },
+    "dog": {
+      "path": "runs/sim/visual/scenario-assets/v1/dog.png",
+      "sha256": "f1e685d754bff11572e0849645ce35b6546b46fe802c2668de02fa6d3ce7da5c",
+      "original_path": "generated_images/01a0f4ff-9b99-7860-a798-17323ebb48ec/exec-ca54f014-a0dc-42b0-b972-224375f970b4.png",
+      "original_sha256": "f1e685d754bff11572e0849645ce35b6546b46fe802c2668de02fa6d3ce7da5c",
+      "semantic_class": "dog",
+      "visible_count": 1,
+      "nominal_height_m": 0.8,
+      "image_size_px": [
+        1536,
+        1024
+      ],
+      "alpha_core_bbox_px": [
+        277,
+        32,
+        1364,
+        988
+      ],
+      "ground_anchor_px": [
+        820.5,
+        988
+      ],
+      "plane_width_m": 1.285356,
+      "plane_height_m": 0.856904,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.645892,
+      "prompt": "Use case: photorealistic-natural. Asset type: transparent full-body cutout for an offline driving simulator. Diffuse dim overcast parking-lot daylight, soft cool-neutral low-contrast lighting, muted natural colors, realistic materials, no hard rim light or studio highlights. Camera 1.2 metres above ground, near-frontal view about 10 metres away, minimal perspective distortion. Whole subject including feet or wheels unclipped, transparent margin on every side. Genuine transparent alpha background without scenery, pavement, floor, haze, glow, halo or cast shadow outside the subject. No text, logos or watermarks. Generate exactly one medium-sized golden retriever standing neutrally on all four paws, mouth relaxed, whole tail visible. Body at a slight three-quarter angle with head generally facing the camera so all four paws and the entire body are readable. Natural fur detail, no collar logos, no leash, no other animals. Landscape composition.",
+      "visual_qa": "Complete silhouette, intended identity/count, no scenery; generated alpha preserved unchanged."
+    },
+    "robot": {
+      "path": "runs/sim/visual/scenario-assets/v1/robot.png",
+      "sha256": "5c2e5fdde37ef408c83cb3c3c422c0de8c3f599e758bbfda88216c9a5080b244",
+      "original_path": "generated_images/01a0f4ff-9b99-7860-a798-17323ebb48ec/exec-acfb4282-e8d0-4b85-a0fb-b812b2a224f8.png",
+      "original_sha256": "5c2e5fdde37ef408c83cb3c3c422c0de8c3f599e758bbfda88216c9a5080b244",
+      "semantic_class": "robot",
+      "visible_count": 1,
+      "nominal_height_m": 1.75,
+      "image_size_px": [
+        1024,
+        1536
+      ],
+      "alpha_core_bbox_px": [
+        252,
+        30,
+        768,
+        1492
+      ],
+      "ground_anchor_px": [
+        510.0,
+        1492
+      ],
+      "plane_width_m": 1.225718,
+      "plane_height_m": 1.838577,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.742298,
+      "prompt": "Use case: photorealistic-natural. Asset type: genuinely transparent full-body cutout for an offline driving simulator. Diffuse dim overcast parking-lot daylight, soft cool-neutral low-contrast lighting, muted colors, realistic materials, no hard rim light or studio highlights. Camera 1.2 metres above ground, near-frontal view about 10 metres away, minimal perspective distortion. Entire subject unclipped with transparent margin on every side. Genuine transparent alpha background without scenery, pavement, floor, haze, glow, halo or cast shadow outside the subject. No text, logos or watermarks. Generate exactly one human-sized humanoid robot standing upright neutrally facing the camera with arms relaxed at sides, realistic smooth gray and white body panels and dark face visor, plausible joints and feet. An actual tangible robot photographed outdoors, not a cartoon. Entire head to soles visible. Portrait composition.",
+      "visual_qa": "Complete silhouette, intended identity/count, no scenery; generated alpha preserved unchanged."
+    },
+    "stroller": {
+      "path": "runs/sim/visual/scenario-assets/v1/stroller.png",
+      "sha256": "33c0c64c0fe691dd51f6481b0161ec54690ddb4eebbf3faea6f5d591cf1d52f3",
+      "original_path": "generated_images/01a0f4ff-9b99-7860-a798-17323ebb48ec/exec-349a625c-a5e4-4aec-9059-74fba0deaa28.png",
+      "original_sha256": "33c0c64c0fe691dd51f6481b0161ec54690ddb4eebbf3faea6f5d591cf1d52f3",
+      "semantic_class": "human_with_stroller",
+      "visible_count": 1,
+      "nominal_height_m": 1.05,
+      "image_size_px": [
+        1024,
+        1536
+      ],
+      "alpha_core_bbox_px": [
+        47,
+        11,
+        983,
+        1518
+      ],
+      "ground_anchor_px": [
+        515.0,
+        1518
+      ],
+      "plane_width_m": 0.71347,
+      "plane_height_m": 1.070206,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.463878,
+      "prompt": "Use case: photorealistic-natural. Asset type: genuinely transparent full-body cutout for an offline driving simulator. Diffuse dim overcast parking-lot daylight, soft cool-neutral low-contrast lighting, muted colors, realistic materials, no hard rim light or studio highlights. Camera 1.2 metres above ground, near-frontal view about 10 metres away, minimal perspective distortion. Entire subject unclipped with transparent margin on every side. Genuine transparent alpha background without scenery, pavement, floor, haze, glow, halo or cast shadow outside the subject. No text, logos or watermarks. Generate exactly one modern baby stroller with one baby visibly sitting safely inside, canopy folded back enough to see the baby. No adult holding the stroller and no other people. Near-frontal slight three-quarter orientation showing realistic handle, frame, seat and all wheels, full stroller and handle unclipped. Neutral baby expression, plain clothing, intact ordinary stroller, no harm. Portrait composition.",
+      "visual_qa": "Complete silhouette, intended identity/count, no scenery; generated alpha preserved unchanged."
+    },
+    "servers": {
+      "path": "runs/sim/visual/scenario-assets/v1/servers.png",
+      "sha256": "67a26bd371a3528d36bb6930722fd0a798c00718a568f77c28c1dbfc65471c46",
+      "original_path": "generated_images/01a0f4ff-9b99-7860-a798-17323ebb48ec/exec-058820bf-7ac6-409d-b0a9-99ad97a8b1ad.png",
+      "original_sha256": "67a26bd371a3528d36bb6930722fd0a798c00718a568f77c28c1dbfc65471c46",
+      "semantic_class": "server_rack",
+      "visible_count": 2,
+      "nominal_height_m": 2.1,
+      "image_size_px": [
+        1024,
+        1536
+      ],
+      "alpha_core_bbox_px": [
+        63,
+        124,
+        976,
+        1444
+      ],
+      "ground_anchor_px": [
+        519.5,
+        1444
+      ],
+      "plane_width_m": 1.629091,
+      "plane_height_m": 2.443636,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.328274,
+      "prompt": "Use case: photorealistic-natural. Asset type: genuinely transparent full-body cutout for an offline driving simulator. Diffuse dim overcast parking-lot daylight, soft cool-neutral low-contrast lighting, muted colors, realistic materials, no hard rim light or studio highlights. Camera 1.2 metres above ground, near-frontal view about 10 metres away, minimal perspective distortion. Entire subject unclipped with transparent margin on every side. Genuine transparent alpha background without scenery, pavement, floor, haze, glow, halo or cast shadow outside the subject. No text, logos or watermarks. Generate exactly TWO tall black server racks side by side on ONE wooden shipping pallet, partly wrapped together in clear stretch plastic film. Small subtle green/blue status lights, plausible realistic server faces, no lettering. Three-quarter view very close to frontal so both racks are clearly countable. Entire top, sides and pallet bottom visible, ordinary industrial scale, no people or robots. Portrait composition.",
+      "visual_qa": "Complete silhouette, intended identity/count, no scenery; generated alpha preserved unchanged."
+    },
+    "child": {
+      "path": "runs/sim/visual/scenario-assets/v1/child.png",
+      "sha256": "fb3d125b2afad3faefbaae1a5cef9780b0269fdafcc7e81c936ec6de11dad3da",
+      "original_path": "generated_images/01a0f4ff-9b99-7860-a798-17323ebb48ec/exec-77ab6e68-1c44-46c7-8740-ab995f5f39df.png",
+      "original_sha256": "fb3d125b2afad3faefbaae1a5cef9780b0269fdafcc7e81c936ec6de11dad3da",
+      "semantic_class": "human",
+      "visible_count": 1,
+      "nominal_height_m": 1.22,
+      "image_size_px": [
+        1024,
+        1536
+      ],
+      "alpha_core_bbox_px": [
+        281,
+        40,
+        737,
+        1461
+      ],
+      "ground_anchor_px": [
+        509.0,
+        1461
+      ],
+      "plane_width_m": 0.879156,
+      "plane_height_m": 1.318733,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.729608,
+      "prompt": "Use case: photorealistic-natural. Asset type: genuinely transparent full-body cutout for an offline driving simulator. Diffuse dim overcast parking-lot daylight, soft cool-neutral low-contrast lighting, muted colors, realistic materials, no hard rim light or studio highlights. Camera 1.2 metres above ground, near-frontal view about 10 metres away, minimal perspective distortion. Entire subject unclipped with transparent margin on every side. Genuine transparent alpha background without scenery, pavement, floor, haze, glow, halo or cast shadow outside the subject. No text, logos or watermarks. Generate exactly one child approximately seven years old, full body, standing naturally facing the camera, arms relaxed and neutral calm expression. Ordinary muted blue sweatshirt, tan trousers and sneakers, natural age-appropriate appearance, no accessories or props. Entire head and both shoe soles visible. No other people, no injury, no dangerous activity. Portrait composition.",
+      "visual_qa": "Complete silhouette, intended identity/count, no scenery; generated alpha preserved unchanged."
+    }
+  }
+}

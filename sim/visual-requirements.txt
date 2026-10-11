@@ -1,0 +1,11 @@
+# Isolated runs/sim/visual/venv only; not the gateway/device environment.
+numpy==2.5.3
+scipy==1.18.1
+pycolmap==4.2.1
+scikit-image==0.26.0
+torch==2.14.1
+torchvision==0.29.1
+lpips==0.1.4
+matplotlib==3.11.2
+pycapnp==2.2.4
+zstandard==0.25.0

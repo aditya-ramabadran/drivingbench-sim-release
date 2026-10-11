@@ -1,0 +1,1864 @@
+{
+  "purpose": "Renderer-independent physics layout evidence; circles are nominal physical-base estimates",
+  "provenance": {
+    "course": {
+      "path": "docs/sim/pilot-course.json",
+      "sha256": "48096b603fb05a6507036cd7c3496fc0e38001c40afed5171bec6035ac51d629"
+    },
+    "calibration": {
+      "path": "runs/sim/visual/marker-eval/calibration.json",
+      "sha256": "1026bccc1a84950f24a55a6e4a785468d02861af91cf0e2b7cc969db43793c5d"
+    },
+    "observations": {
+      "path": "runs/sim/visual/cones/landmarks.json",
+      "sha256": "c14443facae2d43d52827e31efd8e49bcdfcfae1996ab9e2eba892e9ec3c7f52"
+    },
+    "broad_audit": {
+      "path": "runs/sim/visual/marker-layouts/broad/audit.json",
+      "sha256": "041ecc678ebd9418224f3aaf01bb98c7026afc14751d4ccf854a703b27ae0f08"
+    }
+  },
+  "layouts": [
+    {
+      "id": "pilot_664abe_100_800",
+      "session_id": "2026-09-17-gpt-6-astra-codex-664abe",
+      "route": "00000042--544757d3f5",
+      "time_range_monotonic_s": [
+        100,
+        800
+      ],
+      "held_out_range_s": [
+        340,
+        480
+      ],
+      "status": "Provisional shared-layout hypothesis; repeated observations support consistency, not proof of immobility throughout gaps",
+      "frame": {
+        "axes": "east/north/up",
+        "units": "metres",
+        "origin_lat_lon": [
+          0.0,
+          0.0
+        ],
+        "map": "pilot SfM only; independent whole-site map requires separate registration"
+      },
+      "registration": {
+        "source": "runs/sim/visual/cones/landmarks.json",
+        "review": "runs/sim/visual/cones/review.json",
+        "points3D_path": "runs/sim/visual/pilot/sfm/sparse/points3D.bin",
+        "points3D_sha256": "e445eb95f4165b5c7f0f241af650779c088f41cf6dc92bf4afe9261ea8cdf920",
+        "registration_sha256": "a33ddb2455d5b52a321b27539d722f3070fd10c4a71e2ab217cef4b1fae035c6",
+        "registration": {
+          "source": "COLMAP training cameras",
+          "target": "manifest metric ENU camera centers",
+          "scale": 4.827129452029559,
+          "rotation": [
+            [
+              -0.05533891278332024,
+              -0.13975292473848328,
+              -0.9886388242219704
+            ],
+            [
+              0.9966666787243451,
+              -0.06717546800608526,
+              -0.0462924185882119
+            ],
+            [
+              -0.059942774815175986,
+              -0.9879051455100352,
+              0.14300450070628473
+            ]
+          ],
+          "translation": [
+            -19.89941663983216,
+            -8.478172734965137,
+            1.2268537639569488
+          ],
+          "train_camera_count": 218,
+          "rms_m": 1.1988674785146578,
+          "median_m": 0.9839638311238512,
+          "max_m": 2.600668175617175
+        }
+      },
+      "markers": [
+        {
+          "id": "marker_000",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -30.872,
+            -33.076,
+            0.061
+          ],
+          "conditional_sigma_xy_m": 0.02801174978335501,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            156.79448752500002,
+            795.793747712
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_001",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -28.515,
+            -6.877,
+            -0.025
+          ],
+          "conditional_sigma_xy_m": 0.08883507724036925,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "mid_return"
+          ],
+          "observed_time_range_s": [
+            124.794729793,
+            500.794121983
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_002",
+          "class": "tall_cone",
+          "color": "orange_red",
+          "position_enu_m": [
+            -35.227,
+            -28.371,
+            0.057
+          ],
+          "conditional_sigma_xy_m": 0.18907307746684585,
+          "fitted_passes": [
+            "early_out",
+            "early_return"
+          ],
+          "observed_time_range_s": [
+            145.794537267,
+            796.7937474590001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.17,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Per-marker training-view apparent colored base-width/2, rounded upward to 0.01m",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_003",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -31.12,
+            -21.615,
+            0.039
+          ],
+          "conditional_sigma_xy_m": 0.03803515424813799,
+          "fitted_passes": [
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            724.7938451,
+            796.7937474590001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_004",
+          "class": "tall_cone",
+          "color": "orange_red",
+          "position_enu_m": [
+            -34.974,
+            -27.921,
+            0.084
+          ],
+          "conditional_sigma_xy_m": 0.03397644131772292,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            143.79454913700002,
+            795.793747712
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.18,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Per-marker training-view apparent colored base-width/2, rounded upward to 0.01m",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_005",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -28.141,
+            -29.557,
+            0.064
+          ],
+          "conditional_sigma_xy_m": 0.03779846766909143,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            160.794538598,
+            795.793747712
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_006",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -27.279,
+            -8.495,
+            -0.007
+          ],
+          "conditional_sigma_xy_m": 0.05988714991229,
+          "fitted_passes": [
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            711.7938556900001,
+            799.7937624790001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_007",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -33.332,
+            -20.305,
+            0.081
+          ],
+          "conditional_sigma_xy_m": 0.044883954220540694,
+          "fitted_passes": [
+            "early_out",
+            "early_return"
+          ],
+          "observed_time_range_s": [
+            143.79454913700002,
+            496.79411633100005
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_008",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -33.835,
+            -22.332,
+            0.098
+          ],
+          "conditional_sigma_xy_m": 0.07217749400666573,
+          "fitted_passes": [
+            "early_out",
+            "early_return"
+          ],
+          "observed_time_range_s": [
+            142.794561461,
+            494.79413553600006
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_009",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -28.285,
+            -11.285,
+            0.067
+          ],
+          "conditional_sigma_xy_m": 0.06567004941175848,
+          "fitted_passes": [
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            716.793858276,
+            797.793747517
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_010",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -26.977,
+            -2.974,
+            -0.063
+          ],
+          "conditional_sigma_xy_m": 0.07238414591707858,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "mid_return"
+          ],
+          "observed_time_range_s": [
+            121.79475963600001,
+            501.79412360400005
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_011",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -25.669,
+            -0.227,
+            -0.107
+          ],
+          "conditional_sigma_xy_m": 0.053369782033516416,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "mid_return"
+          ],
+          "observed_time_range_s": [
+            120.794776736,
+            503.79409747200003
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_012",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -27.899,
+            -4.745,
+            -0.032
+          ],
+          "conditional_sigma_xy_m": 0.07206867934782495,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "mid_return"
+          ],
+          "observed_time_range_s": [
+            122.79474393000001,
+            501.79412360400005
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_013",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -26.586,
+            -6.555,
+            -0.018
+          ],
+          "conditional_sigma_xy_m": 0.08484793072379668,
+          "fitted_passes": [
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            709.793875521,
+            799.7937624790001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_014",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -8.273,
+            8.282,
+            -0.258
+          ],
+          "conditional_sigma_xy_m": 0.027740184545267232,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "mid_return",
+            "late_out"
+          ],
+          "observed_time_range_s": [
+            116.79487172600001,
+            705.793873046
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_015",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -36.608,
+            -39.088,
+            0.121
+          ],
+          "conditional_sigma_xy_m": 0.030369127986025365,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "late_out"
+          ],
+          "observed_time_range_s": [
+            178.794653613,
+            782.793777833
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_016",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -35.709,
+            -30.376,
+            0.078
+          ],
+          "conditional_sigma_xy_m": 0.048005879584245216,
+          "fitted_passes": [
+            "early_out",
+            "early_return"
+          ],
+          "observed_time_range_s": [
+            147.794515084,
+            216.794678029
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_017",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -12.782,
+            7.881,
+            -0.245
+          ],
+          "conditional_sigma_xy_m": 0.03631247103150419,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "mid_return",
+            "late_out"
+          ],
+          "observed_time_range_s": [
+            116.79487172600001,
+            708.793874004
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_018",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -25.652,
+            -4.157,
+            -0.043
+          ],
+          "conditional_sigma_xy_m": 0.09157468181907753,
+          "fitted_passes": [
+            "late_out"
+          ],
+          "observed_time_range_s": [
+            707.793872486,
+            797.793747517
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_019",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -30.39,
+            -18.958,
+            0.083
+          ],
+          "conditional_sigma_xy_m": 0.07132974147096238,
+          "fitted_passes": [
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            730.7938311300001,
+            793.793747595
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_020",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -31.724,
+            -15.145,
+            0.111
+          ],
+          "conditional_sigma_xy_m": 0.05225183764883528,
+          "fitted_passes": [
+            "early_out",
+            "early_return"
+          ],
+          "observed_time_range_s": [
+            148.794513595,
+            491.79413103700006
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_021",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -10.369,
+            7.922,
+            -0.246
+          ],
+          "conditional_sigma_xy_m": 0.026137793145380016,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "mid_return",
+            "late_out"
+          ],
+          "observed_time_range_s": [
+            116.79487172600001,
+            707.793872486
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_022",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -34.719,
+            -37.949,
+            0.112
+          ],
+          "conditional_sigma_xy_m": 0.030921100038105682,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "late_out"
+          ],
+          "observed_time_range_s": [
+            177.794654855,
+            784.7937623260001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_023",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -22.742,
+            3.75,
+            -0.247
+          ],
+          "conditional_sigma_xy_m": 0.05128552459906628,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "mid_return",
+            "late_out"
+          ],
+          "observed_time_range_s": [
+            121.79475963600001,
+            799.7937624790001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_024",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -15.809,
+            7.864,
+            -0.279
+          ],
+          "conditional_sigma_xy_m": 0.04049584119575403,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "late_out"
+          ],
+          "observed_time_range_s": [
+            116.79487172600001,
+            710.793853548
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_025",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -32.156,
+            -24.026,
+            0.067
+          ],
+          "conditional_sigma_xy_m": 0.039773921823553215,
+          "fitted_passes": [
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            725.7938458360001,
+            795.793747712
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_026",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -28.856,
+            -14.12,
+            0.084
+          ],
+          "conditional_sigma_xy_m": 0.030874770706517923,
+          "fitted_passes": [
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            719.793844077,
+            794.7937480700001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_027",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -24.846,
+            -1.248,
+            -0.077
+          ],
+          "conditional_sigma_xy_m": 0.04640851532682988,
+          "fitted_passes": [
+            "late_out"
+          ],
+          "observed_time_range_s": [
+            703.793860428,
+            799.7937624790001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_028",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -20.073,
+            5.925,
+            -0.25
+          ],
+          "conditional_sigma_xy_m": 0.053183656385546646,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "mid_return",
+            "late_out"
+          ],
+          "observed_time_range_s": [
+            116.79487172600001,
+            713.793851485
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_029",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -43.17,
+            -35.764,
+            0.127
+          ],
+          "conditional_sigma_xy_m": 0.11422563659889161,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "late_out"
+          ],
+          "observed_time_range_s": [
+            172.794603268,
+            785.7937600930001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_030",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -37.859,
+            -31.692,
+            0.067
+          ],
+          "conditional_sigma_xy_m": 0.07683937020321698,
+          "fitted_passes": [
+            "late_out"
+          ],
+          "observed_time_range_s": [
+            490.794128374,
+            791.793770758
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_031",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -38.851,
+            -40.257,
+            0.142
+          ],
+          "conditional_sigma_xy_m": 0.02075944331708083,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            171.79459489,
+            786.7937681730001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_032",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -25.995,
+            -26.085,
+            0.0
+          ],
+          "conditional_sigma_xy_m": 0.05956215533245757,
+          "fitted_passes": [
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            490.794128374,
+            794.7937480700001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_033",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -40.226,
+            -41.304,
+            0.156
+          ],
+          "conditional_sigma_xy_m": 0.023491938301518595,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            178.794653613,
+            785.7937600930001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_034",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -29.393,
+            -9.802,
+            0.06
+          ],
+          "conditional_sigma_xy_m": 0.09131088080086495,
+          "fitted_passes": [
+            "early_out",
+            "early_return"
+          ],
+          "observed_time_range_s": [
+            134.794599274,
+            496.79411633100005
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_035",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -18.253,
+            7.062,
+            -0.274
+          ],
+          "conditional_sigma_xy_m": 0.04819804052479974,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "mid_return",
+            "late_out"
+          ],
+          "observed_time_range_s": [
+            116.79487172600001,
+            711.7938556900001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_036",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -34.036,
+            -26.709,
+            0.089
+          ],
+          "conditional_sigma_xy_m": 0.0597288233280241,
+          "fitted_passes": [
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            732.793828383,
+            790.7937709600001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_037",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -32.922,
+            -25.711,
+            0.083
+          ],
+          "conditional_sigma_xy_m": 0.07521698821064773,
+          "fitted_passes": [
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            726.793847354,
+            792.793769307
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_038",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -24.932,
+            1.861,
+            -0.181
+          ],
+          "conditional_sigma_xy_m": 0.10136687892931562,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "mid_return"
+          ],
+          "observed_time_range_s": [
+            116.79487172600001,
+            509.79410563700003
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_039",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -30.938,
+            -12.807,
+            0.091
+          ],
+          "conditional_sigma_xy_m": 0.042367463100342895,
+          "fitted_passes": [
+            "early_out",
+            "early_return"
+          ],
+          "observed_time_range_s": [
+            140.794569329,
+            494.79413553600006
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_040",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -23.809,
+            1.31,
+            -0.137
+          ],
+          "conditional_sigma_xy_m": 0.057594292497992645,
+          "fitted_passes": [
+            "late_out"
+          ],
+          "observed_time_range_s": [
+            705.793873046,
+            799.7937624790001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_041",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -32.441,
+            -17.182,
+            0.127
+          ],
+          "conditional_sigma_xy_m": 0.05815420982635054,
+          "fitted_passes": [
+            "early_out",
+            "early_return"
+          ],
+          "observed_time_range_s": [
+            154.794478477,
+            494.79413553600006
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_042",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -46.0,
+            -44.947,
+            0.203
+          ],
+          "conditional_sigma_xy_m": 0.08208467521807736,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            175.794631005,
+            784.7937623260001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_043",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -34.686,
+            -25.057,
+            0.108
+          ],
+          "conditional_sigma_xy_m": 0.07706811983965799,
+          "fitted_passes": [
+            "early_out"
+          ],
+          "observed_time_range_s": [
+            146.79451764,
+            491.79413103700006
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_044",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -43.951,
+            -42.28,
+            0.19
+          ],
+          "conditional_sigma_xy_m": 0.02423791539306619,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            174.794620799,
+            786.7937681730001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_045",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -42.207,
+            -41.797,
+            0.196
+          ],
+          "conditional_sigma_xy_m": 0.0229771329901666,
+          "fitted_passes": [
+            "early_out",
+            "early_return",
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            174.794620799,
+            784.7937623260001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_046",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -20.254,
+            -5.43,
+            -0.057
+          ],
+          "conditional_sigma_xy_m": 0.0281756436668739,
+          "fitted_passes": [
+            "early_out"
+          ],
+          "observed_time_range_s": [
+            129.794659924,
+            218.79468823300002
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_047",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -14.022,
+            -0.606,
+            -0.203
+          ],
+          "conditional_sigma_xy_m": 0.040049899570479684,
+          "fitted_passes": [
+            "early_out"
+          ],
+          "observed_time_range_s": [
+            120.794776736,
+            710.793853548
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_048",
+          "class": "tall_cone",
+          "color": "orange_red",
+          "position_enu_m": [
+            -41.807,
+            -44.78,
+            -0.006
+          ],
+          "conditional_sigma_xy_m": 0.10061752940649524,
+          "fitted_passes": [],
+          "observed_time_range_s": [
+            173.794612319,
+            784.7937623260001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.09,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Per-marker training-view apparent colored base-width/2, rounded upward to 0.01m",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_049",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -36.824,
+            -30.047,
+            0.09
+          ],
+          "conditional_sigma_xy_m": 0.08014488708179204,
+          "fitted_passes": [
+            "late_out"
+          ],
+          "observed_time_range_s": [
+            749.7938105290001,
+            790.7937709600001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_050",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -34.999,
+            -26.503,
+            0.112
+          ],
+          "conditional_sigma_xy_m": 0.19301246716210824,
+          "fitted_passes": [],
+          "observed_time_range_s": [
+            148.794513595,
+            490.794128374
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_051",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -40.829,
+            -34.244,
+            0.127
+          ],
+          "conditional_sigma_xy_m": 0.10712915436625288,
+          "fitted_passes": [
+            "early_out",
+            "late_out"
+          ],
+          "observed_time_range_s": [
+            171.79459489,
+            786.7937681730001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_052",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -47.825,
+            -43.333,
+            0.166
+          ],
+          "conditional_sigma_xy_m": 0.038991846773525816,
+          "fitted_passes": [
+            "early_return",
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            176.794632581,
+            785.7937600930001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_053",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -18.791,
+            -3.747,
+            -0.142
+          ],
+          "conditional_sigma_xy_m": 0.04369621798744759,
+          "fitted_passes": [
+            "early_out"
+          ],
+          "observed_time_range_s": [
+            126.794692948,
+            223.79467743700002
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_054",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -22.658,
+            -8.899,
+            0.02
+          ],
+          "conditional_sigma_xy_m": 0.041230453627095064,
+          "fitted_passes": [
+            "early_out"
+          ],
+          "observed_time_range_s": [
+            133.79460718,
+            218.79468823300002
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_055",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -37.042,
+            -31.884,
+            0.102
+          ],
+          "conditional_sigma_xy_m": 0.06568813103537408,
+          "fitted_passes": [
+            "early_out",
+            "early_return"
+          ],
+          "observed_time_range_s": [
+            176.794632581,
+            205.794687178
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_056",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -22.04,
+            1.977,
+            0.041
+          ],
+          "conditional_sigma_xy_m": 0.24848857240704972,
+          "fitted_passes": [],
+          "observed_time_range_s": [
+            117.794855494,
+            698.793885343
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_057",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -17.154,
+            -2.522,
+            -0.167
+          ],
+          "conditional_sigma_xy_m": 0.05933706039002903,
+          "fitted_passes": [
+            "early_out"
+          ],
+          "observed_time_range_s": [
+            125.794702919,
+            224.794678594
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_058",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -29.397,
+            -16.604,
+            0.077
+          ],
+          "conditional_sigma_xy_m": 0.03741852738579215,
+          "fitted_passes": [
+            "late_out",
+            "late_return"
+          ],
+          "observed_time_range_s": [
+            726.793847354,
+            793.793747595
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_059",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -24.471,
+            -22.554,
+            -0.051
+          ],
+          "conditional_sigma_xy_m": 0.08735438126325869,
+          "fitted_passes": [
+            "mid_return"
+          ],
+          "observed_time_range_s": [
+            490.794128374,
+            792.793769307
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_060",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -35.927,
+            -29.01,
+            0.092
+          ],
+          "conditional_sigma_xy_m": 0.09461895751979131,
+          "fitted_passes": [],
+          "observed_time_range_s": [
+            749.7938105290001,
+            790.7937709600001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_061",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -46.182,
+            -37.091,
+            0.118
+          ],
+          "conditional_sigma_xy_m": 0.3552933519719936,
+          "fitted_passes": [
+            "early_out"
+          ],
+          "observed_time_range_s": [
+            172.794603268,
+            757.793793603
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_062",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -34.971,
+            -27.278,
+            0.201
+          ],
+          "conditional_sigma_xy_m": 0.7521061983599113,
+          "fitted_passes": [],
+          "observed_time_range_s": [
+            494.79413553600006,
+            748.7938071890001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_063",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -11.229,
+            0.289,
+            -0.226
+          ],
+          "conditional_sigma_xy_m": 0.04907161388985067,
+          "fitted_passes": [
+            "early_out"
+          ],
+          "observed_time_range_s": [
+            121.79475963600001,
+            225.79468736500002
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_064",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -49.639,
+            -43.32,
+            0.172
+          ],
+          "conditional_sigma_xy_m": 0.48539728054943393,
+          "fitted_passes": [],
+          "observed_time_range_s": [
+            178.794653613,
+            783.7937792460001
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_065",
+          "class": "tall_cone",
+          "color": "orange_red",
+          "position_enu_m": [
+            -23.291,
+            -16.379,
+            -0.047
+          ],
+          "conditional_sigma_xy_m": 0.1106047426275983,
+          "fitted_passes": [
+            "mid_return"
+          ],
+          "observed_time_range_s": [
+            490.794128374,
+            494.79413553600006
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.2,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Per-marker training-view apparent colored base-width/2, rounded upward to 0.01m",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_066",
+          "class": "dome_marker",
+          "color": "yellow_green",
+          "position_enu_m": [
+            -23.864,
+            -11.609,
+            0.004
+          ],
+          "conditional_sigma_xy_m": 0.07057998482931926,
+          "fitted_passes": [
+            "early_return"
+          ],
+          "observed_time_range_s": [
+            214.794699021,
+            218.79468823300002
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        },
+        {
+          "id": "marker_067",
+          "class": "dome_marker",
+          "color": "orange_red",
+          "position_enu_m": [
+            -24.425,
+            -12.845,
+            0.005
+          ],
+          "conditional_sigma_xy_m": 0.09640178205872298,
+          "fitted_passes": [
+            "early_return"
+          ],
+          "observed_time_range_s": [
+            214.794699021,
+            218.79468823300002
+          ],
+          "collision_footprint": {
+            "shape": "circle",
+            "radius_m": 0.1,
+            "status": "nominal physical outer-base estimate, not a surveyed footprint",
+            "source": "Rounded above crop-derived colored radius upper quartile 0.0934m; outer-base allowance is an assumption",
+            "uncertainty": "Physical outer edge, camera scale and segmentation bias are unmeasured; no validated confidence interval"
+          }
+        }
+      ],
+      "boundary_order": null,
+      "course_exit_rule": null
+    }
+  ],
+  "session_index": {
+    "path": "docs/sim/marker-session-layouts.json",
+    "sha256": "f0370ceda4e8f762fa743c3e1f8f1237711e510b74a09917cffd09faea6149f8"
+  },
+  "absence_semantics": "Sampled unmarked parking patches do not imply an empty entire site; null coordinate layout means unknown"
+}

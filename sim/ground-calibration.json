@@ -1,0 +1,725 @@
+{
+  "normal": [
+    0.01050953719463474,
+    0.00035765360200569647,
+    0.9999447093273985
+  ],
+  "offset": 0.25481859078660124,
+  "height": 1.2478405031192725,
+  "mount_rotation": [
+    [
+      -0.010564254347542502,
+      0.019983082439540393,
+      0.9997445038340013
+    ],
+    [
+      -0.9999363761984058,
+      0.0037430691493137947,
+      -0.010641099028911668
+    ],
+    [
+      -0.003954754768639114,
+      -0.999793311564723,
+      0.019942268305334365
+    ]
+  ],
+  "map_from_ground": [
+    [
+      0.9999447732889826,
+      4.235164736271502e-22,
+      0.01050953719463474,
+      0.0
+    ],
+    [
+      -3.758981429255071e-06,
+      0.9999999360348836,
+      0.00035765360200569647,
+      0.0
+    ],
+    [
+      -0.010509536522390969,
+      -0.00035767335512871883,
+      0.9999447093273985,
+      -0.2548326806569156
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "map": "pilot SfM metric ENU",
+  "origin_lat_lon": [
+    0.0,
+    0.0
+  ],
+  "known_physical_height_m": 1.21,
+  "valid_road_polygon_xy": [
+    [
+      -37.100586276345396,
+      -37.3413277436162
+    ],
+    [
+      -34.28489850866993,
+      -40.02299811277219
+    ],
+    [
+      -1.8203521009659838,
+      2.5954987619329426
+    ],
+    [
+      -1.2665592222137967,
+      3.4486284216304277
+    ],
+    [
+      -0.5843747487391973,
+      4.618761310037138
+    ],
+    [
+      -0.5897730627418802,
+      4.621275686212828
+    ],
+    [
+      -4.111074645124464,
+      4.600635945222201
+    ],
+    [
+      -25.400334265046205,
+      -0.27862270514503606
+    ],
+    [
+      -28.15580454181773,
+      -5.20236676479345
+    ],
+    [
+      -33.18666264871916,
+      -20.1029196055637
+    ]
+  ],
+  "provenance": {
+    "runs/sim/visual/ground/road-masks.json": "3beda927d1bdfbacea4c0c26bdf8ef97c3bac9e8da4cada06d9458e04e3bdbc1",
+    "runs/sim/visual/ground/selected-road-points.json": "6a97a92fa264f71325386b84a40bd0a06b95193b2cb322318275a6f3ba4dd1a3",
+    "runs/sim/visual/pilot/sfm/frames.jsonl": "b1854ecd2face994d2b3a497e00fe86bc85a5fc6aa5e6787a4ea69462d67e8cb",
+    "runs/sim/visual/pilot/sfm/sparse/points3D.bin": "e445eb95f4165b5c7f0f241af650779c088f41cf6dc92bf4afe9261ea8cdf920"
+  },
+  "fit": {
+    "selected_road_points": 49,
+    "inlier_points": 45,
+    "inlier_rms_m": 0.01902468821645866,
+    "all_rms_m": 0.02730800090530278,
+    "train_camera_count": 218,
+    "height_percentiles_m": [
+      1.0667497414789364,
+      1.0977673232848524,
+      1.2478405031192725,
+      1.4770265840526842,
+      1.5470503190171296
+    ],
+    "mount_rotation_error_deg": [
+      0.4458668959373878,
+      1.105975918778151,
+      1.5207442555462656
+    ]
+  },
+  "status": "single-plane approximation from manually reviewed training asphalt/paint landmarks; not a complete surface model",
+  "stationarity": [
+    {
+      "interval": "early",
+      "count": 106,
+      "height": 1.2466222276238068,
+      "mount_difference_deg": 0.027743138662289772
+    },
+    {
+      "interval": "middle",
+      "count": 20,
+      "height": 1.326055142834993,
+      "mount_difference_deg": 0.19413296811417313
+    },
+    {
+      "interval": "late",
+      "count": 92,
+      "height": 1.2324817074112446,
+      "mount_difference_deg": 0.07129724335856766
+    }
+  ],
+  "road_observation_masks": [
+    {
+      "name": "00000042--544757d3f5--001--0680.jpg",
+      "t": 116.79487172600001,
+      "bounds": [
+        50,
+        570,
+        1050,
+        710
+      ],
+      "meaning": "manually inspected flat asphalt/paint patch; exclude visible islands and curbs"
+    },
+    {
+      "name": "00000042--544757d3f5--001--1040.jpg",
+      "t": 134.794599274,
+      "bounds": [
+        300,
+        530,
+        1300,
+        710
+      ],
+      "meaning": "manually inspected flat asphalt/paint patch; exclude visible islands and curbs"
+    },
+    {
+      "name": "00000042--544757d3f5--002--0340.jpg",
+      "t": 159.794518992,
+      "bounds": [
+        50,
+        550,
+        1200,
+        710
+      ],
+      "meaning": "manually inspected flat asphalt/paint patch; exclude visible islands and curbs"
+    },
+    {
+      "name": "00000042--544757d3f5--002--0940.jpg",
+      "t": 189.79469328300002,
+      "bounds": [
+        700,
+        560,
+        1300,
+        710
+      ],
+      "meaning": "manually inspected flat asphalt/paint patch; exclude visible islands and curbs"
+    },
+    {
+      "name": "00000042--544757d3f5--003--0140.jpg",
+      "t": 209.794676188,
+      "bounds": [
+        200,
+        550,
+        1200,
+        710
+      ],
+      "meaning": "manually inspected flat asphalt/paint patch; exclude visible islands and curbs"
+    },
+    {
+      "name": "00000042--544757d3f5--003--0720.jpg",
+      "t": 238.79466347500002,
+      "bounds": [
+        30,
+        580,
+        1050,
+        710
+      ],
+      "meaning": "manually inspected flat asphalt/paint patch; exclude visible islands and curbs"
+    },
+    {
+      "name": "00000042--544757d3f5--007--0960.jpg",
+      "t": 490.794128374,
+      "bounds": [
+        200,
+        590,
+        1300,
+        710
+      ],
+      "meaning": "manually inspected flat asphalt/paint patch; exclude visible islands and curbs"
+    },
+    {
+      "name": "00000042--544757d3f5--011--0340.jpg",
+      "t": 699.793887068,
+      "bounds": [
+        50,
+        560,
+        1200,
+        710
+      ],
+      "meaning": "manually inspected flat asphalt/paint patch; exclude visible islands and curbs"
+    },
+    {
+      "name": "00000042--544757d3f5--011--0960.jpg",
+      "t": 730.7938311300001,
+      "bounds": [
+        150,
+        560,
+        1200,
+        710
+      ],
+      "meaning": "manually inspected flat asphalt/paint patch; exclude visible islands and curbs"
+    },
+    {
+      "name": "00000042--544757d3f5--012--0240.jpg",
+      "t": 754.793813062,
+      "bounds": [
+        30,
+        600,
+        900,
+        710
+      ],
+      "meaning": "manually inspected flat asphalt/paint patch; exclude visible islands and curbs"
+    },
+    {
+      "name": "00000042--544757d3f5--012--0740.jpg",
+      "t": 779.793780105,
+      "bounds": [
+        150,
+        650,
+        1250,
+        710
+      ],
+      "meaning": "manually inspected flat asphalt/paint patch; exclude visible islands and curbs"
+    },
+    {
+      "name": "00000042--544757d3f5--012--1040.jpg",
+      "t": 794.7937480700001,
+      "bounds": [
+        100,
+        580,
+        1280,
+        710
+      ],
+      "meaning": "manually inspected flat asphalt/paint patch; exclude visible islands and curbs"
+    }
+  ],
+  "road_landmarks": [
+    {
+      "point3D_id": 16274,
+      "position_enu_m": [
+        -34.28489850866993,
+        -40.02299811277219,
+        0.10608303194429713
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 14457,
+      "position_enu_m": [
+        -34.135268156067816,
+        -39.54087456676972,
+        0.12732650839147408
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 18290,
+      "position_enu_m": [
+        -35.319110307742925,
+        -38.490384026993986,
+        0.10906336974076636
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 18291,
+      "position_enu_m": [
+        -35.319110307742925,
+        -38.490384026993986,
+        0.10906336974076636
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 18334,
+      "position_enu_m": [
+        -34.05854958630733,
+        -39.50823454682016,
+        0.10206660120278155
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 17148,
+      "position_enu_m": [
+        -33.798049743332896,
+        -39.128006871277634,
+        0.08509188931393363
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 16523,
+      "position_enu_m": [
+        -37.913455996013,
+        -36.83739189346318,
+        0.09514449003733927
+      ],
+      "inlier": false
+    },
+    {
+      "point3D_id": 16795,
+      "position_enu_m": [
+        -35.25777199253543,
+        -38.41666773597717,
+        0.13241208651457814
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 16566,
+      "position_enu_m": [
+        -37.100586276345396,
+        -37.3413277436162,
+        0.10996208112961758
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 17011,
+      "position_enu_m": [
+        -37.512001537343444,
+        -37.12289235339252,
+        0.10238130948469104
+      ],
+      "inlier": false
+    },
+    {
+      "point3D_id": 16486,
+      "position_enu_m": [
+        -33.48750787047876,
+        -36.695173098830175,
+        0.10570769834108518
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 16487,
+      "position_enu_m": [
+        -33.48750787047876,
+        -36.695173098830175,
+        0.10570769834108518
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 16656,
+      "position_enu_m": [
+        -33.82278997822593,
+        -36.50857666180127,
+        0.10022036260856626
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 16657,
+      "position_enu_m": [
+        -33.82908460472723,
+        -36.52751591174529,
+        0.09693996276088712
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 12968,
+      "position_enu_m": [
+        -29.200166409694653,
+        -22.812430927427116,
+        0.07017703730411329
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 13190,
+      "position_enu_m": [
+        -29.20063386410004,
+        -22.809365054957546,
+        0.0714248695934947
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 13207,
+      "position_enu_m": [
+        -28.35619915039095,
+        -23.255500818660074,
+        0.07858791033004286
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 13208,
+      "position_enu_m": [
+        -28.355419202525137,
+        -23.27178627866467,
+        0.07526193966480221
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 13325,
+      "position_enu_m": [
+        -28.7501284728308,
+        -23.010750505542312,
+        0.0841878174805244
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 12737,
+      "position_enu_m": [
+        -28.98987044557634,
+        -22.91363189761198,
+        0.07243213683581606
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 12978,
+      "position_enu_m": [
+        -29.036850613650284,
+        -22.874195155531776,
+        0.07150892723794633
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 12695,
+      "position_enu_m": [
+        -29.16270550907086,
+        -22.815468258988215,
+        0.0703123946371893
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 12696,
+      "position_enu_m": [
+        -29.16270550907086,
+        -22.815468258988215,
+        0.0703123946371893
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 13212,
+      "position_enu_m": [
+        -29.06471590234143,
+        -22.844287888930563,
+        0.07666505410508595
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 13213,
+      "position_enu_m": [
+        -29.06471590234143,
+        -22.844287888930563,
+        0.07666505410508595
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 13404,
+      "position_enu_m": [
+        -29.11017208815455,
+        -22.810560793240278,
+        0.07548513128686607
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 12561,
+      "position_enu_m": [
+        -29.11040489013353,
+        -22.802635795992536,
+        0.07665791968651847
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 13020,
+      "position_enu_m": [
+        -28.162485821677198,
+        -23.345258107501113,
+        0.06549987258412915
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 12158,
+      "position_enu_m": [
+        -27.911666560390877,
+        -20.71621262145555,
+        0.07961255694087632
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 12159,
+      "position_enu_m": [
+        -27.911666560390877,
+        -20.71621262145555,
+        0.07961255694087632
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 11304,
+      "position_enu_m": [
+        -33.18666264871916,
+        -20.1029196055637,
+        0.09708017357080223
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 9209,
+      "position_enu_m": [
+        -1.9790038028902757,
+        2.416469773029375,
+        -0.2493967988328325
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 9210,
+      "position_enu_m": [
+        -1.9767577161130774,
+        2.416064193232611,
+        -0.2508474096853852
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 9168,
+      "position_enu_m": [
+        -2.205006264144032,
+        2.6395539375842656,
+        -0.32504817691019405
+      ],
+      "inlier": false
+    },
+    {
+      "point3D_id": 9169,
+      "position_enu_m": [
+        -1.9159015149300451,
+        2.544999885124655,
+        -0.2523567552218109
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 9733,
+      "position_enu_m": [
+        -1.792874941318921,
+        2.736181177650618,
+        -0.25451356029298244
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 9734,
+      "position_enu_m": [
+        -1.7845514987664686,
+        2.735272165095161,
+        -0.2531151806809886
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 9927,
+      "position_enu_m": [
+        -1.2665592222137967,
+        3.4486284216304277,
+        -0.22556371963082178
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 9170,
+      "position_enu_m": [
+        -1.270266495361323,
+        3.5021990895808113,
+        -0.23440916465288497
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 9172,
+      "position_enu_m": [
+        -1.4017477503469777,
+        3.319136546386771,
+        -0.24398089958644897
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 9842,
+      "position_enu_m": [
+        -0.5843747487391973,
+        4.618761310037138,
+        -0.23583423261375058
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 9091,
+      "position_enu_m": [
+        -4.111074645124464,
+        4.600635945222201,
+        -0.21748635096041258
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 9818,
+      "position_enu_m": [
+        -1.523503546493174,
+        3.108568191102048,
+        -0.24149292999692262
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 9926,
+      "position_enu_m": [
+        -1.8203521009659838,
+        2.5954987619329426,
+        -0.2398240639629814
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 9928,
+      "position_enu_m": [
+        -0.5897730627418802,
+        4.621275686212828,
+        -0.23702924105404977
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 947,
+      "position_enu_m": [
+        -26.150993152267482,
+        -6.355686060712698,
+        0.0955956826844846
+      ],
+      "inlier": false
+    },
+    {
+      "point3D_id": 4673,
+      "position_enu_m": [
+        -25.400334265046205,
+        -0.27862270514503606,
+        -0.0016778574867106766
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 966,
+      "position_enu_m": [
+        -28.15580454181773,
+        -5.20236676479345,
+        0.0037793345895134056
+      ],
+      "inlier": true
+    },
+    {
+      "point3D_id": 967,
+      "position_enu_m": [
+        -28.15580454181773,
+        -5.20236676479345,
+        0.0037793345895134056
+      ],
+      "inlier": true
+    }
+  ],
+  "units_note": "Height1.2478405 is a fitted distance in GPS-scaled map units, not a new physical measurement. Known mountheight remains1.21m; no rescaling of map, Gaussian checkpoint, or SimNative dynamics is applied.",
+  "valid_road_polygon_note": "Convex hull of observed inlier asphalt points only; does not certify every interior location as asphalt, collision-free, or validated."
+}
