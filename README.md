@@ -1,8 +1,12 @@
 # DrivingBench simulator and offline testbeds
 
-Anonymous release for double-blind review. It contains the DrivingBench harness (also at
-<https://anonymous.4open.science/r/drivingbench_harness_v1-EEBC/>) together with the closed-loop
-simulator and the replay and fork testbeds used in the paper.
+Code for *How Frontier Models Drive Around Humans: From a Real Car to a Validated Simulator*
+(Aditya Ramabadran, Simon Mahns, Tobias Gessler; HumanRLI Workshop at CoRL 2026). It contains the
+DrivingBench harness as used for the Toyota Corolla runs (the harness itself is at
+<https://github.com/aditya-ramabadran/drivingbench_harness_code>, release `v1.0`) together with the
+closed-loop simulator of the Corolla's parking lot and the replay and fork testbeds used in the
+paper. The newer Tesla simulator ships with the harness's `v1.1` release. Project page:
+<https://drivingbench.com>.
 
 A model drives through the same MCP tools (`observe`, `set_motion`, `stop_now`), gateway, request
 envelope and openpilot controllers as on the real car. Only the layers below them are simulated:
@@ -45,14 +49,11 @@ not part of this release; the fitted plant is in `sim/params.json`. `docs/sim-dy
 describes the plant and its validation. The live renderer needs a Gaussian-splat checkpoint (see
 below), Brush (`sim/brush_render.rs`), Blender and a Metal GPU.
 
-## Withheld for anonymity
+## Not included
 
-- The trained Gaussian-splat checkpoint and the raw camera footage it was trained on, which show
- the test site. Every other scene file is included; `sim/visual_splat.py` retrains the splat
- from footage of any site.
-- The site's GPS origin. Positions are in local metres; set `DRIVINGBENCH_SITE_ORIGIN="lat,lon"`
- to index new footage.
-- One quoted sentence in the fork prompt (`replay/fork.py`) that would identify the project.
+- The trained Gaussian-splat checkpoint and the raw camera footage it was trained on. Every other
+ scene file is included; `sim/visual_splat.py` retrains the splat from footage of any site
+ (set `DRIVINGBENCH_SITE_ORIGIN="lat,lon"` for a site other than the paper's).
 
 ## License
 

@@ -144,8 +144,10 @@ def prepare(root, series, out, *, stride=20, workers=6, pilot=False):
     out.mkdir(parents=True, exist_ok=True)
     (out / "images").mkdir(exist_ok=True)
     paths = route_segments(root)
-    # GPS origin of the site's local frame; withheld for anonymity, set DRIVINGBENCH_SITE_ORIGIN="lat,lon".
-    origin = tuple(float(v) for v in os.environ.get("DRIVINGBENCH_SITE_ORIGIN", "0,0").split(","))
+    # GPS origin of the site's local frame; set DRIVINGBENCH_SITE_ORIGIN="lat,lon" for another site.
+    origin = tuple(
+        float(v) for v in os.environ.get("DRIVINGBENCH_SITE_ORIGIN", "37.42238,-122.14130").split(",")
+    )
     manifest, full_index, jobs, reports = [], [], [], {}
     use_openpilot()
     from openpilot.common.transformations.camera import DEVICE_CAMERAS

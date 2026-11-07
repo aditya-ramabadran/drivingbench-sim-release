@@ -1017,7 +1017,7 @@ def blur_video(blurrer: Blurrer, source: Path, output: Path, bitrate: str) -> No
         raise RuntimeError(f"blur encode failed for {source}")
 
 
-PUBLIC_REPO = "https://anonymous.4open.science/r/drivingbench_harness_v1-EEBC/"
+PUBLIC_REPO = "https://github.com/aditya-ramabadran/drivingbench_harness_code"
 PUBLIC_ABOUT = (
     "Language models driving a real car. Each attempt below is one model's try at a mini-cone "
     "course in an empty parking lot, at walking pace, with a human in the driver's seat ready to "
@@ -1027,7 +1027,10 @@ PUBLIC_ABOUT = (
     f"The harness that recorded this is open source: {PUBLIC_REPO}."
 )
 PUBLIC_TEXT_FILES = ("timeline.json", "calls.srt", "README.md")
-CREATED_BY = "Created by: anonymous authors."
+CREATED_BY = (
+    "Created by: [Simon Mahns](https://x.com/nautsimon_), [Tobias Gessler](https://x.com/tobiges), "
+    "[Aditya Ramabadran](https://x.com/a_ramabadran)."
+)
 DATASET_CARD = """---
 license: cc-by-4.0
 pretty_name: DrivingBench v1
